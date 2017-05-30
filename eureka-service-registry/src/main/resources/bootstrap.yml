@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-registry
+  cloud:
+    config:
+      uri: http://config:8889
+      fail-fast: true
+      password: password
+      username: user

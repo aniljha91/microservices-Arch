@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sakarib1/ConfigData
+          searchPaths: ConfigData
+        native:
+          search-locations: classpath:/shared
+  profiles:
+     active: native
+
+server:
+  port: 8889
+
+security:
+  user: 
+    password: password

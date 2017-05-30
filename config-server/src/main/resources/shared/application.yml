@@ -1,0 +1,26 @@
+logging:
+  level:
+    org.springframework.security: INFO
+    org.springframework.web: DEBUG
+
+spring:
+  rabbitmq:
+    host: rabbitmq
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://service-registry:8762/eureka/
+  instance:
+    prefer-ip-address: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+  config:
+    stream:
+      maxConcurrentConnections: 20

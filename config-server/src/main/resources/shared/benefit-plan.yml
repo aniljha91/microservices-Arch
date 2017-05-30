@@ -1,0 +1,9 @@
+spring:
+
+server:
+  context-path: /statistics
+  port: 7000
+  
+security:
+  user: 
+    password: statistics

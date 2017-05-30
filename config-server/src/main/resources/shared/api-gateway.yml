@@ -1,0 +1,35 @@
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+  routes:
+    auth-server:
+        path: /uaa/**
+        url: http://auth-server:5000
+        stripPrefix: false
+        sensitiveHeaders:
+
+    benefitcoding-service:
+        path: /groups/**
+        url: http://benefitcoding-service:6000
+        stripPrefix: false
+        sensitiveHeaders:
+     
+    benefit-plan:
+        path: /statistics/**
+        url: http://benefit-plan:7000
+        stripPrefix: false
+        sensitiveHeaders:
+
+server:
+  port: 4000
+  
+security:
+  user: 
+    password: gateway

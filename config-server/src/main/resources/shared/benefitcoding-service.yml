@@ -1,0 +1,9 @@
+spring:
+
+server:
+  context-path: /groups
+  port: 6000
+  
+security:
+  user: 
+    password: groups
