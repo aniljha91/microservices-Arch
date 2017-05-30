@@ -1,0 +1,32 @@
+[
+    {
+        "PharmacyCategoryID": "1",
+        "PharmacyCategoryCode": "T1",
+        "PharmacyCategoryName": "Tier1",
+        "PharmacyCategoryDescription": "Tier1"
+    },
+    {
+        "PharmacyCategoryID": "2",
+        "PharmacyCategoryCode": "T2",
+        "PharmacyCategoryName": "Tier2",
+        "PharmacyCategoryDescription": "Tier2"
+    },
+    {
+        "PharmacyCategoryID": "3",
+        "PharmacyCategoryCode": "T3",
+        "PharmacyCategoryName": "Tier3",
+        "PharmacyCategoryDescription": "Tier3"
+    },
+    {
+        "PharmacyCategoryID": "4",
+        "PharmacyCategoryCode": "T4",
+        "PharmacyCategoryName": "Tier4",
+        "PharmacyCategoryDescription": "Tier4"
+    },
+    {
+        "PharmacyCategoryID": "5",
+        "PharmacyCategoryCode": "T5",
+        "PharmacyCategoryName": "Tier5",
+        "PharmacyCategoryDescription": "Tier5"
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "USER_NAME": "User Name",
+    "PASSWORD": "Password",
+    "SIGN_IN": "Sign In",
+    "COPY_RIGHT_TEXT": " © 2017. All rights reserved.",
+    "NAVIGATION": "Navigation",
+    "USER_SEARCH": "User Search",
+    "CREATE_USER": "Create User",
+    "SEARCH_USER": "Search User",
+    "FIRST_NAME": "First Name",
+    "LAST_NAME": "Last Name",
+    "GENDER": "Gender",
+    "MALE": "Male",
+    "FEMALE": "Female"
+}

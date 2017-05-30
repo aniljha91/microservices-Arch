@@ -1,0 +1,17 @@
+[{
+        "id": "PPO-GF-TX-Core",
+        "name": "PPO-GF-TX-Core-Standard Selectable"
+    },
+    {
+        "id": "PPO-NGF-NM-Core",
+        "name": "PPO-NGF-NM-Core-Standard Selectable"
+    },
+    {
+        "id": "HMO-GF-NM-Core",
+        "name": "HMO-GF-NM-Core-Standard Selectable"
+    },
+    {
+        "id": "HMO-NGF-NM-Core",
+        "name": "HMO-NGF-NM-Core-Standard Selectable"
+    }
+]

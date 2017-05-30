@@ -1,0 +1,10 @@
+{
+    "result": [
+        { "memberId": 1, "memberName": "bala" },
+        { "memberId": 2, "memberName": "Alice Gatsby" },
+        { "memberId": 3, "memberName": "Janet Hudson" },
+        { "memberId": 4, "memberName": "Henry McGraw" },
+        { "memberId": 5, "memberName": "Violet Morrison" },
+        { "memberId": 6, "memberName": "John Doe" }
+    ]
+}

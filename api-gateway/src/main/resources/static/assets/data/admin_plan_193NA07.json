@@ -1,0 +1,3135 @@
+{
+    "plan_id": "193NA07",
+    "plan_name": "EPO-NGF-IL-80",
+    "tiers_info": {
+        "service_benefit_count": 2,
+        "pharmacy_benefit_count": 2,
+        "service_tiers": [
+            {
+                "name": "In Network",
+                "id": "service1"
+            },
+            {
+                "name": "Out Network",
+                "id": "service2"
+            }
+        ],
+        "pharmacy_tiers": [
+            {
+                "name": "Preferred",
+                "id": "pharmacy1"
+            },
+            {
+                "name": "Non Preferred",
+                "id": "pharmacy2"
+            }
+        ]
+    },
+    "plan_data": {
+        "items": [
+            {
+                "cost_share": "Deductible (Individual)",
+                "service1": 3000,
+                "service2": 15000
+            },
+            {
+                "cost_share": "Deductible (Family)",
+                "service1": 9000,
+                "service2": 45000
+            },
+            {
+                "cost_share": "OPX (Individual Inc.Ded)",
+                "service1": 7150,
+                "service2": "Unlimited"
+            },
+            {
+                "cost_share": "OPX (Family Inc.Ded)",
+                "service1": 4300,
+                "service2": "Unlimited"
+            },
+            {
+                "cost_share": "Coins-General",
+                "service1": "70%",
+                "service2": "50%"
+            },
+            {
+                "cost_share": "OV Coins",
+                "service1": "100%",
+                "service2": "50%"
+            },
+            {
+                "cost_share": "PCP Copay",
+                "service1": 3000,
+                "service2": 15000
+            },
+            {
+                "cost_share": "Number of OV at Listed Copay",
+                "service1": 30,
+                "service2": 10
+            },
+            {
+                "cost_share": "SPC Copay",
+                "service1": 60,
+                "service2": "NA"
+            }
+        ]
+    },
+    "service_data": {
+        "meta": {
+            "copay": "Copay",
+            "coins": "Coins",
+            "cost_share_applies": "Cost Share Applies"
+        },
+        "items": [
+            {
+                "benefit_service": "Preventive Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Special Visit",
+                "service1": {
+                    "copay": 40,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Office Visit",
+                "service1": {
+                    "copay": 500,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": 1500,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "MRI",
+                "service1": {
+                    "copay": 300,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": 1500,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Minor Surgery",
+                "service1": {
+                    "copay": 300,
+                    "coins": "50%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": 1500,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Major Surgery",
+                "service1": {
+                    "copay": "80",
+                    "coins": "80%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "ER",
+                "service1": {
+                    "copay": 200,
+                    "coins": "40%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Therapies, rehabilitative and habilitative",
+                "service1": {
+                    "copay": 800,
+                    "coins": "30%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Transplants",
+                "service1": {
+                    "copay": 550,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Outpatient Behavioral Health",
+                "service1": {
+                    "copay": 150,
+                    "coins": "60%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Acupunture",
+                "service1": {
+                    "copay": 60,
+                    "coins": "55%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Abortion",
+                "service1": {
+                    "copay": 200,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Allergy Shots / Allergy Treatment",
+                "service1": {
+                    "copay": 25,
+                    "coins": "65%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Autism",
+                "service1": {
+                    "copay": 80,
+                    "coins": "80%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Bariatric Surgery",
+                "service1": {
+                    "copay": 550,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Blood, blood transfusions",
+                "service1": {
+                    "copay": 500,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Breast Implant Removal",
+                "service1": {
+                    "copay": 70,
+                    "coins": "80%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Cardiac Rehabilitation",
+                "service1": {
+                    "copay": 500,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Chemotherapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Dental Treatment under Medical Plan",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Diabetic Care Management",
+                "service1": {
+                    "copay": 600,
+                    "coins": "80%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Diabetic Supplies",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Dialysis Treatment",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Durable Medical Equipment",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Fibrocystic Breast Condition",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Foot Care (Medical)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Foot Care (Routine and Medical)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Hearing Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Hospice",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Inborn Errors of Metabolism",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Infertility",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Naprapath Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Nursery - Newborn Child Coverage",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Orthognathic Surgery",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Osteoporosis",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Pediatric Hearing Tests",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Pulmonary Therapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Radiation Therapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Vision Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Wigs",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Ambulance Service",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Anesthesia (Outpatient)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Assitant Surgeon (Outpatient)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Behavioral Health",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Crisis stabilization Unit",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Ambulance Service",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Anesthesia (Outpatient)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Assitant Surgeon (Outpatient)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Behavioral Health",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Electroconvulsive Therapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Emergency Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Emergency Medical Condition",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Emergency Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Emergency Transportation/Ambulance",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Extended Care Facility",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Hearing Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Imaging: High Cost Imaging",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Home Health Care / Coordinated Home Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Home Health Care Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Infusion Therapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Inhalation Therapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Maternity",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Medical",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Naprapath Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Nutritional Counseling",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Outpatient Habilitation Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Outpatient Reconstructive Surgery",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Outpatient Rehabilitation Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Outpatient Surgery",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Partial Hospitalization (Inpatient)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Pediatric Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Prosthetic Devices",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Repetetive Transcranial Magnetic Stimulation",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Urgent Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "X-rays and Diagnostic Tests",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            }
+        ]
+    },
+    "pharmacy_data": {
+        "meta": {
+            "copay": "Copay",
+            "coins": "Coins"
+        },
+        "items": [
+            {
+                "name": "Drug Plan Tier 1",
+                "pharmacy1": {
+                    "copay": 600,
+                    "coins": "70%"
+                },
+                "pharmacy2": {
+                    "copay": "",
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 2",
+                "pharmacy1": {
+                    "copay": 40,
+                    "coins": ""
+                },
+                "pharmacy2": {
+                    "copay": "",
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 3",
+                "pharmacy1": {
+                    "copay": 500,
+                    "coins": ""
+                },
+                "pharmacy2": {
+                    "copay": 1500,
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 4",
+                "pharmacy1": {
+                    "copay": 300,
+                    "coins": "70%"
+                },
+                "pharmacy2": {
+                    "copay": 1500,
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 5",
+                "pharmacy1": {
+                    "copay": 300,
+                    "coins": "50%"
+                },
+                "pharmacy2": {
+                    "copay": 1500,
+                    "coins": ""
+                }
+            }
+        ]
+    },
+    "plan_rules": [
+        {
+            "Rule_ID": "100007",
+            "Rule_Name": "Define whether Copay Accumulates Towards Deductible",
+            "Rule_Desscription": "Copay accums towards Deduct = {0}",
+            "Configurable_Phrase": "Copay accums towards Deduct = ",
+            "Phrase_Values": [
+                "Y",
+                "N"
+            ],
+            "Selected_Value": [
+                "N"
+            ],
+            "Rule_Category": "Set Copay Restrictions",
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100008",
+            "Rule_Name": "Define whether Copay Accumulates Towards OPX",
+            "Rule_Desscription": "Copay accums towards OPX = {0}",
+            "Configurable_Phrase": "Copay accums towards OPX =",
+            "Phrase_Values": [
+                "Y",
+                "N"
+            ],
+            "Selected_Value": [
+                "Y"
+            ],
+            "Rule_Category": "Set Copay Restrictions",
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100009",
+            "Rule_Name": "Define whether Copay Looks At Deductible",
+            "Rule_Desscription": "Copay looks at Deduct = {0}",
+            "Configurable_Phrase": "Copay looks at Deduct =",
+            "Phrase_Values": [
+                "Y",
+                "N"
+            ],
+            "Selected_Value": [
+                "N"
+            ],
+            "Rule_Category": "Set Copay Restrictions",
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100010",
+            "Rule_Name": "Define whether Copay Looks at OPX",
+            "Rule_Desscription": "Copay looks at OPX = {0}",
+            "Configurable_Phrase": "Copay looks at OPX =",
+            "Phrase_Values": [
+                "Y",
+                "N"
+            ],
+            "Selected_Value": [
+                "Y"
+            ],
+            "Rule_Category": "Set Copay Restrictions",
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100033",
+            "Rule_Name": "Set Member Responsibility based on Network Type",
+            "Rule_Desscription": "If Network Type = {0}, any costs above the allowable amount is member's responsibility",
+            "Configurable_Phrase": [
+                "Network Type"
+            ],
+            "Phrase_Values": [
+                "In Network",
+                "Out of Network"
+            ],
+            "Selected_Value": [
+                "Out of Network"
+            ],
+            "Rule_Category": "Set Member Responsibility",
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100034",
+            "Rule_Name": "Set Member Responsibility based on Network Type and Provider Name",
+            "Rule_Desscription": "If Network Type = {0} and Provider Name = {1}, any costs above the allowable amount is member's responsibility",
+            "Configurable_Phrase": [
+                "Network Type",
+                "Provider Name"
+            ],
+            "Phrase_Values": [
+                "In Network",
+                "Out of Network"
+            ],
+            "Selected_Value": [
+                "Out of Network",
+                "Bluecard"
+            ],
+            "Rule_Category": "Set Member Responsibility",
+            "meta_data": {
+                "0": "drop_down",
+                "1": "input_number"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100000",
+            "Rule_Name": "Set Benefit Year Definition",
+            "Rule_Desscription": "The benefit year will be defined as a {0}",
+            "Configurable_Phrase": "benefit year",
+            "Phrase_Values": [
+                "Calendar Year",
+                "Contract Year"
+            ],
+            "Selected_Value": [
+                "Calendar Year"
+            ],
+            "Rule_Category": "Set Benefit Period Definition",
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100040",
+            "Rule_Name": "Set Maximum Period for Benefit Extension",
+            "Rule_Desscription": "Benefits for disabled members will be provided for no more than {0} months from the termination period",
+            "Configurable_Phrase": [
+                "months"
+            ],
+            "Phrase_Values": [],
+            "Selected_Value": [
+                "12"
+            ],
+            "Rule_Category": "Set Termination of Benefits Extension",
+            "meta_data": {
+                "0": "input_number"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100041",
+            "Rule_Name": "Set Maximum period for Benefit Extension based on Service Type",
+            "Rule_Desscription": "If Service Type = {0}, benefits for disabled members will be provided for {1} days or until the member is discharged whichever occurs first from the termination period",
+            "Configurable_Phrase": [
+                "Service Type",
+                "days"
+            ],
+            "Phrase_Values": [
+                "Inpatient",
+                "Outpatient"
+            ],
+            "Selected_Value": [
+                "Inpatient",
+                "30"
+            ],
+            "Rule_Category": "Set Termination of Benefits Extension",
+            "meta_data": {
+                "0": "drop_down",
+                "1": "input_number"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100042",
+            "Rule_Name": "Set Termination of Benefits Extension for Plan Not Subject to COBRA",
+            "Rule_Desscription": "If an Employee terminates under a plan not subject to COBRA, that Employee and their Dependents remain covered for a period of {0} days after such termination, unless during such period the Employee and their Dependents become entitled to similar insurance from some other source",
+            "Configurable_Phrase": [
+                "days"
+            ],
+            "Phrase_Values": [],
+            "Selected_Value": [
+                "63"
+            ],
+            "Rule_Category": "Set Termination of Benefits Extension",
+            "meta_data": {
+                "0": "input_number"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100005",
+            "Rule_Name": "Set Data Limitations",
+            "Rule_Desscription": "Claim must be filed within {0} {1} following the service date",
+            "Configurable_Phrase": "filed within",
+            "Phrase_Values": [
+                "days",
+                "weeks",
+                "months",
+                "years"
+            ],
+            "Selected_Value": [
+                "12",
+                "months"
+            ],
+            "Rule_Category": "Set Claim Filing Limitations",
+            "meta_data": {
+                "0": "input_number",
+                "1": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100001",
+            "Rule_Name": "Set Copay When Service Level Copay Doesn't Exist",
+            "Rule_Desscription": "If service level copay is not defined, apply contract level copay for that service",
+            "Configurable_Phrase": "",
+            "Phrase_Values": [],
+            "Selected_Value": [],
+            "Rule_Category": "Set Copay",
+            "meta_data": {},
+            "selected": true
+        },
+        {
+            "Rule_ID": "100002",
+            "Rule_Name": "Set Copay Based on Allowed Amount",
+            "Rule_Desscription": "If Allowed Amount < ${0} then Copay = ${1}",
+            "Configurable_Phrase": [
+                "Allowed Amount",
+                "Copay"
+            ],
+            "Phrase_Values": {},
+            "Selected_Value": [
+                "500",
+                "0"
+            ],
+            "Rule_Category": "Set Copay",
+            "meta_data": {
+                "0": "input_number",
+                "1": "input_number"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100003",
+            "Rule_Name": "Set Coins and Deductible Restrictions based on Place of Treatment",
+            "Rule_Desscription": "IF Place of Treatment is Retail Clinic THEN coins is {0} AND Subject to Deductible ={1}",
+            "Configurable_Phrase": "coins, subject to deductible",
+            "Phrase_Values": [
+                "Y",
+                "N"
+            ],
+            "Selected_Value": [
+                "80%",
+                "Y"
+            ],
+            "Rule_Category": "Set Coins and Deductible Restrictions",
+            "meta_data": {
+                "0": "input_percent",
+                "1": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100028",
+            "Rule_Name": "Set Coins When Service Level Coins Doesn't Exist",
+            "Rule_Desscription": "If service level coins is not defined, apply contract level coins for that service",
+            "Configurable_Phrase": "",
+            "Phrase_Values": [],
+            "Selected_Value": [],
+            "Rule_Category": "Set Coins",
+            "meta_data": {},
+            "selected": true
+        },
+        {
+            "Rule_ID": "100030",
+            "Rule_Name": "Define cost sharing for Out of Packet Maximum",
+            "Rule_Desscription": "If Out of Pocket Maximum is met, Eligible Cost Sharing = {0}",
+            "Configurable_Phrase": "Eligible Cost Sharing",
+            "Phrase_Values": [
+                "Y",
+                "N"
+            ],
+            "Selected_Value": [
+                "N"
+            ],
+            "Rule_Category": "Set Cost Sharing Limit",
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100004",
+            "Rule_Name": "Set PCP Provider Definition Based on Provider Specialty",
+            "Rule_Desscription": "IF Provider Specialty is {0}THEN Provider is PCP",
+            "Configurable_Phrase": "Provider",
+            "Phrase_Values": [
+                "Ped",
+                "FP",
+                "GP",
+                "Internist",
+                "OB/GYN"
+            ],
+            "Selected_Value": [
+                "Ped"
+            ],
+            "Rule_Category": "Set Provider Definitions and Restrictions",
+            "meta_data": {
+                "0": "drop_down"
+            }
+        },
+        {
+            "Rule_ID": "100006",
+            "Rule_Name": "Set PCP Change Restrictions",
+            "Rule_Desscription": "The member will be allowed to change their PCP on a {0} basis",
+            "Configurable_Phrase": "Provider",
+            "Phrase_Values": [
+                "Monthly",
+                "Yearly",
+                "Weekly",
+                "Bi-weekly"
+            ],
+            "Selected_Value": [
+                "Monthly"
+            ],
+            "Rule_Category": "Set Provider Definitions and Restrictions",
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100023",
+            "Rule_Name": "Set Carry Over Credit Restrictions Based on Quarter Number",
+            "Rule_Desscription": "If Quarter Number = {0} then Carry Over Credit = {1}",
+            "Configurable_Phrase": [
+                "Quarter Number",
+                "Carry Over Credit"
+            ],
+            "Phrase_Values": [
+                "Y",
+                "N"
+            ],
+            "Selected_Value": [
+                "4",
+                "N"
+            ],
+            "Rule_Category": "Set Carry Over Credit Restrictions",
+            "meta_data": {
+                "1": "drop_down",
+                "0": "input_number"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100024",
+            "Rule_Name": "Set No Member Responsibility based on Network Type when Claim is Denied",
+            "Rule_Desscription": "If Network Type = {0} and claim is denied then Member Responsibility = {1}% of Claim Balance",
+            "Configurable_Phrase": [
+                "Network Type",
+                "Member Responsibility"
+            ],
+            "Phrase_Values": [
+                "In Network",
+                "Out of Network"
+            ],
+            "Selected_Value": [
+                "In Network",
+                "0"
+            ],
+            "Rule_Category": "Set Claim Denial Related Actions",
+            "meta_data": {
+                "0": "drop_down",
+                "1": "input_number"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100022",
+            "Rule_Name": "Set Allowed Amount Restrictions",
+            "Rule_Desscription": "For Medicare recipients, Allowed Amount <= Medicare Limiting charge",
+            "Configurable_Phrase": "",
+            "Phrase_Values": [],
+            "Selected_Value": [],
+            "Rule_Category": "Set Allowed Amount Restrictions",
+            "meta_data": {}
+        },
+        {
+            "Rule_ID": "100029",
+            "Rule_Name": "Set Coordination of Benefits for Medicare Based on Age",
+            "Rule_Desscription": "If Age > {0} and Primary Insurer = Medicare then one cannot be covered under an Exchange plan",
+            "Configurable_Phrase": "Age",
+            "Phrase_Values": [],
+            "Selected_Value": [
+                "65"
+            ],
+            "Rule_Category": "Set Coordination of Benefits",
+            "meta_data": {
+                "0": "input_number"
+            },
+            "selected": true
+        },
+        {
+            "Rule_ID": "100029",
+            "Rule_Name": "Set Lifetime Maximum based on Regulation",
+            "Rule_Desscription": "If Regulation = {0} then Lifetime Maximum = {1}",
+            "Configurable_Phrase": [
+                "Regulation",
+                "Lifetime Maximum"
+            ],
+            "Phrase_Values": [],
+            "Selected_Value": [
+                "ACA",
+                "Unlimited"
+            ],
+            "Rule_Category": "Set Lifetime Maximum",
+            "meta_data": {
+                "0": "input_number",
+                "1": "input_number"
+            },
+            "selected": true
+        }
+    ],
+    "service_rules": [
+        {
+            "benefitServiceName": "Preventive Care",
+            "benefitServiceRuleCategory": "Set Allowed Amount Restrictions",
+            "benefitServiceRuleID": 30022,
+            "benefitServiceRuleName": "Set Allowed Amount for Preventive Services",
+            "benefitServiceRuleDescription": "If Service = 'Preventive' THEN Allowed Amount = {0}",
+            "configurablePhrase": "Allowed Amount",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "$225"
+            ],
+            "meta_data": {
+                "0": "currency"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Special Visit",
+            "benefitServiceRuleCategory": "Set Allowed Amount Restrictions",
+            "benefitServiceRuleID": 30021,
+            "benefitServiceRuleName": "Set Allowed Amount for Specialist Vists",
+            "benefitServiceRuleDescription": "IF Service = 'Specialist Vist' THEN Allowed Amount = {0} of Billed Amount",
+            "configurablePhrase": "Allowed Amount",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "90%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Office Visit",
+            "benefitServiceRuleCategory": "Set Allowed Amount Restrictions",
+            "benefitServiceRuleID": 30027,
+            "benefitServiceRuleName": "Set Allowed Amount for Office Services",
+            "benefitServiceRuleDescription": "IF Service = 'Office Visit' THEN Allowed Amount = {0} of Billed Amount",
+            "configurablePhrase": "Allowed Amount",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "90%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "MRI",
+            "benefitServiceRuleCategory": "Set Allowed Amount Restrictions",
+            "benefitServiceRuleID": 30023,
+            "benefitServiceRuleName": "Set Allowed Amount for MRI Services",
+            "benefitServiceRuleDescription": "IF Service = 'MRI' THEN Allowed Amount = {0}",
+            "configurablePhrase": "Allowed Amount",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "$ 1000"
+            ],
+            "meta_data": {
+                "0": "currency"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Minor Surgery",
+            "benefitServiceRuleCategory": "Set Allowed Amount Restrictions",
+            "benefitServiceRuleID": 30026,
+            "benefitServiceRuleName": "Set Allowed Amount",
+            "benefitServiceRuleDescription": "IF Service = 'Minor Surgery' THEN Allowed Amount = {0}",
+            "configurablePhrase": "Allowed Amount",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "$ 1200"
+            ],
+            "meta_data": {
+                "0": "currency"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Major Surgery",
+            "benefitServiceRuleCategory": "Set Allowed Amount Restrictions",
+            "benefitServiceRuleID": 30025,
+            "benefitServiceRuleName": "Set Allowed Amount",
+            "benefitServiceRuleDescription": "IF Service = 'Major Surgery' THEN Allowed Amount = {0}",
+            "configurablePhrase": "Allowed Amount",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "$ 22000"
+            ],
+            "meta_data": {
+                "0": "currency"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "ER",
+            "benefitServiceRuleCategory": "Set Allowed Amount Restrictions",
+            "benefitServiceRuleID": 30024,
+            "benefitServiceRuleName": "Set Allowed Amount",
+            "benefitServiceRuleDescription": "IF Service = 'ER' THEN Allowed Amount = {0}",
+            "configurablePhrase": "Allowed Amount",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "$ 3500"
+            ],
+            "meta_data": {
+                "0": "currency"
+            }
+        },
+        {
+            "benefitServiceName": "Therapies, rehabilitative and habilitative",
+            "benefitServiceRuleCategory": "Set Coins Restrictions",
+            "benefitServiceRuleID": 30010,
+            "benefitServiceRuleName": "Set Coins Restrictions for Strength Training based on Number of Office Visits",
+            "benefitServiceRuleDescription": "If Service = Strength Training and Number of OV <= {0} THEN Coins = {1}",
+            "configurablePhrase": [
+                "Number of OV",
+                "Coins"
+            ],
+            "configurableValues": [],
+            "benefitServiceRuleValue": {
+                "0": "10",
+                "1": "100%"
+            },
+            "meta_data": {
+                "0": "percentage",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Preventive Care",
+            "benefitServiceRuleCategory": "Set Coins Restrictions",
+            "benefitServiceRuleID": 30005,
+            "benefitServiceRuleName": "Set Coins Restrictions based on Service and Network",
+            "benefitServiceRuleDescription": "If Service = Immunization and Network Type = {0} then Coins = {1}",
+            "configurablePhrase": [
+                "Network Type",
+                "Coins"
+            ],
+            "configurableValues": [
+                "In Network",
+                "Out of Network"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Out of Network",
+                "1": "100%"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Preventive Care",
+            "benefitServiceRuleCategory": "Set Coins Restrictions",
+            "benefitServiceRuleID": 40005,
+            "benefitServiceRuleName": "Set Coins Restrictions based on Service and Age",
+            "benefitServiceRuleDescription": "If Service = Immunization and Age < {0} THEN Coins = {1}",
+            "configurablePhrase": [],
+            "configurableValues": [
+                "Out of Network"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "19",
+                "1": "100%"
+            },
+            "meta_data": {
+                "0": "percentage",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Outpatient Behavioral Health",
+            "benefitServiceRuleCategory": "Set Coins Restrictions",
+            "benefitServiceRuleID": 30019,
+            "benefitServiceRuleName": "Set Coins Restrictions for Electroconvulsive Therapy and Number of Office Visits <= 5",
+            "benefitServiceRuleDescription": "IF Service = Electroconvulsive Therapy AND Number of OV <={0} THEN Coins = {1}",
+            "configurablePhrase": [
+                "Number of OV",
+                "Coins"
+            ],
+            "configurableValues": [
+                "<=",
+                ">"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "5",
+                "1": "100%"
+            },
+            "meta_data": {
+                "0": "percentage",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Outpatient Behavioral Health",
+            "benefitServiceRuleCategory": "Set Coins Restrictions",
+            "benefitServiceRuleID": 30020,
+            "benefitServiceRuleName": "Set Coins Restrictions for Electroconvulsive Therapy and Number of Office Visits > 5",
+            "benefitServiceRuleDescription": "IF Service = Electroconvulsive Therapy AND Number of OV > {0} THEN Coins = {1}",
+            "configurablePhrase": [
+                "Number of OV",
+                "Coins"
+            ],
+            "configurableValues": [
+                "<=",
+                ">"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "5",
+                "1": "75%"
+            },
+            "meta_data": {
+                "0": "percentage",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Therapies, rehabilitative and habilitative",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30001,
+            "benefitServiceRuleName": "Set Copay Restrictions based on Service",
+            "benefitServiceRuleDescription": "If Service = Speech Therapy Then Subject to Copay = {0}",
+            "configurablePhrase": "Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Special Visit",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30043,
+            "benefitServiceRuleName": "Set Copay Restrictions based on Service",
+            "benefitServiceRuleDescription": "IF Service = 'Specialist Visit' THEN  Subject to Copay = {0}",
+            "configurablePhrase": "Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Preventive Care",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30042,
+            "benefitServiceRuleName": "Set Copay Restrictions",
+            "benefitServiceRuleDescription": "If Service = 'Preventive' THEN Subject to Copay = {0}",
+            "configurablePhrase": "Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Office Visit",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30048,
+            "benefitServiceRuleName": "Set Copay Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Office Visit' THEN Subject to Copay = {0}",
+            "configurablePhrase": "Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "MRI",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30044,
+            "benefitServiceRuleName": "Set Copay Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'MRI' THEN  Subject to Copay = {0}",
+            "configurablePhrase": "Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Minor Surgery",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30047,
+            "benefitServiceRuleName": "Set Copay Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Minor Surgery' THEN Subject to Copay = {0}",
+            "configurablePhrase": "Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Major Surgery",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30046,
+            "benefitServiceRuleName": "Set Copay Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Major Surgery' THEN  Subject to Copay = {0}",
+            "configurablePhrase": "Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "ER",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30045,
+            "benefitServiceRuleName": "Set Copay Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'ER' THEN  Subject to Copay = {0}",
+            "configurablePhrase": "Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Special Visit",
+            "benefitServiceRuleCategory": "Set Cost Share Restrictions",
+            "benefitServiceRuleID": 30036,
+            "benefitServiceRuleName": "Set Copay Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Specialist Visit' THEN  IN Ignore Cost Share = {0}",
+            "configurablePhrase": "IN Ignore Cost Share",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Preventive Care",
+            "benefitServiceRuleCategory": "Set Cost Share Restrictions",
+            "benefitServiceRuleID": 30035,
+            "benefitServiceRuleName": "Set Cost Share Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Preventive' THEN IN Ignore Cost Share = {0}",
+            "configurablePhrase": "IN Ignore Cost Share",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Office Visit",
+            "benefitServiceRuleCategory": "Set Cost Share Restrictions",
+            "benefitServiceRuleID": 30041,
+            "benefitServiceRuleName": "Set Cost Share Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Office Visit' THEN  IN Ignore Cost Share = {0}",
+            "configurablePhrase": "IN Ignore Cost Share",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "MRI",
+            "benefitServiceRuleCategory": "Set Cost Share Restrictions",
+            "benefitServiceRuleID": 30037,
+            "benefitServiceRuleName": "Set Cost Share Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'MRI' THEN  IN Ignore Cost Share = {0}",
+            "configurablePhrase": "IN Ignore Cost Share",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Minor Surgery",
+            "benefitServiceRuleCategory": "Set Cost Share Restrictions",
+            "benefitServiceRuleID": 30040,
+            "benefitServiceRuleName": "Set Cost Share Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Minor Surgery' THEN  IN Ignore Cost Share = {0}",
+            "configurablePhrase": "IN Ignore Cost Share",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Major Surgery",
+            "benefitServiceRuleCategory": "Set Cost Share Restrictions",
+            "benefitServiceRuleID": 30039,
+            "benefitServiceRuleName": "Set Cost Share Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Major Surgery' THEN  IN Ignore Cost Share = {0}",
+            "configurablePhrase": "IN Ignore Cost Share",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "ER",
+            "benefitServiceRuleCategory": "Set Cost Share Restrictions",
+            "benefitServiceRuleID": 30038,
+            "benefitServiceRuleName": "Set Cost Share Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'ER' THEN  IN Ignore Cost Share = {0}",
+            "configurablePhrase": "IN Ignore Cost Share",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Special Visit",
+            "benefitServiceRuleCategory": "Set Deductible Restrictions",
+            "benefitServiceRuleID": 30050,
+            "benefitServiceRuleName": "Set Deductible Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Specialist Visit' THEN  Subject to Deductible = {0}",
+            "configurablePhrase": "Subject to Deductible",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Preventive Care",
+            "benefitServiceRuleCategory": "Set Deductible Restrictions",
+            "benefitServiceRuleID": 30049,
+            "benefitServiceRuleName": "Set Deductible Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Preventive' THEN Subject to Deductible ={0}",
+            "configurablePhrase": "Subject to Deductible",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Office Visit",
+            "benefitServiceRuleCategory": "Set Deductible Restrictions",
+            "benefitServiceRuleID": 30055,
+            "benefitServiceRuleName": "Set Deductible Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Office Visit' THEN Subject to Deductible = N",
+            "configurablePhrase": "Subject to Deductible",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "MRI",
+            "benefitServiceRuleCategory": "Set Deductible Restrictions",
+            "benefitServiceRuleID": 30051,
+            "benefitServiceRuleName": "Set Deductible Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'MRI' THEN  Subject to Deductible ={0}",
+            "configurablePhrase": "Subject to Deductible",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Minor Surgery",
+            "benefitServiceRuleCategory": "Set Deductible Restrictions",
+            "benefitServiceRuleID": 30054,
+            "benefitServiceRuleName": "Set Deductible Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Minor Surgery' THEN Subject to Deductible ={0}",
+            "configurablePhrase": "Subject to Deductible",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Major Surgery",
+            "benefitServiceRuleCategory": "Set Deductible Restrictions",
+            "benefitServiceRuleID": 30053,
+            "benefitServiceRuleName": "Set Deductible Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'Major Surgery' THEN Subject to Deductible ={0}",
+            "configurablePhrase": "Subject to Deductible",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "ER",
+            "benefitServiceRuleCategory": "Set Deductible Restrictions",
+            "benefitServiceRuleID": 30052,
+            "benefitServiceRuleName": "Set Deductible Restrictions",
+            "benefitServiceRuleDescription": "IF Service = 'ER' THEN  Subject to Deductible ={0}",
+            "configurablePhrase": "Subject to Deductible",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Therapies, rehabilitative and habilitative",
+            "benefitServiceRuleCategory": "Set Office Visit Limits",
+            "benefitServiceRuleID": 30002,
+            "benefitServiceRuleName": "Set Office Visit Limitations for Physical Therapy based on Age",
+            "benefitServiceRuleDescription": "If Service = Physical Therapy AND Diagnosis Name = Autism AND Age < {0} THEN Number of OV = {1}",
+            "configurablePhrase": "Number of OV",
+            "configurableValues": [],
+            "benefitServiceRuleValue": {
+                "0": "6",
+                "1": "unlimited"
+            },
+            "meta_data": {
+                "0": "percentage",
+                "1": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Therapies, rehabilitative and habilitative",
+            "benefitServiceRuleCategory": "Set Office Visit Limits",
+            "benefitServiceRuleID": 40003,
+            "benefitServiceRuleName": "Set Office Visit Limitations for Speech Therapy based on Age",
+            "benefitServiceRuleDescription": "If Service = Speech Therapy AND Diagnosis Name = Autism AND Age < {0} THEN Number of OV = {1}",
+            "configurablePhrase": "Number of OV",
+            "configurableValues": [],
+            "benefitServiceRuleValue": {
+                "0": "6",
+                "1": "unlimited"
+            },
+            "meta_data": {
+                "0": "percentage",
+                "1": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Therapies, rehabilitative and habilitative",
+            "benefitServiceRuleCategory": "Set Office Visit Limits",
+            "benefitServiceRuleID": 40002,
+            "benefitServiceRuleName": "Set Office Visit Limitations for Occupation Therapy based on Age",
+            "benefitServiceRuleDescription": "If Service = Occupation Therapy AND Diagnosis Name = Autism AND Age < {0} THEN Number of OV = {1}",
+            "configurablePhrase": "Number of OV",
+            "configurableValues": [],
+            "benefitServiceRuleValue": {
+                "0": "6",
+                "1": "unlimited"
+            },
+            "meta_data": {
+                "0": "percentage",
+                "1": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Therapies, rehabilitative and habilitative",
+            "benefitServiceRuleCategory": "Set Office Visit Limits",
+            "benefitServiceRuleID": 30003,
+            "benefitServiceRuleName": "Set Office Visit Limitations for Muscle Manipulation based on Network Type",
+            "benefitServiceRuleDescription": "If Service = Muscle Manipulation and Network Type = {0} THEN Number of OV = {1} ",
+            "configurablePhrase": "NetworkType, Number of OV",
+            "configurableValues": [
+                "In Network",
+                "Out of Network"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "In Network",
+                "1": "25"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Transplants",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30017,
+            "benefitServiceRuleName": "Set Cost Shares based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = Office THEN Subject to Copay ={0}",
+            "configurablePhrase": "PlaceOfTreatment, Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Transplants",
+            "benefitServiceRuleCategory": "Set Allowed Benefits Limit",
+            "benefitServiceRuleID": 30123,
+            "benefitServiceRuleName": "Set Allowed Benefits Limitations based on BCBS Approval",
+            "benefitServiceRuleDescription": "If transplant coverage program is not approved by BCBS then allowed benefits={0}",
+            "configurablePhrase": "PlaceOfTreatment, Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "N"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Transplants",
+            "benefitServiceRuleCategory": "Set Coins and Deductible Restrictions",
+            "benefitServiceRuleID": 30120,
+            "benefitServiceRuleName": "Set Coins and Deductible Restrictions based on Place of Treatment",
+            "benefitServiceRuleDescription": "If not treated in Office then Deductible={0} and Coins={1}",
+            "configurablePhrase": "Deductibe, Coins",
+            "configurableValues": [],
+            "benefitServiceRuleValue": {
+                "0": "$100",
+                "1": "10%"
+            },
+            "meta_data": {
+                "0": "currency",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Transplants",
+            "benefitServiceRuleCategory": "Set Copay",
+            "benefitServiceRuleID": 30119,
+            "benefitServiceRuleName": "Set Copay based on Place of Treatment",
+            "benefitServiceRuleDescription": "If treated in {0} then Copay amount = {1}",
+            "configurablePhrase": [
+                "Facility,Copay"
+            ],
+            "configurableValues": [
+                "Office",
+                "Clinic",
+                "Hospital",
+                "Facility"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Facility",
+                "1": "$20"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Transplants",
+            "benefitServiceRuleCategory": "Set Transportation and Lodging Coverage Restrictions",
+            "benefitServiceRuleID": 30121,
+            "benefitServiceRuleName": "Coverage Restrictions for an eligible child",
+            "benefitServiceRuleDescription": "If transplant recipient is an eligible child then maximum number of adults covered for transportation and lodging ={0}",
+            "configurablePhrase": [
+                "Number of persons allowed"
+            ],
+            "configurableValues": [],
+            "benefitServiceRuleValue": {
+                "0": "2"
+            },
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Transplants",
+            "benefitServiceRuleCategory": "Set Transportation and Lodging Coverage Restrictions",
+            "benefitServiceRuleID": 30122,
+            "benefitServiceRuleName": "Coverage Restrictions for adults",
+            "benefitServiceRuleDescription": "Maximum amount paid per person per day for lodging = {0}",
+            "configurablePhrase": [
+                "Coverage"
+            ],
+            "configurableValues": [],
+            "benefitServiceRuleValue": {
+                "0": "$50"
+            },
+            "meta_data": {
+                "0": "currency"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Preventive Care",
+            "benefitServiceRuleCategory": "Set Coins Restrictions",
+            "benefitServiceRuleID": 30015,
+            "benefitServiceRuleName": "Set Coins based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = {0} THEN Coins = {1}",
+            "configurablePhrase": "Place Of Treatment, Coins",
+            "configurableValues": [
+                "Facility",
+                "Office",
+                "Clinic",
+                "Hospital"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Facility",
+                "1": "100%"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Acupunture",
+            "benefitServiceRuleCategory": "Set Office Visit Limits",
+            "benefitServiceRuleID": 30065,
+            "benefitServiceRuleName": "Set Office Visit Limits",
+            "benefitServiceRuleDescription": "If Service = Acupunture THEN Number of OV ={0}",
+            "configurablePhrase": "Number of OV",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "25"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Acupunture",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30063,
+            "benefitServiceRuleName": "Set Copay Restrictions Based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = 'Office' AND Plan Deductibe is Met THEN Subject to Copay = {0}",
+            "configurablePhrase": "Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Acupunture",
+            "benefitServiceRuleCategory": "Set Member Responsibility",
+            "benefitServiceRuleID": 30064,
+            "benefitServiceRuleName": "Set Member Responsibility  based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = 'Office' AND Plan Deductibe is Met THEN Member Responsibility = {0} of Billed Amount",
+            "configurablePhrase": "Member Responsibility",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "20%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Allergy Shots / Allergy Treatment",
+            "benefitServiceRuleCategory": "Set Copay",
+            "benefitServiceRuleID": 30066,
+            "benefitServiceRuleName": "Set Copay based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = {0} then Subject to Copay={1}",
+            "configurablePhrase": [
+                "Place of Treatment",
+                "Subject to Copay"
+            ],
+            "configurableValues": [
+                "Office",
+                "Clinic",
+                "Non-Office"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Office",
+                "1": "Y"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Autism",
+            "benefitServiceRuleCategory": "Set ABA Indicator",
+            "benefitServiceRuleID": 30131,
+            "benefitServiceRuleName": "Set ABA requirement based on Age",
+            "benefitServiceRuleDescription": "If member age < 19 AND Autism, Asperger’s or Pervasive Developmental Disorders THEN ABA={0}",
+            "configurablePhrase": "ABA",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Autism",
+            "benefitServiceRuleCategory": "Set Treatment Coverage Indicator",
+            "benefitServiceRuleID": 30130,
+            "benefitServiceRuleName": "Set Treatment Coverage Indicator based on Age",
+            "benefitServiceRuleDescription": "If member age < 19 then coverage treatment indicator={0}",
+            "configurablePhrase": "Coverage Treatment Indicator",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Autism",
+            "benefitServiceRuleCategory": "Set Treatment Coverage Limit",
+            "benefitServiceRuleID": 30132,
+            "benefitServiceRuleName": "Set Treatment Coverage Limit based on Age",
+            "benefitServiceRuleDescription": "If member age < 6 then limit on coverage={0}",
+            "configurablePhrase": "Limit on Coverage",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Bariatric Surgery",
+            "benefitServiceRuleCategory": "Set Treatment Coverage Limit",
+            "benefitServiceRuleID": 30068,
+            "benefitServiceRuleName": "Set Lifetime Coverage Limits",
+            "benefitServiceRuleDescription": "Coverage per lifetime={0}",
+            "configurablePhrase": "Coverage per lifetime",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "1"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Blood, blood transfusions",
+            "benefitServiceRuleCategory": "Set Coins and Deductible Restrictions",
+            "benefitServiceRuleID": 30070,
+            "benefitServiceRuleName": "Set Coins and Deductibles Restrictions Based on Service Type",
+            "benefitServiceRuleDescription": "If Service Type = Inpatient then Subject to Coins={0},Subject to Deductible={1}",
+            "configurablePhrase": "Subject to Coins",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Y",
+                "1": "Y"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Blood, blood transfusions",
+            "benefitServiceRuleCategory": "Set Copay",
+            "benefitServiceRuleID": 30069,
+            "benefitServiceRuleName": "Set Copay Based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = Office then Subject to Copay={0}",
+            "configurablePhrase": "Place  of Treatment, Coverage Treatment Indicator",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Blood, blood transfusions",
+            "benefitServiceRuleCategory": "Set Member Responsibility",
+            "benefitServiceRuleID": 30072,
+            "benefitServiceRuleName": "Set Member Responsibility based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = 'Office' AND Plan Deductibe is Met THEN Member Responsibility = {0} of Billed Amount",
+            "configurablePhrase": "Place  of Treatment, Member Responsibility",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "20%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Breast Implant Removal",
+            "benefitServiceRuleCategory": "Set Treatment Coverage Indicator",
+            "benefitServiceRuleID": 30134,
+            "benefitServiceRuleName": "Set Treatment Coverage Indicator Based on Issue Type",
+            "benefitServiceRuleDescription": "If Issue Type = 'Reconstruction' then coverage={0}",
+            "configurablePhrase": "Member Responsibility",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "20%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Cardiac Rehabilitation",
+            "benefitServiceRuleCategory": "Set Coverage",
+            "benefitServiceRuleID": 30075,
+            "benefitServiceRuleName": "Set Coverage based on necessity of CR Comprehensive Evaluation",
+            "benefitServiceRuleDescription": "If CR Comprehensive Evaluation Medically Necessary = {0} then Coverage={1}",
+            "configurablePhrase": "Medically Necessary,Coverage",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Y",
+                "1": "100%"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Cardiac Rehabilitation",
+            "benefitServiceRuleCategory": "Set Coverage",
+            "benefitServiceRuleID": 30076,
+            "benefitServiceRuleName": "Set Coverage based on necessity of ECG",
+            "benefitServiceRuleDescription": "If ECG Medically Necessary = {0} then Coverage={1}",
+            "configurablePhrase": "Medically Necessary,Coverage",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Y",
+                "1": "100%"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Cardiac Rehabilitation",
+            "benefitServiceRuleCategory": "Set Exercise Program Limitations",
+            "benefitServiceRuleID": 30074,
+            "benefitServiceRuleName": "Set Exercise Program Limitations based on necessity of Exercise Sessions",
+            "benefitServiceRuleDescription": "If Exercise Session Medically Necessary = {0}, then  max number of exercise sessions = {1} and max times per week = 3 and max number of weeks = 12",
+            "configurablePhrase": "Medically Necessary,Coverage,max times per week,max number of weeks",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Y",
+                "1": "36"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Chemotherapy",
+            "benefitServiceRuleCategory": "Set Coins and Deductible Restrictions",
+            "benefitServiceRuleID": 30057,
+            "benefitServiceRuleName": "Set Coins and Deductibles Restrictions Based on Service Type",
+            "benefitServiceRuleDescription": "If Service Type = Inpatient or Outpatient  then Subject to Coins={0},Subject to Deductible={1}",
+            "configurablePhrase": "Subject to Coins",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Y",
+                "1": "Y"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Chemotherapy",
+            "benefitServiceRuleCategory": "Set Copay Restrictions",
+            "benefitServiceRuleID": 30056,
+            "benefitServiceRuleName": "Set Copay Restrictions Based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = Office then Subject to Copay = {0}",
+            "configurablePhrase": "Subject to Copay",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": [
+                "Y"
+            ],
+            "meta_data": {
+                "0": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Chemotherapy",
+            "benefitServiceRuleCategory": "Set Coverage",
+            "benefitServiceRuleID": 30059,
+            "benefitServiceRuleName": "Set Coverage based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = Office then Coverage ={0}",
+            "configurablePhrase": "Coverage",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "100%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Dental Treatment under Medical Plan",
+            "benefitServiceRuleCategory": "Set Copay",
+            "benefitServiceRuleID": 30136,
+            "benefitServiceRuleName": "Set Copay Based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = Office then Copay = {0}",
+            "configurablePhrase": "Copay",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "$  50"
+            ],
+            "meta_data": {
+                "0": "currency"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Diabetes Care Management",
+            "benefitServiceRuleCategory": "Set Coverage",
+            "benefitServiceRuleID": 30141,
+            "benefitServiceRuleName": "Set Coverage based on Necessity of US FDA Equipment and Approved Status",
+            "benefitServiceRuleDescription": "If Equipment Approved by US FDA = Y  and  Equipment Medically Necessary = Y then coverage={0}",
+            "configurablePhrase": "Coverage",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "100%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Diabetic Care Management",
+            "benefitServiceRuleCategory": "Set Coins and Deductible Restrictions",
+            "benefitServiceRuleID": 30138,
+            "benefitServiceRuleName": "Set Coins and Deductible based on Service Type",
+            "benefitServiceRuleDescription": "If Service Type = Inpatient or Outpatient then Deductible={0} and Coins={1}",
+            "configurablePhrase": "Deductible,Coins",
+            "configurableValues": [],
+            "benefitServiceRuleValue": {
+                "0": "$1000",
+                "1": "70%"
+            },
+            "meta_data": {
+                "0": "currency",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Diabetic Care Management",
+            "benefitServiceRuleCategory": "Set Member Responsibility",
+            "benefitServiceRuleID": 30139,
+            "benefitServiceRuleName": "Set Member Responsibility",
+            "benefitServiceRuleDescription": "If Plan Deductibe is Met THEN Member Responsibility = {0} of Covered Charges",
+            "configurablePhrase": "Member Responsibility",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "10%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Diabetic Care Management",
+            "benefitServiceRuleCategory": "Set Member Responsibility",
+            "benefitServiceRuleID": 30140,
+            "benefitServiceRuleName": "Set Member Responsibility Based on Copay",
+            "benefitServiceRuleDescription": "If Copay = $0 and Plan Deductible is Met, after first $250, Member Responsibility = {0} of Covered Charges",
+            "configurablePhrase": "Coinsurance Percentage",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "30%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Diabetic Care Management",
+            "benefitServiceRuleCategory": "Set Copay",
+            "benefitServiceRuleID": 30137,
+            "benefitServiceRuleName": "Set Copay Based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment =  Office then Copay = {0}",
+            "configurablePhrase": "Copay",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "$  20"
+            ],
+            "meta_data": {
+                "0": "currency"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Diabetic Supplies",
+            "benefitServiceRuleCategory": "Set Member Responsibility",
+            "benefitServiceRuleID": 30142,
+            "benefitServiceRuleName": "Set Member Responsibility",
+            "benefitServiceRuleDescription": "If Plan Deductibe is Met THEN Member Responsibility = {0} of Covered Charges",
+            "configurablePhrase": "Member Responsibility",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "10%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Dialysis Treatment",
+            "benefitServiceRuleCategory": "Set Coins and Deductible Restrictions",
+            "benefitServiceRuleID": 30079,
+            "benefitServiceRuleName": "Set Coins and Deductible Restrictions based on Service Type",
+            "benefitServiceRuleDescription": "If Service Type = Inpatient or Outpatient  then Subject to Deductible={0} and Subject to Coins={1}",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Y",
+                "1": "Y"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Dialysis Treatment",
+            "benefitServiceRuleCategory": "Set Member Responsibility",
+            "benefitServiceRuleID": 30145,
+            "benefitServiceRuleName": "Set Member Responsibility",
+            "benefitServiceRuleDescription": "If Plan Deductibe is Met THEN Member Responsibility = {0} of Covered Charges",
+            "configurablePhrase": "Member Responsibility",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "10%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Dialysis Treatment",
+            "benefitServiceRuleCategory": "Set Copay",
+            "benefitServiceRuleID": 30144,
+            "benefitServiceRuleName": "Set Copay Based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment =  Office then Copay = {0}",
+            "configurablePhrase": "Copay",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "$  20"
+            ],
+            "meta_data": {
+                "0": "currency"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Durable Medical Equipment",
+            "benefitServiceRuleCategory": "Set Coins and Deductible Restrictions",
+            "benefitServiceRuleID": 30081,
+            "benefitServiceRuleName": "Set Coins and Deductible Restrictions based on Service Type",
+            "benefitServiceRuleDescription": "If Service Type = Inpatient or Outpatient then Subject to Coins={0} and Subject to Deductible={1}",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Y",
+                "1": "Y"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Durable Medical Equipment",
+            "benefitServiceRuleCategory": "Set Member Responsibility",
+            "benefitServiceRuleID": 30148,
+            "benefitServiceRuleName": "Set Member Responsibility",
+            "benefitServiceRuleDescription": "If Plan Deductibe is Met THEN Member Responsibility = {0} of Covered Charges",
+            "configurablePhrase": "Member Responsibility",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "10%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Durable Medical Equipment",
+            "benefitServiceRuleCategory": "Set Copay",
+            "benefitServiceRuleID": 30082,
+            "benefitServiceRuleName": "Set Copay Based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment =  Office then Copay = {0}",
+            "configurablePhrase": "Copay",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "$  20"
+            ],
+            "meta_data": {
+                "0": "currency"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Orthognathic Surgery",
+            "benefitServiceRuleCategory": "Set Coins and Deductible Restrictions",
+            "benefitServiceRuleID": 30100,
+            "benefitServiceRuleName": "Set Coins and Deductible Restrictions based on Service Type",
+            "benefitServiceRuleDescription": "If Service Type = Inpatient or Outpatient then Subject to Coins={0} and Subject to Deductible={1}",
+            "configurableValues": [
+                "Y",
+                "N"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Y",
+                "1": "Y"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "drop_down"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Orthognathic Surgery",
+            "benefitServiceRuleCategory": "Set Copay",
+            "benefitServiceRuleID": 30101,
+            "benefitServiceRuleName": "Set Copay Based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = {0} THEN Copay = {1}",
+            "configurablePhrase": [
+                "Place of Treatment",
+                "Copay"
+            ],
+            "configurableValues": [
+                "Office",
+                "Clinic",
+                "Hospital"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Office",
+                "1": "$ 30"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Osteoporosis",
+            "benefitServiceRuleCategory": "Set Coins and Deductible Restrictions",
+            "benefitServiceRuleID": 30102,
+            "benefitServiceRuleName": "Set Coins and Deductible Restrictions based on Service Type",
+            "benefitServiceRuleDescription": "If Service Type = Inpatient or Outpatient THEN Deductible = {0} and Coins = {1}",
+            "configurablePhrase": [
+                "Deductible",
+                "Coins"
+            ],
+            "configurableValues": [],
+            "benefitServiceRuleValue": {
+                "0": "$ 1000",
+                "1": "70%"
+            },
+            "meta_data": {
+                "0": "currency",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Osteoporosis",
+            "benefitServiceRuleCategory": "Set Copay",
+            "benefitServiceRuleID": 30103,
+            "benefitServiceRuleName": "Set Copay Based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = {0} THEN Copay = {1}",
+            "configurablePhrase": [
+                "Place of Treatment",
+                "Copay"
+            ],
+            "configurableValues": [
+                "Office",
+                "Clinic",
+                "Hospital"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Office",
+                "1": "$ 20"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Osteoporosis",
+            "benefitServiceRuleCategory": "Set Member Responsibility",
+            "benefitServiceRuleID": 30127,
+            "benefitServiceRuleName": "Set Member Responsibility",
+            "benefitServiceRuleDescription": "If Plan Deductibe is Met THEN Member Responsibility = {0} of billed amount",
+            "configurablePhrase": "Member Responsibility",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "10%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Pediatric Hearing tests",
+            "benefitServiceRuleCategory": "Set Coins and Deductible Restrictions",
+            "benefitServiceRuleID": 30104,
+            "benefitServiceRuleName": "Set Coins and Deductible Restrictions based on Service Type",
+            "benefitServiceRuleDescription": "If Service Type = Inpatient or Outpatient THEN Deductible = {0} and Coins = {1}",
+            "configurablePhrase": [
+                "Deductible",
+                "Coins"
+            ],
+            "configurableValues": [],
+            "benefitServiceRuleValue": {
+                "0": "$ 1000",
+                "1": "70%"
+            },
+            "meta_data": {
+                "0": "currency",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Pediatric Hearing tests",
+            "benefitServiceRuleCategory": "Set Copay",
+            "benefitServiceRuleID": 30105,
+            "benefitServiceRuleName": "Set Copay Based on Place of Treatment",
+            "benefitServiceRuleDescription": "If Place of Treatment = {0} THEN Copay = {1}",
+            "configurablePhrase": [
+                "Place of Treatment",
+                "Copay"
+            ],
+            "configurableValues": [
+                "Office",
+                "Clinic",
+                "Hospital"
+            ],
+            "benefitServiceRuleValue": {
+                "0": "Office",
+                "1": "$ 20"
+            },
+            "meta_data": {
+                "0": "drop_down",
+                "1": "percentage"
+            },
+            "selected": true
+        },
+        {
+            "benefitServiceName": "Pediatric Hearing tests",
+            "benefitServiceRuleCategory": "Set Coverage",
+            "benefitServiceRuleID": 30109,
+            "benefitServiceRuleName": "Set Coverage Based on Age",
+            "benefitServiceRuleDescription": "If age =< 21 and service = Hearing test THEN Coverage = {0}",
+            "configurablePhrase": "Coverage",
+            "configurableValues": [],
+            "benefitServiceRuleValue": [
+                "10%"
+            ],
+            "meta_data": {
+                "0": "percentage"
+            },
+            "selected": true
+        }
+    ]
+}

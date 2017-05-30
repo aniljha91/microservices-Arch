@@ -1,0 +1,22 @@
+[
+    {
+        "GroupTypeID": "1",
+        "GroupTypeName": "Individual",
+        "GroupTypeDescription": "Individual"
+    },
+    {
+        "GroupTypeID": "2",
+        "GroupTypeName": "MSPP Ind",
+        "GroupTypeDescription": "MSPP Ind"
+    },
+    {
+        "GroupTypeID": "3",
+        "GroupTypeName": "Conversion",
+        "GroupTypeDescription": "Conversion"
+    },
+    {
+        "GroupTypeID": "4",
+        "GroupTypeName": "Small Group",
+        "GroupTypeDescription": "Small Group"
+    }
+]

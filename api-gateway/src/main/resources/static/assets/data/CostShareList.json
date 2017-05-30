@@ -1,0 +1,11 @@
+[{"CostShareID":1,"CostShareCode":"CS0001","CostShareName":"Deductible(Individual)","CostShareDescription":"Deductible(Individual)"},
+{"CostShareID":2,"CostShareCode":"CS0002","CostShareName":"Deductible(Family)","CostShareDescription":"Deductible(Family)"},
+{"CostShareID":3,"CostShareCode":"CS0003","CostShareName":"OPX(Individual)","CostShareDescription":"OPX(Individual)"},
+{"CostShareID":4,"CostShareCode":"CS0004","CostShareName":"OPX(Family)","CostShareDescription":"OPX(Family)"},
+{"CostShareID":5,"CostShareCode":"CS0005","CostShareName":"Coins(General)","CostShareDescription":"Coins(General)"},
+{"CostShareID":6,"CostShareCode":"CS0006","CostShareName":"OV Coins","CostShareDescription":"OV Coins"},
+{"CostShareID":7,"CostShareCode":"CS0007","CostShareName":"PCP Copay","CostShareDescription":"PCP Copay"},
+{"CostShareID":8,"CostShareCode":"CS0008","CostShareName":"SPC Copay","CostShareDescription":"SPC Copay"},
+{"CostShareID":9,"CostShareCode":"CS0009","CostShareName":"Number of OV at Listed Copay","CostShareDescription":"Number of OV at Listed Copay"},
+{"CostShareID":10,"CostShareCode":"CS0010","CostShareName":"Copay","CostShareDescription":"Copay"},
+{"CostShareID":11,"CostShareCode":"CS0011","CostShareName":"Coins","CostShareDescription":"Coins"}]

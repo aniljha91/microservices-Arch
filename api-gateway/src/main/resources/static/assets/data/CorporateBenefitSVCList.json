@@ -1,0 +1,818 @@
+[{
+        "BenefitServiceID": 1,
+        "CorporateBenefitServiceID": 1,
+        "CorporateBenefitServiceCode": "B-01",
+        "CorporatebenefitServiceName": "Preventive",
+        "CorporateBenefitServiceDescription": "Preventive"
+    },
+    {
+        "BenefitServiceID": 2,
+        "CorporateBenefitServiceID": 2,
+        "CorporateBenefitServiceCode": "B-02",
+        "CorporatebenefitServiceName": "Specialist Visit",
+        "CorporateBenefitServiceDescription": "Specialist Visit"
+    },
+    {
+        "BenefitServiceID": 3,
+        "CorporateBenefitServiceID": 3,
+        "CorporateBenefitServiceCode": "B-03",
+        "CorporatebenefitServiceName": "Abortion",
+        "CorporateBenefitServiceDescription": "Abortion"
+    },
+
+    {
+        "BenefitServiceID": 5,
+        "CorporateBenefitServiceID": 5,
+        "CorporateBenefitServiceCode": "B-04",
+        "CorporatebenefitServiceName": "Office Visit",
+        "CorporateBenefitServiceDescription": "Office Visit"
+    },
+    {
+        "BenefitServiceID": 6,
+        "CorporateBenefitServiceID": 6,
+        "CorporateBenefitServiceCode": "B-05",
+        "CorporatebenefitServiceName": "ER",
+        "CorporateBenefitServiceDescription": "ER"
+    },
+
+    {
+        "BenefitServiceID": 8,
+        "CorporateBenefitServiceID": 8,
+        "CorporateBenefitServiceCode": "B-06",
+        "CorporatebenefitServiceName": "Transplants",
+        "CorporateBenefitServiceDescription": "Transplants"
+    },
+    {
+        "BenefitServiceID": 9,
+        "CorporateBenefitServiceID": 9,
+        "CorporateBenefitServiceCode": "B-07",
+        "CorporatebenefitServiceName": "Allergy Shots / Allergy Treatment",
+        "CorporateBenefitServiceDescription": "Allergy Shots / Allergy Treatment"
+    },
+
+    {
+        "BenefitServiceID": 11,
+        "CorporateBenefitServiceID": 11,
+        "CorporateBenefitServiceCode": "B-08",
+        "CorporatebenefitServiceName": "Ambulance Service",
+        "CorporateBenefitServiceDescription": "Ambulance Service"
+    },
+    {
+        "BenefitServiceID": 12,
+        "CorporateBenefitServiceID": 12,
+        "CorporateBenefitServiceCode": "B-09",
+        "CorporatebenefitServiceName": "Anesthesia (Outpatient)",
+        "CorporateBenefitServiceDescription": "Anesthesia (Outpatient)"
+    },
+    {
+        "BenefitServiceID": 13,
+        "CorporateBenefitServiceID": 13,
+        "CorporateBenefitServiceCode": "B-10",
+        "CorporatebenefitServiceName": "Assistant Surgeon (Outpatient)",
+        "CorporateBenefitServiceDescription": "Assistant Surgeon (Outpatient)"
+    },
+    {
+        "BenefitServiceID": 14,
+        "CorporateBenefitServiceID": 14,
+        "CorporateBenefitServiceCode": "B-11",
+        "CorporatebenefitServiceName": "Autism",
+        "CorporateBenefitServiceDescription": "Autism"
+    },
+    {
+        "BenefitServiceID": 15,
+        "CorporateBenefitServiceID": 15,
+        "CorporateBenefitServiceCode": "B-12",
+        "CorporatebenefitServiceName": "Behavioral Health",
+        "CorporateBenefitServiceDescription": "Behavioral Health"
+    },
+
+
+
+
+    {
+        "BenefitServiceID": 33,
+        "CorporateBenefitServiceID": 33,
+        "CorporateBenefitServiceCode": "B-13",
+        "CorporatebenefitServiceName": "Crisis stabilization Unit",
+        "CorporateBenefitServiceDescription": "Crisis stabilization Unit"
+    },
+
+
+
+
+    {
+        "BenefitServiceID": 39,
+        "CorporateBenefitServiceID": 39,
+        "CorporateBenefitServiceCode": "B-14",
+        "CorporatebenefitServiceName": "Durable Medical Equipment",
+        "CorporateBenefitServiceDescription": "Durable Medical Equipment"
+    },
+    {
+        "BenefitServiceID": 40,
+        "CorporateBenefitServiceID": 40,
+        "CorporateBenefitServiceCode": "B-15",
+        "CorporatebenefitServiceName": "Electroconvulsive Therapy",
+        "CorporateBenefitServiceDescription": "Electroconvulsive Therapy"
+    },
+
+    {
+        "BenefitServiceID": 46,
+        "CorporateBenefitServiceID": 46,
+        "CorporateBenefitServiceCode": "B-16",
+        "CorporatebenefitServiceName": "Emergency Care / Emergency Medical Condition ",
+        "CorporateBenefitServiceDescription": "Emergency Care / Emergency Medical Condition "
+    },
+
+
+    {
+        "BenefitServiceID": 52,
+        "CorporateBenefitServiceID": 52,
+        "CorporateBenefitServiceCode": "B-17",
+        "CorporatebenefitServiceName": "Emergency Services",
+        "CorporateBenefitServiceDescription": "Emergency Services"
+    },
+    {
+        "BenefitServiceID": 53,
+        "CorporateBenefitServiceID": 53,
+        "CorporateBenefitServiceCode": "B-18",
+        "CorporatebenefitServiceName": "Emergency Transportation/Ambulance",
+        "CorporateBenefitServiceDescription": "Emergency Transportation/Ambulance"
+    },
+    {
+        "BenefitServiceID": 54,
+        "CorporateBenefitServiceID": 54,
+        "CorporateBenefitServiceCode": "B-19",
+        "CorporatebenefitServiceName": "Extended Care Facility ",
+        "CorporateBenefitServiceDescription": "Extended Care Facility "
+    },
+    {
+        "BenefitServiceID": 55,
+        "CorporateBenefitServiceID": 55,
+        "CorporateBenefitServiceCode": "B-20",
+        "CorporatebenefitServiceName": "Extended Care Facility - Convalescent Home",
+        "CorporateBenefitServiceDescription": "Extended Care Facility - Convalescent Home"
+    },
+
+
+    {
+        "BenefitServiceID": 61,
+        "CorporateBenefitServiceID": 61,
+        "CorporateBenefitServiceCode": "B-21",
+        "CorporatebenefitServiceName": "Hearing Care",
+        "CorporateBenefitServiceDescription": "Hearing Care"
+    },
+    {
+        "BenefitServiceID": 62,
+        "CorporateBenefitServiceID": 62,
+        "CorporateBenefitServiceCode": "B-22",
+        "CorporatebenefitServiceName": "Imaging: High Cost Imaging",
+        "CorporateBenefitServiceDescription": "Imaging: High Cost Imaging"
+    },
+
+
+    {
+        "BenefitServiceID": 66,
+        "CorporateBenefitServiceID": 66,
+        "CorporateBenefitServiceCode": "B-23",
+        "CorporatebenefitServiceName": "Home Health Care /Coordinated Home Care",
+        "CorporateBenefitServiceDescription": "Home Health Care /Coordinated Home Care"
+    },
+    {
+        "BenefitServiceID": 67,
+        "CorporateBenefitServiceID": 67,
+        "CorporateBenefitServiceCode": "B-24",
+        "CorporatebenefitServiceName": "Home Health Care Services",
+        "CorporateBenefitServiceDescription": "Home Health Care Services"
+    },
+
+    {
+        "BenefitServiceID": 69,
+        "CorporateBenefitServiceID": 69,
+        "CorporateBenefitServiceCode": "B-25",
+        "CorporatebenefitServiceName": "Home Infusion Therapy",
+        "CorporateBenefitServiceDescription": "Home Infusion Therapy"
+    },
+
+    {
+        "BenefitServiceID": 71,
+        "CorporateBenefitServiceID": 71,
+        "CorporateBenefitServiceCode": "B-26",
+        "CorporatebenefitServiceName": "Infusion Therapy",
+        "CorporateBenefitServiceDescription": "Infusion Therapy"
+    },
+    {
+        "BenefitServiceID": 72,
+        "CorporateBenefitServiceID": 72,
+        "CorporateBenefitServiceCode": "B-27",
+        "CorporatebenefitServiceName": "Inhalation (Respiratory) Therapy",
+        "CorporateBenefitServiceDescription": "Inhalation (Respiratory) Therapy"
+    },
+
+    {
+        "BenefitServiceID": 74,
+        "CorporateBenefitServiceID": 74,
+        "CorporateBenefitServiceCode": "B-28",
+        "CorporatebenefitServiceName": "Inpatient Behavioral Health",
+        "CorporateBenefitServiceDescription": "Inpatient Behavioral Health"
+    },
+
+    {
+        "BenefitServiceID": 76,
+        "CorporateBenefitServiceID": 76,
+        "CorporateBenefitServiceCode": "B-29",
+        "CorporatebenefitServiceName": "Inpatient Diagnostic Services",
+        "CorporateBenefitServiceDescription": "Inpatient Diagnostic Services"
+    },
+
+
+    {
+        "BenefitServiceID": 82,
+        "CorporateBenefitServiceID": 82,
+        "CorporateBenefitServiceCode": "B-30",
+        "CorporatebenefitServiceName": "Intensive Outpatient treatment for Behavioral Health",
+        "CorporateBenefitServiceDescription": "Intensive Outpatient treatment for Behavioral Health"
+    },
+    {
+        "BenefitServiceID": 83,
+        "CorporateBenefitServiceID": 83,
+        "CorporateBenefitServiceCode": "B-31",
+        "CorporatebenefitServiceName": "Intensive Outpatient Treatment for Behavioral Health (Outpatient)",
+        "CorporateBenefitServiceDescription": "Intensive Outpatient Treatment for Behavioral Health (Outpatient)"
+    },
+
+    {
+        "BenefitServiceID": 85,
+        "CorporateBenefitServiceID": 85,
+        "CorporateBenefitServiceCode": "B-32",
+        "CorporatebenefitServiceName": "Laboratory Outpatient and Professional Services",
+        "CorporateBenefitServiceDescription": "Laboratory Outpatient and Professional Services"
+    },
+
+    {
+        "BenefitServiceID": 87,
+        "CorporateBenefitServiceID": 87,
+        "CorporateBenefitServiceCode": "B-33",
+        "CorporatebenefitServiceName": "Maternity",
+        "CorporateBenefitServiceDescription": "Maternity"
+    },
+
+    {
+        "BenefitServiceID": 89,
+        "CorporateBenefitServiceID": 89,
+        "CorporateBenefitServiceCode": "B-34",
+        "CorporatebenefitServiceName": "Medical",
+        "CorporateBenefitServiceDescription": "Medical"
+    },
+
+
+    {
+        "BenefitServiceID": 94,
+        "CorporateBenefitServiceID": 94,
+        "CorporateBenefitServiceCode": "B-35",
+        "CorporatebenefitServiceName": "Naprapath Services",
+        "CorporateBenefitServiceDescription": "Naprapath Services"
+    },
+    {
+        "BenefitServiceID": 98,
+        "CorporateBenefitServiceID": 98,
+        "CorporateBenefitServiceCode": "B-36",
+        "CorporatebenefitServiceName": "Newborn",
+        "CorporateBenefitServiceDescription": "Newborn"
+    },
+
+    {
+        "BenefitServiceID": 100,
+        "CorporateBenefitServiceID": 100,
+        "CorporateBenefitServiceCode": "B-37",
+        "CorporatebenefitServiceName": "Nursery - Newborn Child Coverage",
+        "CorporateBenefitServiceDescription": "Nursery - Newborn Child Coverage"
+    },
+
+    {
+        "BenefitServiceID": 103,
+        "CorporateBenefitServiceID": 103,
+        "CorporateBenefitServiceCode": "B-38",
+        "CorporatebenefitServiceName": "Nutritional Counseling (Preventive Service)",
+        "CorporateBenefitServiceDescription": "Nutritional Counseling (Preventive Service)"
+    },
+
+
+
+
+
+    {
+        "BenefitServiceID": 109,
+        "CorporateBenefitServiceID": 109,
+        "CorporateBenefitServiceCode": "B-39",
+        "CorporatebenefitServiceName": "Outpatient Allergy Testing",
+        "CorporateBenefitServiceDescription": "Outpatient Allergy Testing"
+    },
+    {
+        "BenefitServiceID": 110,
+        "CorporateBenefitServiceID": 110,
+        "CorporateBenefitServiceCode": "B-40",
+        "CorporatebenefitServiceName": "Outpatient Behavioral Health",
+        "CorporateBenefitServiceDescription": "Outpatient Behavioral Health"
+    },
+    {
+        "BenefitServiceID": 111,
+        "CorporateBenefitServiceID": 111,
+        "CorporateBenefitServiceCode": "B-41",
+        "CorporatebenefitServiceName": "Outpatient Chemotherapy",
+        "CorporateBenefitServiceDescription": "Outpatient Chemotherapy"
+    },
+    {
+        "BenefitServiceID": 112,
+        "CorporateBenefitServiceID": 112,
+        "CorporateBenefitServiceCode": "B-42",
+        "CorporatebenefitServiceName": "Outpatient Diabetes Education",
+        "CorporateBenefitServiceDescription": "Outpatient Diabetes Education"
+    },
+
+    {
+        "BenefitServiceID": 114,
+        "CorporateBenefitServiceID": 114,
+        "CorporateBenefitServiceCode": "B-43",
+        "CorporatebenefitServiceName": "Outpatient Dialysis",
+        "CorporateBenefitServiceDescription": "Outpatient Dialysis"
+    },
+
+
+    {
+        "BenefitServiceID": 118,
+        "CorporateBenefitServiceID": 118,
+        "CorporateBenefitServiceCode": "B-44",
+        "CorporatebenefitServiceName": "Outpatient Habilitation Services",
+        "CorporateBenefitServiceDescription": "Outpatient Habilitation Services"
+    },
+    {
+        "BenefitServiceID": 119,
+        "CorporateBenefitServiceID": 119,
+        "CorporateBenefitServiceCode": "B-45",
+        "CorporatebenefitServiceName": "Outpatient Hospice Services",
+        "CorporateBenefitServiceDescription": "Outpatient Hospice Services"
+    },
+    {
+        "BenefitServiceID": 120,
+        "CorporateBenefitServiceID": 120,
+        "CorporateBenefitServiceCode": "B-46",
+        "CorporatebenefitServiceName": "Outpatient Infusion Therapy",
+        "CorporateBenefitServiceDescription": "Outpatient Infusion Therapy"
+    },
+    {
+        "BenefitServiceID": 121,
+        "CorporateBenefitServiceID": 121,
+        "CorporateBenefitServiceCode": "B-47",
+        "CorporatebenefitServiceName": "Outpatient Radiation",
+        "CorporateBenefitServiceDescription": "Outpatient Radiation"
+    },
+    {
+        "BenefitServiceID": 122,
+        "CorporateBenefitServiceID": 122,
+        "CorporateBenefitServiceCode": "B-48",
+        "CorporatebenefitServiceName": "Outpatient Reconstructive Surgery",
+        "CorporateBenefitServiceDescription": "Outpatient Reconstructive Surgery"
+    },
+    {
+        "BenefitServiceID": 123,
+        "CorporateBenefitServiceID": 123,
+        "CorporateBenefitServiceCode": "B-49",
+        "CorporatebenefitServiceName": "Outpatient Rehabilitation Services",
+        "CorporateBenefitServiceDescription": "Outpatient Rehabilitation Services"
+    },
+    {
+        "BenefitServiceID": 124,
+        "CorporateBenefitServiceID": 124,
+        "CorporateBenefitServiceCode": "B-50",
+        "CorporatebenefitServiceName": "Outpatient Rehabilitative Occupational & Rehabilitative Physical Therapy",
+        "CorporateBenefitServiceDescription": "Outpatient Rehabilitative Occupational & Rehabilitative Physical Therapy"
+    },
+    {
+        "BenefitServiceID": 125,
+        "CorporateBenefitServiceID": 125,
+        "CorporateBenefitServiceCode": "B-51",
+        "CorporatebenefitServiceName": "Outpatient Rehabilitative Speech Therapy",
+        "CorporateBenefitServiceDescription": "Outpatient Rehabilitative Speech Therapy"
+    },
+    {
+        "BenefitServiceID": 126,
+        "CorporateBenefitServiceID": 126,
+        "CorporateBenefitServiceCode": "B-52",
+        "CorporatebenefitServiceName": "Outpatient Surgery",
+        "CorporateBenefitServiceDescription": "Outpatient Surgery"
+    },
+    {
+        "BenefitServiceID": 127,
+        "CorporateBenefitServiceID": 127,
+        "CorporateBenefitServiceCode": "B-53",
+        "CorporatebenefitServiceName": "Outpatient Surgery Physician/Surgical Services",
+        "CorporateBenefitServiceDescription": "Outpatient Surgery Physician/Surgical Services"
+    },
+
+    {
+        "BenefitServiceID": 129,
+        "CorporateBenefitServiceID": 129,
+        "CorporateBenefitServiceCode": "B-54",
+        "CorporatebenefitServiceName": "Outpatient Treatment for Temporomandibular Joint Disorders",
+        "CorporateBenefitServiceDescription": "Outpatient Treatment for Temporomandibular Joint Disorders"
+    },
+    {
+        "BenefitServiceID": 130,
+        "CorporateBenefitServiceID": 130,
+        "CorporateBenefitServiceCode": "B-55",
+        "CorporatebenefitServiceName": "Partial Hospitalization (Inpatient)",
+        "CorporateBenefitServiceDescription": "Partial Hospitalization (Inpatient)"
+    },
+    {
+        "BenefitServiceID": 131,
+        "CorporateBenefitServiceID": 131,
+        "CorporateBenefitServiceCode": "B-56",
+        "CorporatebenefitServiceName": "Partial Hospitalization and intensive outpatient treatment for Behavioral Health",
+        "CorporateBenefitServiceDescription": "Partial Hospitalization and intensive outpatient treatment for Behavioral Health"
+    },
+    {
+        "BenefitServiceID": 132,
+        "CorporateBenefitServiceID": 132,
+        "CorporateBenefitServiceCode": "B-57",
+        "CorporatebenefitServiceName": "Partial Hospitalization for Behavioral Health (Inpatient)",
+        "CorporateBenefitServiceDescription": "Partial Hospitalization for Behavioral Health (Inpatient)"
+    },
+
+    {
+        "BenefitServiceID": 136,
+        "CorporateBenefitServiceID": 136,
+        "CorporateBenefitServiceCode": "B-58",
+        "CorporatebenefitServiceName": "Pediatric Services",
+        "CorporateBenefitServiceDescription": "Pediatric Services"
+    },
+
+
+
+
+
+    {
+        "BenefitServiceID": 163,
+        "CorporateBenefitServiceID": 163,
+        "CorporateBenefitServiceCode": "B-59",
+        "CorporatebenefitServiceName": "Preventive / ACA Services",
+        "CorporateBenefitServiceDescription": "Preventive / ACA Services"
+    },
+    {
+        "BenefitServiceID": 164,
+        "CorporateBenefitServiceID": 164,
+        "CorporateBenefitServiceCode": "B-60",
+        "CorporatebenefitServiceName": "Preventive Service ",
+        "CorporateBenefitServiceDescription": "Preventive Service "
+    },
+
+    {
+        "BenefitServiceID": 167,
+        "CorporateBenefitServiceID": 167,
+        "CorporateBenefitServiceCode": "B-61",
+        "CorporatebenefitServiceName": "Prosthetic Devices",
+        "CorporateBenefitServiceDescription": "Prosthetic Devices"
+    },
+
+    {
+        "BenefitServiceID": 171,
+        "CorporateBenefitServiceID": 171,
+        "CorporateBenefitServiceCode": "B-62",
+        "CorporatebenefitServiceName": "Repetitive Transcranial Magnetic Stimuation (rTMS)",
+        "CorporateBenefitServiceDescription": "Repetitive Transcranial Magnetic Stimuation (rTMS)"
+    },
+
+
+
+
+    {
+        "BenefitServiceID": 179,
+        "CorporateBenefitServiceID": 179,
+        "CorporateBenefitServiceCode": "B-63",
+        "CorporatebenefitServiceName": "Specialist Visit",
+        "CorporateBenefitServiceDescription": "Specialist Visit"
+    },
+
+    {
+        "BenefitServiceID": 185,
+        "CorporateBenefitServiceID": 185,
+        "CorporateBenefitServiceCode": "B-64",
+        "CorporatebenefitServiceName": "Therapies, rehabilitative and habilitative",
+        "CorporateBenefitServiceDescription": "Therapies, rehabilitative and habilitative"
+    },
+
+    {
+        "BenefitServiceID": 191,
+        "CorporateBenefitServiceID": 191,
+        "CorporateBenefitServiceCode": "B-65",
+        "CorporatebenefitServiceName": "Urgent Care",
+        "CorporateBenefitServiceDescription": "Urgent Care"
+    },
+
+
+    {
+        "BenefitServiceID": 200,
+        "CorporateBenefitServiceID": 200,
+        "CorporateBenefitServiceCode": "B-66",
+        "CorporatebenefitServiceName": "X-rays and Diagnostic Tests",
+        "CorporateBenefitServiceDescription": "X-rays and Diagnostic Tests"
+    },
+    {
+        "BenefitServiceID": 201,
+        "CorporateBenefitServiceID": 201,
+        "CorporateBenefitServiceCode": "B-67",
+        "CorporatebenefitServiceName": "Preventive Care",
+        "CorporateBenefitServiceDescription": "Preventive Care"
+    },
+    {
+        "BenefitServiceID": 202,
+        "CorporateBenefitServiceID": 202,
+        "CorporateBenefitServiceCode": "B-68",
+        "CorporatebenefitServiceName": "Transplants",
+        "CorporateBenefitServiceDescription": "Transplants"
+    },
+    {
+        "BenefitServiceID": 203,
+        "CorporateBenefitServiceID": 203,
+        "CorporateBenefitServiceCode": "B-69",
+        "CorporatebenefitServiceName": "Special Visit",
+        "CorporateBenefitServiceDescription": "Special Visit"
+    },
+    {
+        "BenefitServiceID": 204,
+        "CorporateBenefitServiceID": 204,
+        "CorporateBenefitServiceCode": "B-70",
+        "CorporatebenefitServiceName": "MRI",
+        "CorporateBenefitServiceDescription": "MRI"
+    },
+    {
+        "BenefitServiceID": 205,
+        "CorporateBenefitServiceID": 205,
+        "CorporateBenefitServiceCode": "B-205",
+        "CorporatebenefitServiceName": "ER",
+        "CorporateBenefitServiceDescription": "ER"
+    },
+    {
+        "BenefitServiceID": 206,
+        "CorporateBenefitServiceID": 206,
+        "CorporateBenefitServiceCode": "B-71",
+        "CorporatebenefitServiceName": "Minor Surgery",
+        "CorporateBenefitServiceDescription": "Minor Surgery"
+    },
+    {
+        "BenefitServiceID": 207,
+        "CorporateBenefitServiceID": 207,
+        "CorporateBenefitServiceCode": "B-72",
+        "CorporatebenefitServiceName": "Major Surgery",
+        "CorporateBenefitServiceDescription": "Major Surgery"
+    },
+    {
+        "BenefitServiceID": 208,
+        "CorporateBenefitServiceID": 208,
+        "CorporateBenefitServiceCode": "B-73",
+        "CorporatebenefitServiceName": "Acupunture",
+        "CorporateBenefitServiceDescription": "Acupunture"
+    },
+    {
+        "BenefitServiceID": 209,
+        "CorporateBenefitServiceID": 209,
+        "CorporateBenefitServiceCode": "B-74",
+        "CorporatebenefitServiceName": "Bariatric Surgery",
+        "CorporateBenefitServiceDescription": "Bariatric Surgery"
+    },
+    {
+        "BenefitServiceID": 210,
+        "CorporateBenefitServiceID": 210,
+        "CorporateBenefitServiceCode": "B-75",
+        "CorporatebenefitServiceName": "Blood, blood transfusions",
+        "CorporateBenefitServiceDescription": "Blood, blood transfusions"
+    },
+
+    {
+        "BenefitServiceID": 211,
+        "CorporateBenefitServiceID": 211,
+        "CorporateBenefitServiceCode": "B-76",
+        "CorporatebenefitServiceName": "Breast Implant Removal",
+        "CorporateBenefitServiceDescription": "Breast Implant Removal"
+    },
+
+    {
+        "BenefitServiceID": 212,
+        "CorporateBenefitServiceID": 212,
+        "CorporateBenefitServiceCode": "B-77",
+        "CorporatebenefitServiceName": "Cardiac Rehabilitation",
+        "CorporateBenefitServiceDescription": "Cardiac Rehabilitation"
+    },
+
+    {
+        "BenefitServiceID": 213,
+        "CorporateBenefitServiceID": 213,
+        "CorporateBenefitServiceCode": "B-78",
+        "CorporatebenefitServiceName": "Chemotherapy",
+        "CorporateBenefitServiceDescription": "Chemotherapy"
+    },
+
+    {
+        "BenefitServiceID": 214,
+        "CorporateBenefitServiceID": 214,
+        "CorporateBenefitServiceCode": "B-79",
+        "CorporatebenefitServiceName": "Dental Treatment under Medical Plan",
+        "CorporateBenefitServiceDescription": "Dental Treatment under Medical Plan"
+    },
+
+    {
+        "BenefitServiceID": 215,
+        "CorporateBenefitServiceID": 215,
+        "CorporateBenefitServiceCode": "B-80",
+        "CorporatebenefitServiceName": "Diabetic Care Management",
+        "CorporateBenefitServiceDescription": "Diabetic Care Management"
+    },
+
+    {
+        "BenefitServiceID": 216,
+        "CorporateBenefitServiceID": 216,
+        "CorporateBenefitServiceCode": "B-81",
+        "CorporatebenefitServiceName": "Diabetic Supplies",
+        "CorporateBenefitServiceDescription": "Diabetic Supplies"
+    },
+
+    {
+        "BenefitServiceID": 217,
+        "CorporateBenefitServiceID": 217,
+        "CorporateBenefitServiceCode": "B-82",
+        "CorporatebenefitServiceName": "Dialysis Treatment",
+        "CorporateBenefitServiceDescription": "Dialysis Treatment"
+    },
+
+    {
+        "BenefitServiceID": 218,
+        "CorporateBenefitServiceID": 218,
+        "CorporateBenefitServiceCode": "B-83",
+        "CorporatebenefitServiceName": "Fibrocystic Breast Condition",
+        "CorporateBenefitServiceDescription": "Fibrocystic Breast Condition"
+    },
+
+    {
+        "BenefitServiceID": 219,
+        "CorporateBenefitServiceID": 219,
+        "CorporateBenefitServiceCode": "B-84",
+        "CorporatebenefitServiceName": "Foot Care (Medical)",
+        "CorporateBenefitServiceDescription": "Foot Care (Medical)"
+    },
+
+    {
+        "BenefitServiceID": 220,
+        "CorporateBenefitServiceID": 220,
+        "CorporateBenefitServiceCode": "B-85",
+        "CorporatebenefitServiceName": "Foot Care (Rputine and Medical)",
+        "CorporateBenefitServiceDescription": "Foot Care (Routine and Medical)"
+    },
+
+    {
+        "BenefitServiceID": 221,
+        "CorporateBenefitServiceID": 221,
+        "CorporateBenefitServiceCode": "B-86",
+        "CorporatebenefitServiceName": "Hospice",
+        "CorporateBenefitServiceDescription": "Hospice"
+    },
+
+    {
+        "BenefitServiceID": 222,
+        "CorporateBenefitServiceID": 222,
+        "CorporateBenefitServiceCode": "B-87",
+        "CorporatebenefitServiceName": "Inborn Errors of Metabolism",
+        "CorporateBenefitServiceDescription": "Inborn Errors of Metabolism"
+    },
+
+    {
+        "BenefitServiceID": 223,
+        "CorporateBenefitServiceID": 223,
+        "CorporateBenefitServiceCode": "B-88",
+        "CorporatebenefitServiceName": "Infertility",
+        "CorporateBenefitServiceDescription": "Infertility"
+    },
+
+    {
+        "BenefitServiceID": 224,
+        "CorporateBenefitServiceID": 224,
+        "CorporateBenefitServiceCode": "B-89",
+        "CorporatebenefitServiceName": "Orthognathic Surgery",
+        "CorporateBenefitServiceDescription": "Orthognathic Surgery"
+    },
+
+    {
+        "BenefitServiceID": 225,
+        "CorporateBenefitServiceID": 225,
+        "CorporateBenefitServiceCode": "B-90",
+        "CorporatebenefitServiceName": "Osteoporosis",
+        "CorporateBenefitServiceDescription": "Osteoporosis"
+    },
+
+    {
+        "BenefitServiceID": 226,
+        "CorporateBenefitServiceID": 226,
+        "CorporateBenefitServiceCode": "B-91",
+        "CorporatebenefitServiceName": "Pediatric Hearing Tests",
+        "CorporateBenefitServiceDescription": "Pediatric Hearing Tests"
+    },
+
+    {
+        "BenefitServiceID": 227,
+        "CorporateBenefitServiceID": 227,
+        "CorporateBenefitServiceCode": "B-92",
+        "CorporatebenefitServiceName": "Pediatric Vision",
+        "CorporateBenefitServiceDescription": "Pediatric Vision"
+    },
+
+    {
+        "BenefitServiceID": 228,
+        "CorporateBenefitServiceID": 228,
+        "CorporateBenefitServiceCode": "B-93",
+        "CorporatebenefitServiceName": "Pulmonary Therapy",
+        "CorporateBenefitServiceDescription": "Pulmonary Therapy"
+    },
+
+    {
+        "BenefitServiceID": 229,
+        "CorporateBenefitServiceID": 229,
+        "CorporateBenefitServiceCode": "B-94",
+        "CorporatebenefitServiceName": "Radiation Therapy",
+        "CorporateBenefitServiceDescription": "Radiation Therapy"
+    },
+
+    {
+        "BenefitServiceID": 230,
+        "CorporateBenefitServiceID": 230,
+        "CorporateBenefitServiceCode": "B-95",
+        "CorporatebenefitServiceName": "Vision Care",
+        "CorporateBenefitServiceDescription": "Vision Care"
+    },
+
+    {
+        "BenefitServiceID": 231,
+        "CorporateBenefitServiceID": 231,
+        "CorporateBenefitServiceCode": "B-96",
+        "CorporatebenefitServiceName": "Wigs",
+        "CorporateBenefitServiceDescription": "Wigs"
+    },
+
+    {
+        "BenefitServiceID": 232,
+        "CorporateBenefitServiceID": 232,
+        "CorporateBenefitServiceCode": "B-97",
+        "CorporatebenefitServiceName": "ADD/ADHD",
+        "CorporateBenefitServiceDescription": "ADD/ADHD"
+    },
+
+    {
+        "BenefitServiceID": 233,
+        "CorporateBenefitServiceID": 233,
+        "CorporateBenefitServiceCode": "B-98",
+        "CorporatebenefitServiceName": "Chiropractic (Care) and Osteopathic Manipulation",
+        "CorporateBenefitServiceDescription": "Chiropractic (Care) and Osteopathic Manipulation"
+    },
+
+    {
+        "BenefitServiceID": 234,
+        "CorporateBenefitServiceID": 234,
+        "CorporateBenefitServiceCode": "B-99",
+        "CorporatebenefitServiceName": "Criminal Sexual Assault",
+        "CorporateBenefitServiceDescription": "Criminal Sexual Assault"
+    },
+
+    {
+        "BenefitServiceID": 234,
+        "CorporateBenefitServiceID": 234,
+        "CorporateBenefitServiceCode": "B-100",
+        "CorporatebenefitServiceName": "Primary Care Visit to Treat an Injury or Illness",
+        "CorporateBenefitServiceDescription": "Primary Care Visit to Treat an Injury or Illness"
+    },
+
+    {
+        "BenefitServiceID": 234,
+        "CorporateBenefitServiceID": 234,
+        "CorporateBenefitServiceCode": "B-101",
+        "CorporatebenefitServiceName": "Habilitation Services",
+        "CorporateBenefitServiceDescription": "Habilitation Services"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

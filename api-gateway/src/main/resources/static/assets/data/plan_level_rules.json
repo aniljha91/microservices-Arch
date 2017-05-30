@@ -1,0 +1,356 @@
+[
+    
+		 {
+        "Rule_ID": "100007",
+        "Rule_Name": "Define whether Copay Accumulates Towards Deductible",
+        "Rule_Desscription": "Copay accums towards Deduct = {0}",
+        "Configurable_Phrase": "Copay accums towards Deduct = ",
+        "Phrase_Values": [ "Y", "N"],
+        "Selected_Value": ["N"],
+        "Rule_Category": "Set Copay Restrictions",
+        "meta_data":{            
+            "0": "drop_down"           
+        },
+        "selected": true
+    },
+    {
+        "Rule_ID": "100008",
+        "Rule_Name": "Define whether Copay Accumulates Towards OPX",
+        "Rule_Desscription": "Copay accums towards OPX = {0}",
+        "Configurable_Phrase": "Copay accums towards OPX =",
+        "Phrase_Values": [ "Y", "N"],
+        "Selected_Value": ["Y"],
+        "Rule_Category": "Set Copay Restrictions",
+        "meta_data":{            
+            "0": "drop_down"           
+        },
+        "selected": true
+    },
+    {
+        "Rule_ID": "100009",
+        "Rule_Name": "Define whether Copay Looks At Deductible",
+        "Rule_Desscription": "Copay looks at Deduct = {0}",
+        "Configurable_Phrase": "Copay looks at Deduct =",
+        "Phrase_Values": [ "Y", "N"],
+        "Selected_Value": ["N"],
+        "Rule_Category": "Set Copay Restrictions",
+        "meta_data":{            
+            "0": "drop_down"           
+        },
+        "selected": true
+    },
+    {
+        "Rule_ID": "100010",
+        "Rule_Name": "Define whether Copay Looks at OPX",
+        "Rule_Desscription": "Copay looks at OPX = {0}",
+        "Configurable_Phrase": "Copay looks at OPX =",
+        "Phrase_Values": [ "Y", "N"],
+        "Selected_Value": ["Y"],
+        "Rule_Category": "Set Copay Restrictions",
+        "meta_data":{            
+            "0": "drop_down"           
+        },
+        "selected": true
+    },
+    
+
+    
+             {
+        "Rule_ID": "100033",
+        "Rule_Name": "Set Member Responsibility based on Network Type",
+        "Rule_Desscription": "If Network Type = {0}, any costs above the allowable amount is member's responsibility",
+        "Configurable_Phrase": ["Network Type"],
+        "Phrase_Values": ["In Network","Out of Network" ],
+        "Selected_Value": ["Out of Network"],
+        "Rule_Category": "Set Member Responsibility",
+        "meta_data":{  
+        	"0": "drop_down"       	     
+        },
+        "selected": true
+    },
+    
+                 {
+        "Rule_ID": "100034",
+        "Rule_Name": "Set Member Responsibility based on Network Type and Provider Name",
+        "Rule_Desscription": "If Network Type = {0} and Provider Name = {1}, any costs above the allowable amount is member's responsibility",
+        "Configurable_Phrase": ["Network Type","Provider Name"],
+        "Phrase_Values": ["In Network","Out of Network" ],
+        "Selected_Value": ["Out of Network","Bluecard"],
+        "Rule_Category": "Set Member Responsibility",
+        "meta_data":{  
+        	"0": "drop_down",
+        	"1": "input_number"              
+        },
+        "selected": true
+    },
+    
+    {
+        "Rule_ID": "100000",
+        "Rule_Name": "Set Benefit Year Definition",
+        "Rule_Desscription": "The benefit year will be defined as a {0}",
+        "Configurable_Phrase": "benefit year",
+        "Phrase_Values": [
+            "Calendar Year",
+            "Contract Year"
+        ],
+        "Selected_Value": ["Calendar Year"],
+        "Rule_Category": "Set Benefit Period Definition",
+        "meta_data":{            
+            "0": "drop_down"
+        },
+        "selected": true
+    },
+    
+            {
+        "Rule_ID": "100040",
+        "Rule_Name": "Set Maximum Period for Benefit Extension",
+        "Rule_Desscription": "Benefits for disabled members will be provided for no more than {0} months from the termination period",
+        "Configurable_Phrase": ["months"],        
+        "Phrase_Values": [],
+        "Selected_Value": ["12"],
+        "Rule_Category": "Set Termination of Benefits Extension",
+        "meta_data":{  
+        	           
+            "0": "input_number"
+                 
+        },
+        "selected": true
+    },
+    
+        {
+        "Rule_ID": "100041",
+        "Rule_Name": "Set Maximum period for Benefit Extension based on Service Type",
+        "Rule_Desscription": "If Service Type = {0}, benefits for disabled members will be provided for {1} days or until the member is discharged whichever occurs first from the termination period",
+        "Configurable_Phrase": ["Service Type","days"],        
+        "Phrase_Values": ["Inpatient","Outpatient"],
+        "Selected_Value": ["Inpatient","30"],
+        "Rule_Category": "Set Termination of Benefits Extension",
+        "meta_data":{  
+        	           
+            "0": "drop_down",
+            "1": "input_number"                
+        },
+        "selected": true
+    },
+    
+            {
+        "Rule_ID": "100042",
+        "Rule_Name": "Set Termination of Benefits Extension for Plan Not Subject to COBRA",
+        "Rule_Desscription": "If an Employee terminates under a plan not subject to COBRA, that Employee and their Dependents remain covered for a period of {0} days after such termination, unless during such period the Employee and their Dependents become entitled to similar insurance from some other source",
+        "Configurable_Phrase": ["days"],        
+        "Phrase_Values": [],
+        "Selected_Value": ["63"],
+        "Rule_Category": "Set Termination of Benefits Extension",
+        "meta_data":{  
+        	           
+            
+            "0": "input_number"                
+        },
+        "selected": true
+    },
+    
+    {
+        "Rule_ID": "100005",
+        "Rule_Name": "Set Data Limitations",
+        "Rule_Desscription": "Claim must be filed within {0} {1} following the service date",
+        "Configurable_Phrase": "filed within",
+        "Phrase_Values": [
+            "days",
+            "weeks",
+            "months",
+            "years"
+        ],
+        "Selected_Value": ["12", "months"],
+        "Rule_Category": "Set Claim Filing Limitations",
+        "meta_data":{            
+            "0": "input_number",
+            "1": "drop_down"
+        },
+        "selected": true
+    },
+    
+        {
+        "Rule_ID": "100001",
+        "Rule_Name": "Set Copay When Service Level Copay Doesn't Exist",
+        "Rule_Desscription": "If service level copay is not defined, apply contract level copay for that service",
+        "Configurable_Phrase": "",
+        "Phrase_Values": [ ],
+        "Selected_Value": [],
+        "Rule_Category": "Set Copay",
+        "meta_data":{            
+              
+        },
+        "selected": true
+    },
+    
+         {
+        "Rule_ID": "100002",
+        "Rule_Name": "Set Copay Based on Allowed Amount",
+        "Rule_Desscription": "If Allowed Amount < ${0} then Copay = ${1}",
+        "Configurable_Phrase": ["Allowed Amount", "Copay"],
+        "Phrase_Values": {
+        	
+        },
+        "Selected_Value": ["500", "0"],
+        "Rule_Category": "Set Copay",
+        "meta_data":{   
+        	"0": "input_number",
+            "1": "input_number"           
+                     
+        },
+        "selected": true
+    },
+
+   
+    {
+        "Rule_ID": "100003",
+        "Rule_Name": "Set Coins and Deductible Restrictions based on Place of Treatment",
+        "Rule_Desscription": "IF Place of Treatment is Retail Clinic THEN coins is {0} AND Subject to Deductible ={1}",
+        "Configurable_Phrase": "coins, subject to deductible",        
+        "Phrase_Values": [ "Y", "N"],
+        "Selected_Value": ["80%", "Y"],
+        "Rule_Category": "Set Coins and Deductible Restrictions",
+        "meta_data":{
+            "0": "input_percent",
+            "1": "drop_down"           
+        },
+        "selected": true
+    },
+    
+       {
+        "Rule_ID": "100028",
+        "Rule_Name": "Set Coins When Service Level Coins Doesn't Exist",
+        "Rule_Desscription": "If service level coins is not defined, apply contract level coins for that service",
+        "Configurable_Phrase": "",
+        "Phrase_Values": [ ],
+        "Selected_Value": [],
+        "Rule_Category": "Set Coins",
+        "meta_data":{            
+              
+        },
+        "selected": true
+    },
+    
+        	 {
+        "Rule_ID": "100030",
+        "Rule_Name": "Define cost sharing for Out of Packet Maximum",
+        "Rule_Desscription": "If Out of Pocket Maximum is met, Eligible Cost Sharing = {0}",
+        "Configurable_Phrase": "Eligible Cost Sharing",
+        "Phrase_Values": [ "Y", "N"],
+        "Selected_Value": ["N"],
+        "Rule_Category": "Set Cost Sharing Limit",
+        "meta_data":{            
+            "0": "drop_down"           
+        },
+        "selected": true
+    },
+    {
+        "Rule_ID": "100004",
+        "Rule_Name": "Set PCP Provider Definition Based on Provider Specialty",
+        "Rule_Desscription": "IF Provider Specialty is {0}THEN Provider is PCP",
+        "Configurable_Phrase": "Provider",        
+        "Phrase_Values": [ "Ped", "FP", "GP","Internist","OB/GYN"],
+        "Selected_Value": ["Ped"],
+        "Rule_Category": "Set Provider Definitions and Restrictions",
+        "meta_data":{            
+            "0": "drop_down"           
+        }
+    },
+    {
+        "Rule_ID": "100006",
+        "Rule_Name": "Set PCP Change Restrictions",
+        "Rule_Desscription": "The member will be allowed to change their PCP on a {0} basis",
+        "Configurable_Phrase": "Provider",        
+        "Phrase_Values": [ "Monthly", "Yearly", "Weekly", "Bi-weekly"],
+        "Selected_Value": ["Monthly"],
+        "Rule_Category": "Set Provider Definitions and Restrictions",
+        "meta_data":{            
+            "0": "drop_down"           
+        },
+        "selected": true
+    },
+    
+
+ 
+    
+        {
+        "Rule_ID": "100023",
+        "Rule_Name": "Set Carry Over Credit Restrictions Based on Quarter Number",
+        "Rule_Desscription": "If Quarter Number = {0} then Carry Over Credit = {1}",
+        "Configurable_Phrase": ["Quarter Number","Carry Over Credit"],        
+        "Phrase_Values": ["Y","N"],
+        "Selected_Value": ["4", "N"],
+        "Rule_Category": "Set Carry Over Credit Restrictions",
+        "meta_data":{  
+        	"1": "drop_down",               
+            "0": "input_number"
+                 
+        },
+        "selected": true
+    },
+    
+            {
+        "Rule_ID": "100024",
+        "Rule_Name": "Set No Member Responsibility based on Network Type when Claim is Denied",
+        "Rule_Desscription": "If Network Type = {0} and claim is denied then Member Responsibility = {1}% of Claim Balance",
+        "Configurable_Phrase": ["Network Type","Member Responsibility"],        
+        "Phrase_Values": ["In Network","Out of Network"],
+        "Selected_Value": ["In Network","0"],
+        "Rule_Category": "Set Claim Denial Related Actions",
+        "meta_data":{  
+			"0": "drop_down",
+			"1": "input_number"
+        	               
+            
+                 
+        },
+        "selected": true
+    },
+    
+       {
+        "Rule_ID": "100022",
+        "Rule_Name": "Set Allowed Amount Restrictions",
+        "Rule_Desscription": "For Medicare recipients, Allowed Amount <= Medicare Limiting charge",
+        "Configurable_Phrase": "",        
+        "Phrase_Values": [ ],
+        "Selected_Value": [],
+        "Rule_Category": "Set Allowed Amount Restrictions",
+        "meta_data":{            
+                   
+        }
+    },
+    
+           {
+        "Rule_ID": "100029",
+        "Rule_Name": "Set Coordination of Benefits for Medicare Based on Age",
+        "Rule_Desscription": "If Age > {0} and Primary Insurer = Medicare then one cannot be covered under an Exchange plan",
+        "Configurable_Phrase": "Age",
+        "Phrase_Values": [ ],
+        "Selected_Value": ["65"],
+        "Rule_Category": "Set Coordination of Benefits",
+        "meta_data":{  
+        	"0": "input_number"          
+              
+        },
+        "selected": true
+    },
+    
+            {
+        "Rule_ID": "100029",
+        "Rule_Name": "Set Lifetime Maximum based on Regulation",
+        "Rule_Desscription": "If Regulation = {0} then Lifetime Maximum = {1}",
+        "Configurable_Phrase": ["Regulation","Lifetime Maximum"],
+        "Phrase_Values": [ ],
+        "Selected_Value": ["ACA","Unlimited"],
+        "Rule_Category": "Set Lifetime Maximum",
+        "meta_data":{  
+        	"0": "input_number",
+        	"1":  "input_number"       
+              
+        },
+        "selected": true
+        
+    }
+    
+   
+]

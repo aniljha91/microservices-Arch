@@ -1,0 +1,27 @@
+[
+    {
+        "StateId":"16",
+        "StateCode":"IL",
+        "StateName":"Illinois"
+    },
+    {
+        "StateId":"28",
+        "StateCode":"MT",
+        "StateName":"Montana"
+    },
+    {
+        "StateId":"34",
+        "StateCode":"NM",
+        "StateName":"New Mexico"
+    },
+    {
+        "StateId":"38",
+        "StateCode":"OK",
+        "StateName":"Oklahoma"
+    },
+    {
+        "StateId":"46",
+        "StateCode":"TX",
+        "StateName":"Texas"
+    }
+]

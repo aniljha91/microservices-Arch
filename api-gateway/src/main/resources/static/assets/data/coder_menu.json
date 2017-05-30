@@ -1,0 +1,32 @@
+[{
+        "name": "Dashboard",
+        "isSubMenuVisible": false,
+        "icon": "ion-ios-home",
+        "state": "coder.dashboard"
+    }, {
+        "name": "Manage Marketing Plans",
+        "isSubMenuVisible": false,
+        "icon": "ion-ios-clipboard",
+        "state": "coder.marketingplan"
+    },
+    {
+        "name": "Plan Design",
+        "isSubMenuVisible": false,
+        "icon": "ion-md-clipboard",
+        "items": [{
+                "name": "Create New Admin Plan",
+                "state": "coder.createNewAdminPlan"
+            },
+            {
+                "name": "Update Existing Admin Plan",
+                "state": "coder.updateExistingAdminPlan"
+            }
+        ]
+    },
+    {
+        "name": "Search and View",
+        "isSubMenuVisible": false,
+        "icon": "ion-ios-search",
+        "state": "coder.searchplan"
+    }
+]
