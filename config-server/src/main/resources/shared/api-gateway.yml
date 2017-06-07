@@ -17,13 +17,13 @@ zuul:
 
     benefitcoding-service:
         path: /groups/**
-        url: http://benefitcoding-service:6000
+        url: http://benefitcoding.us-west-2.elasticbeanstalk.com
         stripPrefix: false
         sensitiveHeaders:
      
     benefit-plan:
         path: /statistics/**
-        url: http://benefit-plan:7000
+        url: http://benefitplan.us-west-2.elasticbeanstalk.com
         stripPrefix: false
         sensitiveHeaders:
 

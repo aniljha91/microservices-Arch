@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/sakarib1/ConfigData
+          uri: https://github.com/aniljha91/microservices-Arch/tree/master/config-server
           searchPaths: ConfigData
         native:
           search-locations: classpath:/shared
