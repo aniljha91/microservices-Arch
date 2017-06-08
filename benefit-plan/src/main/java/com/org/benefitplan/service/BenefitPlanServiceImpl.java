@@ -4,21 +4,19 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.org.benefitplan.domain.BenefitPlan;
 import com.org.benefitplan.domain.Contract;
-import com.org.benefitplan.repository.BenefitPlanRepository;
 
 @Service
 public class BenefitPlanServiceImpl implements BenefitPlanService {
 
 	private final Logger log = LoggerFactory.getLogger(getClass());
 
-	@Autowired
-	private BenefitPlanRepository repository;
+	/*@Autowired
+	private BenefitPlanRepository repository;*/
 	
 	@Override
 	@HystrixCommand(fallbackMethod = "fallback")

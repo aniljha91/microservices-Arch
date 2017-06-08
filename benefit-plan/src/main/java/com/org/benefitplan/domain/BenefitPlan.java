@@ -2,16 +2,11 @@ package com.org.benefitplan.domain;
 
 import javax.validation.constraints.NotNull;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@Document(collection = "benefitplans")
 @JsonIgnoreProperties
 public class BenefitPlan {
 
-	@Id
 	private int benefitPlanId;
 
 	public int getBenefitPlanId() {

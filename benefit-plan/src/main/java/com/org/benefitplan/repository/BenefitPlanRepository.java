@@ -1,4 +1,4 @@
-package com.org.benefitplan.repository;
+/*package com.org.benefitplan.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
@@ -13,3 +13,4 @@ public interface BenefitPlanRepository extends CrudRepository<BenefitPlan, Integ
 	BenefitPlan findByBenefitPlanName(String benefitPlanName);
 
 }
+*/
