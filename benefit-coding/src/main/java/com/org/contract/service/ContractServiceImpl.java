@@ -1,26 +1,19 @@
 package com.org.contract.service;
 
-import java.util.Date;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.Assert;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.org.group.domain.Contract;
-import com.org.group.domain.Group;
-import com.org.group.domain.User;
-import com.org.group.repository.ContractRepository;
 
 @Service
 public class ContractServiceImpl implements ContractService {
 
 	private final Logger log = LoggerFactory.getLogger(getClass());
 
-	@Autowired
-	private ContractRepository repository;
+/*	@Autowired
+	private ContractRepository repository;*/
 
 	@Override
 	@HystrixCommand(fallbackMethod = "fallbackFindByName")
@@ -40,7 +33,7 @@ public class ContractServiceImpl implements ContractService {
 
 	/**
 	 * {@inheritDoc}
-	 */
+	 *//*
 	@Override
 	public Contract create(User user) {
 
@@ -64,9 +57,9 @@ public class ContractServiceImpl implements ContractService {
 		return contract;
 	}
 
-	/**
+	*//**
 	 * {@inheritDoc}
-	 */
+	 *//*
 	@Override
 	public void saveChanges(String name, Contract update) {
 
@@ -80,5 +73,5 @@ public class ContractServiceImpl implements ContractService {
 		log.debug("contract {} changes are saved", name);
 
 		//statisticsClient.updateBenefitPlan(name, contract);
-	}
+	}*/
 }

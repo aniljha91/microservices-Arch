@@ -4,17 +4,13 @@ import java.security.Principal;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.org.group.domain.Group;
-import com.org.group.domain.User;
 import com.org.group.service.GroupService;
 
 @RestController
@@ -36,7 +32,7 @@ public class GroupController {
 		return groupService.findByName(name);
 	}
 
-	@RequestMapping(path = "/current", method = RequestMethod.PUT)
+	/*@RequestMapping(path = "/current", method = RequestMethod.PUT)
 	public void saveCurrentGroup(Principal principal, @Valid @RequestBody Group account) {
 		groupService.saveChanges(principal.getName(), account);
 	}
@@ -44,5 +40,5 @@ public class GroupController {
 	@RequestMapping(path = "/", method = RequestMethod.POST)
 	public Group createNewGroup(@Valid @RequestBody User user) {
 		return groupService.create(user);
-	}
+	}*/
 }

@@ -1,18 +1,11 @@
 package com.org.group.service;
 
-import java.util.Date;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.Assert;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.org.group.domain.Contract;
 import com.org.group.domain.Group;
-import com.org.group.domain.User;
-import com.org.group.repository.GroupRepository;
 
 @Service
 public class GroupServiceImpl implements GroupService {
@@ -25,8 +18,8 @@ public class GroupServiceImpl implements GroupService {
 	@Autowired
 	private AuthServiceClient authClient;*/
 
-	@Autowired
-	private GroupRepository repository;
+	/*@Autowired
+	private GroupRepository repository;*/
 
 	/**
 	 * {@inheritDoc}
@@ -53,7 +46,7 @@ public class GroupServiceImpl implements GroupService {
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override
+	/*@Override
 	public Group create(User user) {
 
 		Group existing = repository.findByName(user.getUsername());
@@ -75,9 +68,9 @@ public class GroupServiceImpl implements GroupService {
 		return account;
 	}
 
-	/**
+	*//**
 	 * {@inheritDoc}
-	 */
+	 *//*
 	@Override
 	public void saveChanges(String name, Group update) {
 
@@ -90,5 +83,5 @@ public class GroupServiceImpl implements GroupService {
 		repository.save(group);
 
 		log.debug("group {} changes has been saved", name);
-	}
+	}*/
 }

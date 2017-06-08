@@ -3,31 +3,19 @@ package com.org.group.domain;
 import java.util.Date;
 import java.util.List;
 
-import javax.validation.Valid;
-
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
-@Document(collection = "groups")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Group {
 
-	@Id
 	private String name;
 
-	@Valid
 	private Date creationDate;
 
-	@Valid
 	private GroupType groupType;
 	
-	@Valid
 	private List<Item> incomes;
 
-	@Valid
 	private List<Item> expenses;
 
 

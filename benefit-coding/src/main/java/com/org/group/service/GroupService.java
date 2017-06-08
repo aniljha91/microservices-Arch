@@ -1,7 +1,6 @@
 package com.org.group.service;
 
 import com.org.group.domain.Group;
-import com.org.group.domain.User;
 
 public interface GroupService {
 
@@ -22,7 +21,7 @@ public interface GroupService {
 	 * @param user
 	 * @return created group
 	 */
-	Group create(User user);
+	//Group create(User user);
 
 	/**
 	 * Validates and applies incoming group updates
@@ -31,5 +30,5 @@ public interface GroupService {
 	 * @param name
 	 * @param update
 	 */
-	void saveChanges(String name, Group update);
+	//void saveChanges(String name, Group update);
 }
