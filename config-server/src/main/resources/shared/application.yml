@@ -10,7 +10,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eurekaservice-registry.us-west-2.elasticbeanstalk.com/eureka/
+      defaultZone: http://service-registry:8762/eureka/
   instance:
     prefer-ip-address: true
 
