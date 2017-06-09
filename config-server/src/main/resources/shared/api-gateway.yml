@@ -33,3 +33,5 @@ server:
 security:
   user: 
     password: gateway
+    
+rohit:45
