@@ -5,4 +5,4 @@ server:
 security:
   user: 
     password: groups
-test: 500
+test: 600
