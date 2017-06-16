@@ -27,9 +27,10 @@ public class GroupController {
 	}
 
 	@RequestMapping(path = "/{name}", method = RequestMethod.GET)
-	public Group getTestResults(@PathVariable String name) throws Exception {
+	public String getTestResults(@PathVariable String name) throws Exception {
 		LOG.log(Level.INFO, "calling getTestResult");
-		return groupService.findByName(name);
+		Group group = groupService.findByName(name);
+		return group.getName();
 	}
 
 	/*@RequestMapping(path = "/current", method = RequestMethod.PUT)

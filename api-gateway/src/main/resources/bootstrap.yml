@@ -7,3 +7,5 @@ spring:
       fail-fast: true
       password: password
       username: user
+jwt:
+  header: Bearer
