@@ -7,7 +7,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
-import com.org.auth.domain.User;
+import com.org.auth.domain.UserDetails;
 import com.org.auth.repository.UserRepository;
 
 @Service
@@ -21,9 +21,9 @@ public class UserServiceImpl implements UserService {
 	private UserRepository repository;
 
 	@Override
-	public void create(User user) {
+	public void create(UserDetails user) {
 
-		User existing = repository.findOne(user.getUsername());
+		UserDetails existing = repository.findOne(user.getUsername());
 		Assert.isNull(existing, "user already exists: " + user.getUsername());
 
 		String hash = encoder.encode(user.getPassword());

@@ -1,9 +1,9 @@
 package com.org.auth.service;
 
-import com.org.auth.domain.User;
+import com.org.auth.domain.UserDetails;
 
 public interface UserService {
 
-	void create(User user);
+	void create(UserDetails user);
 
 }
