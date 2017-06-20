@@ -1,13 +1,5 @@
-ribbon:
-  ReadTimeout: 20000
-  ConnectTimeout: 20000
-
+    
 zuul:
-  ignoredServices: '*'
-  host:
-    connect-timeout-millis: 20000
-    socket-timeout-millis: 20000
-
   routes:
     auth-server:
         path: /uaa/**
@@ -16,26 +8,44 @@ zuul:
         username: writer
         stripPrefix: false
         sensitiveHeaders:
-
     benefitcoding-service:
         path: /groups/**
-        url: http://localhost:6000
         password: groups
         username: user
         stripPrefix: false
         sensitiveHeaders:
-     
+        serviceId: benefitcoding-service
     benefit-plan:
         path: /statistics/**
-        url: http://localhost:7000
         password: statistics
         username: user
         stripPrefix: false
         sensitiveHeaders:
-
+        serviceId: benefit-plan
+       
 server:
   port: 4000
   
+ribbon:
+  eureka:
+    enabled: true
+    ReadTimeout: 20000
+    ConnectTimeout: 20000
+            
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://service-registry:8762/eureka/
+     
+      
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000      
+            
 security:
   user: 
     password: gateway

@@ -1,6 +1,6 @@
 server:
   contextPath: /groups
-  port: 6000
+  
 
 security:
   user:
@@ -9,6 +9,8 @@ security:
     client:
       clientId: benefitcoding-service
       clientSecret: groups
-      accessTokenUri: http://localhost:5000/uaa/oauth/token
+      accessTokenUri: http://writer:writer@localhost:5000/uaa/oauth/token
       grant-type: client_credentials
       scope: server
+
+test: 700

@@ -1,6 +1,6 @@
 server:
   contextPath: /statistics
-  port: 7000
+  
   
 security:
   user: 
@@ -12,3 +12,5 @@ security:
       accessTokenUri: http://writer:writer@localhost:5000/uaa/oauth/token
       grant-type: client_credentials
       scope: server
+      
+test: 7015
