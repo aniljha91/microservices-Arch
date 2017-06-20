@@ -14,14 +14,14 @@ ribbon:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://service-registry:8762/eureka/
+      defaultZone: http://ec2-34-212-49-187.us-west-2.compute.amazonaws.com:8762/eureka/
   instance:
     prefer-ip-address: true
     
 security:
   oauth2:
     resource:
-      user-info-uri: http://auth-server:5000/uaa/users/current
+      user-info-uri: http://ec2-34-212-49-187.us-west-2.compute.amazonaws.com:5000/uaa/users/current
 
 hystrix:
   command:
