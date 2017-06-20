@@ -1,0 +1,42 @@
+[
+    {
+        "id": "ADPL102",
+        "name": "Admin PPO 102",
+        "deduct_indv": 3000,
+        "deduct_family": 9000,
+        "opx_indv": 7150,
+        "opx_family": 4300
+    },
+     {
+        "id": "ADPL105",
+        "name": "Admin PPO 105",
+        "deduct_indv": 4000,
+        "deduct_family": 5000,
+        "opx_indv": 8150,
+        "opx_family": 5300
+    },
+    {
+        "id": "ADPL108",
+        "name": "Admin PPO 108",
+        "deduct_indv": 5000,
+        "deduct_family": 6000,
+        "opx_indv": 9150,
+        "opx_family": 6300
+    },
+    {
+        "id": "ADPL109",
+        "name": "Admin PPO 109",
+        "deduct_indv": 7000,
+        "deduct_family": 8000,
+        "opx_indv": 4150,
+        "opx_family": 1300
+    },
+    {
+        "id": "ADPL112",
+        "name": "Admin PPO 112",
+        "deduct_indv": 2000,
+        "deduct_family": 3000,
+        "opx_indv": 1150,
+        "opx_family": 1300
+    }    
+]

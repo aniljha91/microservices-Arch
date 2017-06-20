@@ -1,7 +1,16 @@
 server:
   contextPath: /statistics
-  port: 7000
+  
   
 security:
   user: 
     password: statistics
+  oauth2:
+    client:
+      clientId: benefit-plan
+      clientSecret: statistics
+      accessTokenUri: http://writer:writer@localhost:5000/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+      
+test: 7015

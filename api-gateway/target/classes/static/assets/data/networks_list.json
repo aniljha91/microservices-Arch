@@ -1,0 +1,57 @@
+[{
+	"NetworkNameID": 1,
+	"NetworkName": "Blue Advantage",
+	"NetworkNameDescription": "Blue Advantage"
+}, {
+	"NetworkNameID": 2,
+	"NetworkName": "Blue Choice",
+	"NetworkNameDescription": "Blue Choice"
+}, {
+	"NetworkNameID": 3,
+	"NetworkName": "Blue Choice Preferred",
+	"NetworkNameDescription": "Blue Choice Preferred"
+}, {
+	"NetworkNameID": 4,
+	"NetworkName": "Blue Focus POS",
+	"NetworkNameDescription": "Blue Focus POS"
+}, {
+	"NetworkNameID": 5,
+	"NetworkName": "Blue FocusCare",
+	"NetworkNameDescription": "Blue FocusCare"
+}, {
+	"NetworkNameID": 6,
+	"NetworkName": "Blue Options",
+	"NetworkNameDescription": "Blue Options"
+}, {
+	"NetworkNameID": 7,
+	"NetworkName": "Blue Precision",
+	"NetworkNameDescription": "Blue Precision"
+}, {
+	"NetworkNameID": 8,
+	"NetworkName": "Blue Preferred",
+	"NetworkNameDescription": "Blue Preferred"
+}, {
+	"NetworkNameID": 9,
+	"NetworkName": "Blue Premier",
+	"NetworkNameDescription": "Blue Premier"
+}, {
+	"NetworkNameID": 10,
+	"NetworkName": "BlueCare Direct",
+	"NetworkNameDescription": "BlueCare Direct"
+}, {
+	"NetworkNameID": 11,
+	"NetworkName": "BlueLincs",
+	"NetworkNameDescription": "BlueLincs"
+}, {
+	"NetworkNameID": 12,
+	"NetworkName": "Community",
+	"NetworkNameDescription": "Community"
+}, {
+	"NetworkNameID": 13,
+	"NetworkName": "HMO",
+	"NetworkNameDescription": "HMO"
+}, {
+	"NetworkNameID": 14,
+	"NetworkName": "PPO",
+	"NetworkNameDescription": "PPO"
+}]

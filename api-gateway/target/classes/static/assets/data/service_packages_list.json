@@ -1,0 +1,37 @@
+[
+    {
+        "id": "pk1",
+        "name": "Maternity",
+        "description": "One inpatient hearing screening",
+        "startdate": "01/16/2017",
+        "enddate": ""
+    },
+    {
+        "id": "pk2",
+        "name": "Imaging: High Cost Imaging",
+        "description": "CAT Scan outpatient",
+        "startdate": "01/18/2017",
+        "enddate": "02/16/2017"
+    },
+    {
+        "id": "pk3",
+        "name": "Therapies, rehabilative and habilitative",
+        "description": "One inpatient hearing screening",
+        "startdate": "01/16/2017",
+        "enddate": "02/16/2017"
+    },
+    {
+        "id": "pk4",
+        "name": "Outpatient Diagnostic",
+        "description": "One inpatient hearing screening",
+        "startdate": "01/22/2017",
+        "enddate": "02/16/2017"
+    },
+    {
+        "id": "pk5",
+        "name": "Preventive Care",
+        "description": "One inpatient hearing screening",
+        "startdate": "01/26/2017",
+        "enddate": "02/16/2017"
+    }
+]

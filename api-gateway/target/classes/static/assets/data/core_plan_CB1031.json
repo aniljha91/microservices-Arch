@@ -1,0 +1,316 @@
+{
+    "plan_id": "CB103",
+    "plan_name": "PPO-GF-TX-Core-Standard Selectable",
+    "tiers_info": {
+        "service_benefit_count": 2,
+        "pharmacy_benefit_count": 2,
+        "service_tiers": [{
+                "name": "In Network",
+                "id": "service1"
+            },
+            {
+                "name": "Out Network",
+                "id": "service2"
+            }
+        ],
+        "pharmacy_tiers": [{
+                "name": "Preferred",
+                "id": "pharmacy1"
+            },
+            {
+                "name": "Non Preferred",
+                "id": "pharmacy2"
+            }
+        ]
+    },
+    "plan_data": {
+        "items": [{
+                "cost_share": "Deductible (Individual)",
+                "service1": 3000,
+                "service2": 15000
+            },
+            {
+                "cost_share": "Deductible (Family)",
+                "service1": 9000,
+                "service2": 45000
+            },
+            {
+                "cost_share": "OPX (Individual Inc.Ded)",
+                "service1": 7150,
+                "service2": "Unlimited"
+            },
+            {
+                "cost_share": "OPX (Family Inc.Ded)",
+                "service1": 4300,
+                "service2": "Unlimited"
+            },
+            {
+                "cost_share": "Coins-General",
+                "service1": "70%",
+                "service2": "50%"
+            },
+            {
+                "cost_share": "OV Coins",
+                "service1": "100%",
+                "service2": "50%"
+            },
+            {
+                "cost_share": "PCP Copay",
+                "service1": 3000,
+                "service2": 15000
+            },
+            {
+                "cost_share": "Number of OV at Listed Copay",
+                "service1": 30,
+                "service2": 10
+            },
+            {
+                "cost_share": "SPC Copay",
+                "service1": 60,
+                "service2": "NA"
+            }
+        ]
+    },
+    "service_data": {
+        "meta": {
+            "copay": "Copay",
+            "coins": "Coins",
+            "cost_share_applies": "Cost Share Applies",
+            "max_amt": "Max Amt",
+            "cost_share_order": "Cost Share Order"
+        },
+        "items": [{
+                "benefit_service": "Preventive Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "",
+                    "max_amt": "",
+                    "cost_share_order": "DC"
+                },
+                "service2": {
+                    "copay": "",
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": 200,
+                    "cost_share_order": "DC"
+                }
+            },
+            {
+                "benefit_service": "Special Visit",
+                "service1": {
+                    "copay": 40,
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": "",
+                    "cost_share_order": "None"
+                },
+                "service2": {
+                    "copay": "",
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": "",
+                    "cost_share_order": ""
+                }
+            },
+            {
+                "benefit_service": "Office Visit",
+                "service1": {
+                    "copay": 500,
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": "NA",
+                    "cost_share_order": "DC"
+                },
+                "service2": {
+                    "copay": 1500,
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": 200,
+                    "cost_share_order": "DC"
+                }
+            },
+            {
+                "benefit_service": "MRI",
+                "service1": {
+                    "copay": 300,
+                    "coins": "70%",
+                    "cost_share_applies": "",
+                    "max_amt": "",
+                    "cost_share_order": "DC"
+                },
+                "service2": {
+                    "copay": 1500,
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": 200,
+                    "cost_share_order": ""
+                }
+            },
+            {
+                "benefit_service": "Minor Surgery",
+                "service1": {
+                    "copay": 300,
+                    "coins": "50%",
+                    "cost_share_applies": "",
+                    "max_amt": "",
+                    "cost_share_order": "DC"
+                },
+                "service2": {
+                    "copay": 1500,
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": 200,
+                    "cost_share_order": ""
+                }
+            },
+            {
+                "benefit_service": "Major Surgery",
+                "service1": {
+                    "copay": "NA",
+                    "coins": "70%",
+                    "cost_share_applies": "",
+                    "max_amt": "",
+                    "cost_share_order": "DC"
+                },
+                "service2": {
+                    "copay": "",
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": 200,
+                    "cost_share_order": ""
+                }
+            },
+            {
+                "benefit_service": "ER",
+                "service1": {
+                    "copay": 200,
+                    "coins": "40%",
+                    "cost_share_applies": "",
+                    "max_amt": "",
+                    "cost_share_order": ""
+                },
+                "service2": {
+                    "copay": "",
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": 200,
+                    "cost_share_order": "DC"
+                }
+            },
+            {
+                "benefit_service": "Therapies, rehabilitative and habilitative",
+                "service1": {
+                    "copay": 800,
+                    "coins": "30%",
+                    "cost_share_applies": "",
+                    "max_amt": "",
+                    "cost_share_order": "DC"
+                },
+                "service2": {
+                    "copay": "",
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": 200,
+                    "cost_share_order": "DC"
+                }
+            },
+            {
+                "benefit_service": "Transplants",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "",
+                    "max_amt": "",
+                    "cost_share_order": "DC"
+                },
+                "service2": {
+                    "copay": "",
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": 200,
+                    "cost_share_order": "DC"
+                }
+            },
+            {
+                "benefit_service": "Outpatient Behavioral Health",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "",
+                    "max_amt": "",
+                    "cost_share_order": "DC"
+                },
+                "service2": {
+                    "copay": "",
+                    "coins": "",
+                    "cost_share_applies": "",
+                    "max_amt": 200,
+                    "cost_share_order": "DC"
+                }
+            }
+        ]
+    },
+    "pharmacy_data": {
+        "meta": {
+            "copay": "Copay",
+            "coins": "Coins"
+        },
+        "items": [{
+                "name": "Drug Plan Tier 1",
+                "pharmacy1": {
+                    "copay": 600,
+                    "coins": "70%"
+                },
+                "pharmacy2": {
+                    "copay": "",
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 2",
+                "pharmacy1": {
+                    "copay": 40,
+                    "coins": ""
+                },
+                "pharmacy2": {
+                    "copay": "",
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 3",
+                "pharmacy1": {
+                    "copay": 500,
+                    "coins": ""
+                },
+                "pharmacy2": {
+                    "copay": 1500,
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 4",
+                "pharmacy1": {
+                    "copay": 300,
+                    "coins": "70%"
+                },
+                "pharmacy2": {
+                    "copay": 1500,
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 5",
+                "pharmacy1": {
+                    "copay": 300,
+                    "coins": "50%"
+                },
+                "pharmacy2": {
+                    "copay": 1500,
+                    "coins": ""
+                }
+            }
+        ]
+    }
+}

@@ -7,3 +7,7 @@ spring:
       fail-fast: true
       password: password
       username: user
+jwt:
+  secret: testingJWTAuthentication
+  expiration: 2
+  header: Bearer

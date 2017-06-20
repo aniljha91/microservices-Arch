@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: hystrix-monitoring
+  cloud:
+    config:
+      uri: http://localhost:8889
+      fail-fast: true
+      password: password
+      username: user

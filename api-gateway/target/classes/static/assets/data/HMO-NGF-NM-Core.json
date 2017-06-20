@@ -1,0 +1,50 @@
+{
+    "Benefit/Services Data":{
+ 	   "Core":[
+            "Occupational Therapy", "Preventive","Specialist Visit","Abortion","Office Visit","ER","Transplants","Allergy Shots / Allergy Treatment","Ambulance Service",
+			"Anesthesia (Outpatient)","Assistant Surgeon (Outpatient)","Autism","Behavioral Health","Crisis stabilization Unit","Durable Medical Equipment","Electroconvulsive Therapy","Emergency Care / Emergency Medical Condition ","Emergency Services",
+			"Emergency Transportation/Ambulance","Extended Care Facility ", "Hearing Care","Imaging: High Cost Imaging","Home Health Care /Coordinated Home Care","Home Health Care Services",
+			"Infusion Therapy","Inhalation (Respiratory) Therapy","Inpatient Behavioral Health",
+        "Preventive Service ", "Prosthetic Devices", "Repetitive Transcranial Magnetic Stimuation (rTMS)",
+		"Therapies, rehabilitative and habilitative","Urgent Care", "X-rays and Diagnostic Tests","Preventive Care","Special Visit","MRI",
+		"Breast Implant Removal","Cardiac Rehabilitation","Chemotherapy",
+		"Dental Treatment under Medical Plan","Diabetic Care Management","Diabetic Supplies","Fibrocystic Breast Condition","Foot Care (Medical)","Hospice","Infertility"
+		
+
+
+    
+        ],
+        "HMO":[
+		"Osteoporosis","Pediatric Hearing Tests","Pediatric Vision","Pulmonary Therapy","Radiation Therapy","Vision Care","Wigs","ADD/ADHD","Chiropractic (Care) and Osteopathic Manipulation",
+		"Primary Care Visit to Treat an Injury or Illness","Habilitation Services"
+            
+        ],
+        "NGF":[
+		"Minor Surgery","Major Surgery","Acupunture","Bariatric Surgery","Blood, blood transfusions"
+           
+		
+        ],
+        "NM":[
+		 "Inhalation (Respiratory) Therapy", "Intensive Outpatient treatment for Behavioral Health","Laboratory Outpatient and Professional Services",
+		"Maternity","Medical","Nursery - Newborn Child Coverage","Outpatient Allergy Testing", "Pediatric Services"
+            
+        ]
+    } ,
+    "Pharmacy Data":{
+        "Drug Tier 1":[
+            "Drug1"
+        ],
+        "Drug Tier 2":[
+            "Drug2"
+        ],
+        "Drug Tier 3":[
+            "Drug3"
+        ],
+        "Drug Tier 4":[
+            "Drug4"
+        ],
+        "Drug Tier 5":[
+            "Drug5"
+        ]
+    }
+}

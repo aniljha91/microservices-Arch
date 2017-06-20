@@ -1,0 +1,25 @@
+[{
+        "first_name": "Mary",
+        "last_name": "Jane",
+        "user_name": "admin",
+        "password": "admin",
+        "role": "admin",
+        "role_display_name": "Benefit Engineer"
+    },
+    {
+        "first_name": "John",
+        "last_name": "Smith",
+        "user_name": "coder",
+        "password": "coder",
+        "role": "coder",
+        "role_display_name": "Benefit Coder"
+    },
+    {
+        "first_name": "Timothy",
+        "last_name": "O'Toole",
+        "user_name": "provider",
+        "password": "provider",
+        "role": "provider",
+        "role_display_name": "Claims Adjudicator"
+    }
+]

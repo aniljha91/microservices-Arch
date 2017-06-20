@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: benefitcoding-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: rohchoudhary
+Implementation-Vendor-Id: com.org
+Build-Jdk: 1.8.0_131
+Implementation-URL: http://projects.spring.io/spring-boot/benefitcodin
+ g-service/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

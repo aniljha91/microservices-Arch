@@ -1,0 +1,3 @@
+com\org\gateway\domain\Error.class
+com\org\gateway\domain\UserDetails.class
+com\org\ApiGatewayApplication.class

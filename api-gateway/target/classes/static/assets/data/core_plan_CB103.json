@@ -1,0 +1,1186 @@
+{
+    "plan_id": "CB103",
+    "plan_name": "Blue Care Direct GoldS",
+    "tiers_info": {
+        "service_benefit_count": 2,
+        "pharmacy_benefit_count": 2,
+        "service_tiers": [{
+                "name": "In Network",
+                "id": "service1"
+            },
+            {
+                "name": "Out Network",
+                "id": "service2"
+            }
+        ],
+        "pharmacy_tiers": [{
+                "name": "Preferred",
+                "id": "pharmacy1"
+            },
+            {
+                "name": "Non Preferred",
+                "id": "pharmacy2"
+            }
+        ]
+    },
+    "plan_data": {
+        "items": [{
+                "cost_share": "Deductible (Individual)",
+                "service1": 3000,
+                "service2": 15000
+            },
+            {
+                "cost_share": "Deductible (Family)",
+                "service1": 9000,
+                "service2": 45000
+            },
+            {
+                "cost_share": "OPX (Individual Inc.Ded)",
+                "service1": 7150,
+                "service2": "Unlimited"
+            },
+            {
+                "cost_share": "OPX (Family Inc.Ded)",
+                "service1": 4300,
+                "service2": "Unlimited"
+            },
+            {
+                "cost_share": "Coins-General",
+                "service1": "70%",
+                "service2": "50%"
+            },
+            {
+                "cost_share": "OV Coins",
+                "service1": "100%",
+                "service2": "50%"
+            },
+            {
+                "cost_share": "PCP Copay",
+                "service1": 3000,
+                "service2": 15000
+            },
+            {
+                "cost_share": "Number of OV at Listed Copay",
+                "service1": 15,
+                "service2": 20
+            },
+            {
+                "cost_share": "SPC Copay",
+                "service1": 60,
+                "service2": "NA"
+            }
+        ]
+    },
+    "service_data": {
+        "meta": {
+            "copay": "Copay",
+            "coins": "Coins",
+            "cost_share_applies": "Cost Share Applies"
+        },
+        "items": [{
+                "benefit_service": "Preventive Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Special Visit",
+                "service1": {
+                    "copay": 40,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Office Visit",
+                "service1": {
+                    "copay": 500,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": 1500,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "MRI",
+                "service1": {
+                    "copay": 300,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": 1500,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Minor Surgery",
+                "service1": {
+                    "copay": 300,
+                    "coins": "50%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": 1500,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Major Surgery",
+                "service1": {
+                    "copay": "80",
+                    "coins": "80%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "ER",
+                "service1": {
+                    "copay": 200,
+                    "coins": "40%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Therapies, rehabilitative and habilitative",
+                "service1": {
+                    "copay": 800,
+                    "coins": "30%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Transplants",
+                "service1": {
+                    "copay": 550,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Outpatient Behavioral Health",
+                "service1": {
+                    "copay": 150,
+                    "coins": "60%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Acupunture",
+                "service1": {
+                    "copay": 60,
+                    "coins": "55%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Abortion",
+                "service1": {
+                    "copay": 200,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Allergy Shots / Allergy Treatment",
+                "service1": {
+                    "copay": 25,
+                    "coins": "65%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Autism",
+                "service1": {
+                    "copay": 80,
+                    "coins": "80%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Bariatric Surgery",
+                "service1": {
+                    "copay": 550,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Blood, blood transfusions",
+                "service1": {
+                    "copay": 500,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Breast Implant Removal",
+                "service1": {
+                    "copay": 70,
+                    "coins": "80%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Cardiac Rehabilitation",
+                "service1": {
+                    "copay": 500,
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Chemotherapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Dental Treatment under Medical Plan",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Diabetic Care Management",
+                "service1": {
+                    "copay": 600,
+                    "coins": "80%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Diabetic Supplies",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Dialysis Treatment",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Durable Medical Equipment",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+
+            {
+                "benefit_service": "Fibrocystic Breast Condition",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Foot Care (Medical)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Foot Care (Routine and Medical)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Hearing Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Hospice",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Inborn Errors of Metabolism",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Infertility",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Naprapath Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Nursery - Newborn Child Coverage",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Orthognathic Surgery",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Osteoporosis",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+
+
+            {
+                "benefit_service": "Pediatric Hearing Tests",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Pulmonary Therapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Radiation Therapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Vision Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Wigs",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+            {
+                "benefit_service": "Ambulance Service",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Anesthesia (Outpatient)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Assitant Surgeon (Outpatient)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Behavioral Health",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Crisis stabilization Unit",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Ambulance Service",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Anesthesia (Outpatient)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Assitant Surgeon (Outpatient)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Behavioral Health",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Electroconvulsive Therapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Emergency Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Emergency Medical Condition",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Emergency Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Emergency Transportation/Ambulance",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Extended Care Facility",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Hearing Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Imaging: High Cost Imaging",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Home Health Care / Coordinated Home Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Home Health Care Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Infusion Therapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Inhalation Therapy",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Maternity",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Medical",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Naprapath Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Nutritional Counseling",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Outpatient Habilitation Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Outpatient Reconstructive Surgery",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Outpatient Rehabilitation Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Outpatient Surgery",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Partial Hospitalization (Inpatient)",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Pediatric Services",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Prosthetic Devices",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Repetetive Transcranial Magnetic Stimulation",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "Urgent Care",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            },
+
+            {
+                "benefit_service": "X-rays and Diagnostic Tests",
+                "service1": {
+                    "copay": 600,
+                    "coins": "70%",
+                    "cost_share_applies": "Y"
+                },
+                "service2": {
+                    "copay": "100",
+                    "coins": "75%",
+                    "cost_share_applies": "Y"
+                }
+            }
+
+
+
+
+
+
+
+        ]
+    },
+    "pharmacy_data": {
+        "meta": {
+            "copay": "Copay",
+            "coins": "Coins"
+        },
+        "items": [{
+                "name": "Drug Plan Tier 1",
+                "pharmacy1": {
+                    "copay": 600,
+                    "coins": "70%"
+                },
+                "pharmacy2": {
+                    "copay": "100",
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 2",
+                "pharmacy1": {
+                    "copay": 40,
+                    "coins": ""
+                },
+                "pharmacy2": {
+                    "copay": "100",
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 3",
+                "pharmacy1": {
+                    "copay": 500,
+                    "coins": ""
+                },
+                "pharmacy2": {
+                    "copay": 1500,
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 4",
+                "pharmacy1": {
+                    "copay": 300,
+                    "coins": "70%"
+                },
+                "pharmacy2": {
+                    "copay": 1500,
+                    "coins": ""
+                }
+            },
+            {
+                "name": "Drug Plan Tier 5",
+                "pharmacy1": {
+                    "copay": 300,
+                    "coins": "50%"
+                },
+                "pharmacy2": {
+                    "copay": 1500,
+                    "coins": ""
+                }
+            }
+        ]
+    }
+}

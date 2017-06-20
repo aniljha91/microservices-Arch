@@ -1,0 +1,33 @@
+{
+    "result": {
+        "accumulatorINDeductAmount": 0.00,
+        "accumulatorINOpexAmount": 0.00,
+        "accumulatorONDeductAmount": 0.00,
+        "accumulatorONOpexAmount": 0.00,
+        "age": 18,
+        "billedAmount": 100.00,
+        "diagnosticCodeDesc": "Glaucoma",
+        "diagnosticCode": 462,
+        "isCoInsuranceAllowed": "N",
+        "isCoPayAllowed": "Y",
+        "isDeductableAllowed": "N",
+        "isIgnoreCostShare": "N",
+        "isNetwork": "IN",
+        "isServiceAllowed": "Y",
+        "memberId": 1,
+        "paidByCompanyInsuranceAmount": 0.00,
+        "patientCoInsuranceAmount": 0.00,
+        "patientCoPayAmount": 0.00,
+        "patientDeductableAmount": 0.00,
+        "planName": "193NA02",
+        "procedureCodeDesc": "Mid-level Outpatient Office Visit",
+        "procedureCode": 99213,
+        "serviceCode": 208,
+        "serviceName": "Acupunture",
+        "maximumAllowedAmount": 0.90,
+        "maxDeductableAmountAllowed": 1000.00,
+        "totalDeductableAmount": 0.00,
+        "coInsuranceAmount": 0.00,
+        "coPayAmount": 0.00
+    }
+}

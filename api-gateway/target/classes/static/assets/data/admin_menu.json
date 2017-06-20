@@ -1,0 +1,27 @@
+[
+    {
+        "name": "My Dashboard",
+        "isSubMenuVisible": false,
+        "icon": "ion-ios-clipboard",
+        "state": "admin.dashboard"
+    },
+    {
+        "name": "Admin Corporate Data",
+        "isSubMenuVisible": false,
+        "icon": "ion-md-clipboard",
+        "items": [
+            {
+                "name": "Manage Corporate Benefits List",
+                "state": "admin.corporateManageAdminPlan"
+            },
+            {
+                "name": "Manage Cost Accums",
+                "state": "admin.manageCostAccums"
+            },
+            {
+                "name": "Create Core Benefit Plan",
+                "state": "admin.createCoreBenefitPlan"
+            }
+        ]
+    }
+]

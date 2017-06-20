@@ -1,0 +1,68 @@
+[{
+        "name": "Injury of Cranial Nerve",
+        "proceduresList": [{
+            "id": 1,
+            "procCode": 11111,
+            "procName": "Inspection of Nose",
+            "diagCode": 111
+        }],
+        "id": 111
+    },
+    {
+        "name": "Other Bacterial Diseases",
+        "proceduresList": [{
+            "id": 5,
+            "procCode": 11111,
+            "procName": "Inspection of Nose",
+            "diagCode": 112
+        }],
+        "id": 112
+    },
+    {
+        "name": "Glaucoma",
+        "proceduresList": [{
+            "id": 7,
+            "procCode": 99213,
+            "procName": "Mid-level Outpatient Office Visit",
+            "diagCode": 462
+        }],
+        "id": 462
+    },
+    {
+        "name": "Pneumonia",
+        "proceduresList": [{
+            "id": 3,
+            "procCode": 99213,
+            "procName": "Mid-level Outpatient Office Visit",
+            "diagCode": 463
+        }],
+        "id": 463
+    },
+    {
+        "name": "Blindness",
+        "proceduresList": [{
+                "id": 4,
+                "procCode": 99811,
+                "procName": "Inspection of Diaphragm",
+                "diagCode": 464
+            },
+            {
+                "id": 6,
+                "procCode": 99213,
+                "procName": "Mid-level Outpatient Office Visit",
+                "diagCode": 464
+            }
+        ],
+        "id": 464
+    },
+    {
+        "name": "Influenza",
+        "proceduresList": [{
+            "id": 2,
+            "procCode": 88155,
+            "procName": "Inspection of Sinus",
+            "diagCode": 929
+        }],
+        "id": 929
+    }
+]

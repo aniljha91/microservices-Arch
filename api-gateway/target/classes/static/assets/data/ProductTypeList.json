@@ -1,0 +1,17 @@
+[
+    {
+        "ProductTypeID": "1",
+        "ProductTypeName": "EPO",
+        "ProductTypeDescription": "Individual"
+    },
+    {
+        "ProductTypeID": "2",
+        "ProductTypeName": "HMO",
+        "ProductTypeDescription": "HMO"
+    },
+    {
+        "ProductTypeID": "3",
+        "ProductTypeName": "PPO",
+        "ProductTypeDescription": "PPO"
+    }
+]

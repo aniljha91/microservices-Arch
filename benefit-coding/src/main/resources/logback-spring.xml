@@ -20,9 +20,9 @@
 	</appender>
 
 	<appender name="flatfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/var/log/tomcat8/${LOG_FILE}</file>
+		<file>${LOG_FILE}</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>/var/log/tomcat8/${LOG_FILE}.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.log</fileNamePattern>
 			<maxHistory>7</maxHistory>
 		</rollingPolicy>
 		<encoder>
@@ -32,9 +32,9 @@
 	</appender>
 	​
 	<appender name="logstash" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/var/log/tomcat8/${LOG_FILE}.json</file>
+		<file>${LOG_FILE}.json</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>/var/log/tomcat8/${LOG_FILE}.json.%d{yyyy-MM-dd}.gz</fileNamePattern>
+			<fileNamePattern>${LOG_FILE}.json.%d{yyyy-MM-dd}.gz</fileNamePattern>
 			<maxHistory>7</maxHistory>
 		</rollingPolicy>
 		<encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
