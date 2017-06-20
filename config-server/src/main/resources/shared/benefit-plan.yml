@@ -9,7 +9,7 @@ security:
     client:
       clientId: benefit-plan
       clientSecret: statistics
-      accessTokenUri: http://writer:writer@localhost:5000/uaa/oauth/token
+      accessTokenUri: http://writer:writer@ec2-34-212-49-187.us-west-2.compute.amazonaws.com:5000/uaa/oauth/token
       grant-type: client_credentials
       scope: server
       
