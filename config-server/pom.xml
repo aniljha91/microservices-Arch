@@ -74,8 +74,10 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.4.13</version>
 				<configuration>
-					<imageName>anil/${project.artifactId}</imageName>
+					<imageName>anil/configserver</imageName>
 					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+					<!-- <dockerHost></dockerHost>
+					<dockerCertPath></dockerCertPath> -->
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
