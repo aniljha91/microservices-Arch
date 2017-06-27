@@ -6,6 +6,8 @@ logging:
 spring:
   rabbitmq:
     host: rabbitmq
+  zipkin:
+    baseUrl: http://localhost:3333 
     
 ribbon:
   eureka:
