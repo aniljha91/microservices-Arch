@@ -24,14 +24,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/aniljha91/microservices-Arch/tree/Branch1
+          uri: https://github.com/aniljha91/microservices-Arch
           search-paths:
           - '/config-server/src/main/resources/shared'
           username: aniljha91
           password: Github_9791
-
-
-
 
 server:
   port: 8889
