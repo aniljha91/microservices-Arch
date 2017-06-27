@@ -30,9 +30,6 @@ spring:
           username: aniljha91
           password: Github_9791
 
-
-
-
 server:
   port: 8889
   
