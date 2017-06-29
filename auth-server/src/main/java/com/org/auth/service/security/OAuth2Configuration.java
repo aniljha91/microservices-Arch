@@ -1,4 +1,4 @@
-package com.org.auth.service.security;
+/*package com.org.auth.service.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -45,17 +45,18 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
 				.scopes("ui")
 		.and()
 				.withClient("benefit-plan")
-				.secret("statistics")
+				//.secret("statistics")
 				.autoApprove(true)
+				.accessTokenValiditySeconds(3600)
                 .authorities("READ", "WRITE")
-				.authorizedGrantTypes("client_credentials", "refresh_token")
+				.authorizedGrantTypes("implicit", "password","client_credentials", "refresh_token")
 				.scopes("server")
 		.and()
 				.withClient("benefitcoding-service")
-				.secret("groups")
+				//.secret("groups")
 				.autoApprove(true)
 				.accessTokenValiditySeconds(3600)
-                //.authorities("READ", "WRITE")
+                .authorities("READ", "WRITE")
 				.authorizedGrantTypes("implicit", "password","client_credentials", "refresh_token")
 				.scopes("server");
 		// @formatter:on
@@ -68,4 +69,4 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
 				.tokenEnhancer(jwtTokenEnhancer())
 				.authenticationManager(authenticationManager);
 	}
-}
+}*/

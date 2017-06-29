@@ -1,18 +1,14 @@
 package com.org.group.controller;
 
 import java.security.Principal;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -52,36 +48,25 @@ public class GroupController {
 		Group group = groupService.findByName(name);
 		return group.getName();
 	}
-
-	/*@RequestMapping(path = "/current", method = RequestMethod.PUT)
-	public void saveCurrentGroup(Principal principal, @Valid @RequestBody Group account) {
-		groupService.saveChanges(principal.getName(), account);
-	}
-
-	@RequestMapping(path = "/", method = RequestMethod.POST)
-	public Group createNewGroup(@Valid @RequestBody User user) {
-		return groupService.create(user);
-	}*/
 	
 	
-	@RequestMapping(path="/value",method = RequestMethod.GET)
+	@RequestMapping(path="/callService",method = RequestMethod.GET)
 	public @ResponseBody String getPortNumber()
 	{
-		HttpEntity<String> restRequest = new HttpEntity<String>(setAuthenticationInHeader());
-		ResponseEntity<String> result = restTemplate.exchange("http://BENEFIT-PLAN/statistics/plan", HttpMethod.GET, restRequest, String.class);
-		return  (String) " From BENEFIT-PLAN: " + port + result.getBody();
+		LOG.log(Level.INFO, "Inside Benefit-coding callService");
+		String result = restTemplate.getForObject("http://BENEFIT-PLAN/statistics/plan", String.class);
+		long range = 1234567L;
+		Random r = new Random();
+		long number = (long)(r.nextDouble()*range);
+		
+		StringBuilder finalResponse = new StringBuilder();
+		finalResponse.append("Called Benefit coding : "+ number);
+		finalResponse.append("    ::   ");
+		finalResponse.append("Instance used of BENEFIT-CODING is running on Port :"+ port);
+		finalResponse.append("    ::   ");
+		finalResponse.append("And Internally called BENEFIT_PLAN Service, "+result);
+		LOG.log(Level.INFO, finalResponse.toString());
+		return finalResponse.toString();
 	}
-	
-	private HttpHeaders setAuthenticationInHeader(){
-		String plainCreds = "user:statistics";
-		byte[] plainCredsBytes = plainCreds.getBytes();
-		byte[] base64CredsBytes = Base64.encodeBase64(plainCredsBytes);
-		String base64Creds = new String(base64CredsBytes);
-		HttpHeaders headers = new HttpHeaders();
-		headers.add("Authorization", "Basic " + base64Creds);
-		return headers;
-	}
-	
-	
 	
 }

@@ -3,8 +3,6 @@ package com.org.auth.controller;
 import java.security.InvalidKeyException;
 import java.security.SignatureException;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -42,22 +40,22 @@ public class AuthController {
 	}
 
 	@RequestMapping(value = "/verifyToken", method = RequestMethod.GET, consumes="text/plain")
-	public @ResponseBody Boolean validateToken(@RequestBody HttpServletRequest request) throws InvalidKeyException {
-		return jwtTokenUtil.validateToken(extractTokenFromRequestHeader(request));
+	public @ResponseBody Boolean validateToken(@RequestBody String token) throws InvalidKeyException {
+		return jwtTokenUtil.validateToken(token);
 	}
 	
 	@RequestMapping(value = "/refreshToken", method = RequestMethod.GET, consumes="text/plain")
-	public @ResponseBody String refreshToken(@RequestBody HttpServletRequest request) throws Exception {
-		return jwtTokenUtil.refreshToken(extractTokenFromRequestHeader(request));
+	public @ResponseBody String refreshToken(@RequestBody String token) throws Exception {
+		return jwtTokenUtil.refreshToken(token);
 	}
 	
 	@RequestMapping(value = "/returnTokenClaims", method = RequestMethod.GET, produces="application/json", consumes="text/plain")
-	public @ResponseBody Claims returnTokenClaims(@RequestBody HttpServletRequest request) throws InvalidKeyException {
-		return jwtTokenUtil.getClaimsFromToken(extractTokenFromRequestHeader(request));
+	public @ResponseBody Claims returnTokenClaims(@RequestBody String token) throws InvalidKeyException {
+		return jwtTokenUtil.getClaimsFromToken(token);
 	}
-	
+/*	
 	private String extractTokenFromRequestHeader(HttpServletRequest request){
 		String header = request.getHeader(this.tokenHeader);
 		return header;
-	}
+	}*/
 }

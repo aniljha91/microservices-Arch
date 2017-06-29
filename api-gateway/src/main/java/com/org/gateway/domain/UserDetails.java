@@ -1,4 +1,4 @@
-package com.org.gateway.domain;
+/*package com.org.gateway.domain;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -80,3 +80,4 @@ public class UserDetails implements Serializable{
 	private boolean enabled;
 
 }
+*/

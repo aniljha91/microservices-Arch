@@ -1,6 +1,6 @@
 package com.org.gateway.domain;
 
-public class Error {
+public class ErrorDetails {
 
 	private String errorCode;
 	private String errorDesc;

@@ -9,8 +9,6 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
 import org.springframework.context.annotation.Bean;
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
@@ -18,8 +16,6 @@ import org.springframework.web.client.RestTemplate;
 @EnableHystrix
 @RefreshScope
 @EnableCircuitBreaker
-@EnableGlobalMethodSecurity(prePostEnabled = true)
-@EnableOAuth2Client
 public class BenefitPlanApplication{
 
 	public static void main(String[] args) {

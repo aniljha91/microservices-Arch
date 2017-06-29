@@ -1,4 +1,4 @@
-package com.org.benefitplan.service.security;
+/*package com.org.benefitplan.service.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -39,4 +39,4 @@ public class JwtConfiguration {
         converter.setVerifierKey(publicKey);
         return converter;
     }
-}
+}*/
