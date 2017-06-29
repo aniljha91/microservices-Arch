@@ -39,17 +39,17 @@ public class AuthController {
 		return null;
 	}
 
-	@RequestMapping(value = "/verifyToken", method = RequestMethod.GET, consumes="text/plain")
+	@RequestMapping(value = "/verifyToken", method = RequestMethod.POST, consumes="text/plain")
 	public @ResponseBody Boolean validateToken(@RequestBody String token) throws InvalidKeyException {
 		return jwtTokenUtil.validateToken(token);
 	}
 	
-	@RequestMapping(value = "/refreshToken", method = RequestMethod.GET, consumes="text/plain")
+	@RequestMapping(value = "/refreshToken", method = RequestMethod.POST, consumes="text/plain")
 	public @ResponseBody String refreshToken(@RequestBody String token) throws Exception {
 		return jwtTokenUtil.refreshToken(token);
 	}
 	
-	@RequestMapping(value = "/returnTokenClaims", method = RequestMethod.GET, produces="application/json", consumes="text/plain")
+	@RequestMapping(value = "/returnTokenClaims", method = RequestMethod.POST, produces="application/json", consumes="text/plain")
 	public @ResponseBody Claims returnTokenClaims(@RequestBody String token) throws InvalidKeyException {
 		return jwtTokenUtil.getClaimsFromToken(token);
 	}
