@@ -2,49 +2,20 @@ zuul:
   routes:
     auth-server:
         path: /uaa/**
-        url: http://ec2-34-212-49-187.us-west-2.compute.amazonaws.com:5000
-        password: writer
-        username: writer
+        #url: http://ec2-34-212-49-187.us-west-2.compute.amazonaws.com:5000
         stripPrefix: false
         sensitiveHeaders:
+        serviceId: auth-server
     benefitcoding-service:
         path: /groups/**
-        password: groups
-        username: user
         stripPrefix: false
         sensitiveHeaders:
         serviceId: benefitcoding-service
     benefit-plan:
         path: /statistics/**
-        password: statistics
-        username: user
         stripPrefix: false
         sensitiveHeaders:
         serviceId: benefit-plan
        
 server:
   port: 4000
-  
-ribbon:
-  eureka:
-    enabled: true
-    ReadTimeout: 20000
-    ConnectTimeout: 20000
-            
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://ec2-34-212-49-187.us-west-2.compute.amazonaws.com:8762/eureka/
-     
-      
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000      
-            
-security:
-  user: 
-    password: gateway
