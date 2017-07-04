@@ -12,19 +12,20 @@
 	<description>CCSP Config Server</description>
 
 	<parent>
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-parent</artifactId>
-		<version>Dalston.SR1</version>
-		<!-- <version>${spring-cloud.version}</version> -->
-
-		<relativePath /> <!-- lookup parent from repository -->
+		<groupId>com.org.micro</groupId>
+		<artifactId>org-microservice-parent</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
 	</parent>
+
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
+		<spring-cloud.version>Dalston.SR1</spring-cloud.version>
+		<build.version>0.1.0-SNAPSHOT</build.version>
+		
 	</properties>
 
 	<dependencies>
@@ -67,6 +68,9 @@
 		</dependencies>
 	</dependencyManagement>
 
+
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -80,6 +84,8 @@
 				<configuration>
 					<imageName>aniljha/${project.name}</imageName>
 					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+					<dockerHost>https://172.22.38.167:2376</dockerHost>
+					<dockerCertPath>C:\Users\bsakariboina\.docker\machine\certs</dockerCertPath>
 					<!-- <dockerHost></dockerHost>
 					<dockerCertPath></dockerCertPath> -->
 					<resources>

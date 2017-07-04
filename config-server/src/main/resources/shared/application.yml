@@ -39,3 +39,16 @@ hystrix:
   config:
     stream:
       maxConcurrentConnections: 20
+      
+      
+#swagger
+swagger:
+  title: You have swagger!
+  description: Swagger Page
+  #version: {build.version}
+  termsOfServiceUrl: https://localhost:8080/TnC
+  contact:
+      name:
+      url: https://localhost:8080/contactInfo
+      email:
+  licenseUrl: https://localhost:8080/PrototypeLicense      
