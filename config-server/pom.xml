@@ -84,8 +84,6 @@
 				<configuration>
 					<imageName>aniljha/${project.name}</imageName>
 					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
-					<dockerHost>https://172.22.38.167:2376</dockerHost>
-					<dockerCertPath>C:\Users\bsakariboina\.docker\machine\certs</dockerCertPath>
 					<!-- <dockerHost></dockerHost>
 					<dockerCertPath></dockerCertPath> -->
 					<resources>
