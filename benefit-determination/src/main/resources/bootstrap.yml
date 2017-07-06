@@ -1,6 +1,6 @@
 spring:
   application:
-    name: benefit-plan
+    name: benefit-determination
   cloud:
     config:
       uri: http://ec2-34-212-49-187.us-west-2.compute.amazonaws.com:8889
