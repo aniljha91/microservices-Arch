@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.ccsp.model.PlanServiceEntity;
+import com.ccsp.entity.PlanServiceEntity;
 
 public interface PlanServiceRepository extends JpaRepository<PlanServiceEntity, Integer> {
 	

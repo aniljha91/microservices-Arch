@@ -3,7 +3,7 @@ package com.ccsp.service;
 import java.util.List;
 
 import com.ccsp.dto.EditPlanService;
-import com.ccsp.model.PlanServiceEntity;
+import com.ccsp.entity.PlanServiceEntity;
 
 public interface PlanService {
 	

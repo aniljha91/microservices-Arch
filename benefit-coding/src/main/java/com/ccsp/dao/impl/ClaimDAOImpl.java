@@ -5,12 +5,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.ccsp.dao.ClaimDAO;
-import com.ccsp.dao.UserDAO;
-import com.ccsp.dao.UserMapper;
 import com.ccsp.dto.ClaimRequest;
 import com.ccsp.model.Claim;
-import com.ccsp.model.User;
-import com.ccsp.utils.QueryConstant;
 
 @Repository
 public class ClaimDAOImpl  implements ClaimDAO {

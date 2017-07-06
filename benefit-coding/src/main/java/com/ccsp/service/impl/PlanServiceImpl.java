@@ -10,8 +10,8 @@ import com.ccsp.dao.PlanDAO;
 import com.ccsp.dao.PlanServiceRepository;
 import com.ccsp.dao.ServiceRulesRepository;
 import com.ccsp.dto.EditPlanService;
+import com.ccsp.entity.PlanServiceEntity;
 import com.ccsp.entity.ServiceRules;
-import com.ccsp.model.PlanServiceEntity;
 import com.ccsp.service.PlanService;
 
 @Service("planService")

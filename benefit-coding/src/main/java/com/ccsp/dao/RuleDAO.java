@@ -1,6 +1,6 @@
 package com.ccsp.dao;
 
-import com.ccsp.model.PlanServiceEntity;
+import com.ccsp.entity.PlanServiceEntity;
 
 public interface RuleDAO {
 	

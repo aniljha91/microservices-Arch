@@ -1,7 +1,7 @@
 package com.ccsp.utils;
 
+import com.ccsp.entity.PlanServiceEntity;
 import com.ccsp.model.Claim;
-import com.ccsp.model.PlanServiceEntity;
 
 public class RuleServiceUtil {
 	

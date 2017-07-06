@@ -24,14 +24,3 @@ refreshParameter: BenefitCodingBeforeRefresh
     service: com.ccsp.service.MajorService
   111: 
     service: com.ccsp.service.MinorService
-
-#Spring JPA
-spring: 
-  jpa: 
-    show-sql: true
-    properties: 
-      hibernate: 
-        format_sql: false
-    hibernate:  
-      naming: 
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

@@ -6,7 +6,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
@@ -28,7 +27,6 @@ import io.swagger.annotations.ApiResponses;
 @RestController
 @RefreshScope
 @Configuration
-//@Api(value="groups")
 public class GroupController {
 
 	@Autowired
@@ -36,9 +34,6 @@ public class GroupController {
 	
 	@Autowired
 	private RestTemplate restTemplate;
-	
-	@Value("${server.port}")
-	private int port;
 
 	private static final Logger LOG = Logger.getLogger(GroupController.class.getName());
 	
@@ -74,7 +69,7 @@ public class GroupController {
 		StringBuilder finalResponse = new StringBuilder();
 		finalResponse.append("Called Benefit coding : "+ number);
 		finalResponse.append("    ::   ");
-		finalResponse.append("Instance used of BENEFIT-CODING is running on Port :"+ port);
+		finalResponse.append("Instance used of BENEFIT-CODING is running.");
 		finalResponse.append("    ::   ");
 		finalResponse.append("And Internally called BENEFIT_PLAN Service, "+result);
 		LOG.log(Level.INFO, finalResponse.toString());

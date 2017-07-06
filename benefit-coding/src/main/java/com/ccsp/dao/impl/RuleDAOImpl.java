@@ -9,7 +9,7 @@ import javax.persistence.Query;
 import org.springframework.stereotype.Repository;
 
 import com.ccsp.dao.RuleDAO;
-import com.ccsp.model.PlanServiceEntity;
+import com.ccsp.entity.PlanServiceEntity;
 
 @Repository
 public class RuleDAOImpl implements RuleDAO{

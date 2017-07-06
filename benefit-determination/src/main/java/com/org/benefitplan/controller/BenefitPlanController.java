@@ -30,9 +30,6 @@ public class BenefitPlanController {
 	/*@Autowired
 	private RestTemplate restTemplate;*/
 	
-	@Value("${server.port}")
-	private int port;
-	
 	@Value("${refreshParameter}")
 	private String testVal;
 
@@ -76,8 +73,8 @@ public class BenefitPlanController {
 	@RequestMapping(path="/plan",method = RequestMethod.GET)
 	public @ResponseBody String getPortNumber()
 	{
-		LOG.log(Level.INFO, " Instance used of BENEFIT-PLAN is running on Port : " + port);
-		return  (String) " Instance used of BENEFIT-PLAN is running on Port : " + port;
+		LOG.log(Level.INFO, " Instance used of BENEFIT-PLAN is running on Port : " );
+		return  (String) " Instance used of BENEFIT-PLAN is running on Port : ";
 	}
 	
 }

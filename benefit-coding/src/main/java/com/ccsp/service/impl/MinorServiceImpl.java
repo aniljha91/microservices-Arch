@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 
 import com.ccsp.dao.PlanDAO;
 import com.ccsp.dao.RuleDAO;
+import com.ccsp.entity.PlanServiceEntity;
 import com.ccsp.model.Claim;
-import com.ccsp.model.PlanServiceEntity;
 import com.ccsp.service.MinorService;
 import com.ccsp.utils.RuleServiceUtil;
 import com.ccsp.utils.SerialUtils;

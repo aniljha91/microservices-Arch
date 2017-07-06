@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "proc_diag_details", schema = "dbo", catalog = "ccsp")
+@Table(name = "proc_diag_details")
 public class ProcDiagDetails implements java.io.Serializable {
 
 
