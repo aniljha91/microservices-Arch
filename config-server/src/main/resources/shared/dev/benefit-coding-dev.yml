@@ -1,0 +1,26 @@
+server:
+  contextPath: /groups
+  port: 6000
+
+refreshParameter: BenefitCodingBeforeRefresh
+
+
+88155: 
+  929:
+    service: com.ccsp.service.RuleService
+99213: 
+  463: 
+    service: com.ccsp.service.SpecialistVisitRuleService
+  464: 
+    service: com.ccsp.service.MRIService
+  462:
+    service: com.ccsp.service.officeVisitService
+
+99811: 
+  464: 
+    service: com.ccsp.service.ERService
+11111:  
+  112:  
+    service: com.ccsp.service.MajorService
+  111: 
+    service: com.ccsp.service.MinorService
