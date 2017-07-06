@@ -1,4 +1,4 @@
-/*package com.org;
+/*package com.ccsp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

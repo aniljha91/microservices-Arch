@@ -1,4 +1,4 @@
-/*package com.org.group.repository;
+/*package com.ccsp.group.repository;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,12 +12,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.org.BenefitCodingApplication;
-import com.org.group.domain.Contract;
-import com.org.group.domain.Group;
-import com.org.group.domain.GroupType;
-import com.org.group.domain.Item;
-import com.org.group.domain.TimePeriod;
+import com.ccsp.BenefitCodingApplication;
+import com.ccsp.group.domain.Contract;
+import com.ccsp.group.domain.Group;
+import com.ccsp.group.domain.GroupType;
+import com.ccsp.group.domain.Item;
+import com.ccsp.group.domain.TimePeriod;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebMvcTest(BenefitCodingApplication.class)

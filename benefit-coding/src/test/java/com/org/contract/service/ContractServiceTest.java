@@ -1,4 +1,4 @@
-/*package com.org.contract.service;
+/*package com.ccsp.service.contract;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
@@ -12,13 +12,13 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
-import com.org.group.domain.Contract;
-import com.org.group.domain.Group;
-import com.org.group.domain.GroupType;
-import com.org.group.domain.Item;
-import com.org.group.domain.TimePeriod;
-import com.org.group.domain.User;
-import com.org.group.repository.ContractRepository;
+import com.ccsp.group.domain.Contract;
+import com.ccsp.group.domain.Group;
+import com.ccsp.group.domain.GroupType;
+import com.ccsp.group.domain.Item;
+import com.ccsp.group.domain.TimePeriod;
+import com.ccsp.group.domain.User;
+import com.ccsp.group.repository.ContractRepository;
 
 public class ContractServiceTest {
 
