@@ -34,7 +34,7 @@
 		<module>api-gateway</module>
 		<module>auth-server</module>
 		<module>benefit-coding</module>
-		<module>benefit-plan</module>
+		<module>benefit-determination</module>
 		<module>hystrix-monitoring</module>
 	</modules>
 

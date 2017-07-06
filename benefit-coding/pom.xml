@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.org</groupId>
-	<artifactId>benefitcoding-service</artifactId>
+	<artifactId>benefit-coding</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>benefitcoding-service</name>
+	<name>benefit-coding</name>
 	<description>CCSP benefit coding</description>
 
 	<parent>
@@ -16,8 +16,6 @@
 		<artifactId>org-microservice-parent</artifactId>
 		<version>0.1.0-SNAPSHOT</version>
 	</parent>
-
-
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
