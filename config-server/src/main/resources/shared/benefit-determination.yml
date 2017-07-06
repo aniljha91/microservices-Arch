@@ -1,4 +1,0 @@
-server:
-  contextPath: /determine
-      
-refreshParameter: AfterConfigRefresh
