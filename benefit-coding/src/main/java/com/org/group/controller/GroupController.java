@@ -20,10 +20,15 @@ import org.springframework.web.client.RestTemplate;
 import com.org.group.domain.Group;
 import com.org.group.service.GroupService;
 
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+
 @Component
 @RestController
 @RefreshScope
 @Configuration
+//@Api(value="groups")
 public class GroupController {
 
 	@Autowired
@@ -42,7 +47,7 @@ public class GroupController {
 		return groupService.findByName(principal.getName());
 	}
 
-	@RequestMapping(path = "/{name}", method = RequestMethod.GET)
+	@RequestMapping(path = "/simple/{name}", method = RequestMethod.GET)
 	public String getTestResults(@PathVariable String name) throws Exception {
 		LOG.log(Level.INFO, "calling getTestResult");
 		Group group = groupService.findByName(name);
@@ -51,6 +56,13 @@ public class GroupController {
 	
 	
 	@RequestMapping(path="/callService",method = RequestMethod.GET)
+	@ApiOperation(value="callService", nickname="generic", response=String.class)
+	@ApiResponses(value = {
+			@ApiResponse(code = 200, message = "Success", response = String.class),
+			@ApiResponse(code = 400, message = "Bad Request"),
+			@ApiResponse(code = 415, message = "Unsupported Media Type"),
+			@ApiResponse(code = 500, message = "Internal Server Error")
+	})
 	public @ResponseBody String getPortNumber()
 	{
 		LOG.log(Level.INFO, "Inside Benefit-coding callService");
