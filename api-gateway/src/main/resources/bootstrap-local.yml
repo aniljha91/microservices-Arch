@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: api-gateway
+  profiles: 
+     active: local   
+  cloud:
+    config:
+      uri: http://localhost:8889
+      fail-fast: true
+      password: password
+      username: user
+jwt:
+  header: Bearer
