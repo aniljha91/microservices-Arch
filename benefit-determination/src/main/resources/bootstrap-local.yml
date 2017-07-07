@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: benefit-determination
+  profiles: 
+     active: local 
+  cloud:
+    config:
+      uri: http://localhost:8889
+      fail-fast: true
+      password: password
+      username: user
+      
+management:
+  security:
+    enabled: false
