@@ -27,8 +27,6 @@ public class StateList implements java.io.Serializable {
   }
 
   @Id
-
-
   @Column(name = "StateId", unique = true, nullable = false)
   public int getStateId() {
     return this.stateId;

@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: service-registry
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: bsakariboina
+Built-By: aniljha
 Implementation-Vendor-Id: com.org
-Build-Jdk: 1.8.0_65
+Build-Jdk: 1.8.0_131
 Implementation-URL: http://projects.spring.io/spring-boot/service-regi
  stry/
 Created-By: Maven Integration for Eclipse

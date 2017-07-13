@@ -22,6 +22,7 @@ import com.ccsp.entity.ProcCodeDiagCodeList;
 import com.ccsp.entity.ProductTypeList;
 import com.ccsp.entity.StateBenefitServiceList;
 import com.ccsp.entity.StateList;
+import java.util.List;
 
 public interface MasterService {
 
@@ -121,5 +122,7 @@ public interface MasterService {
 	void deletePharmaCategory(Integer pharmacyCategoryId);
 
 	void deleteGroupType(Integer groupTypeId);
+
+	List<MarketingPlan> getMarketingPlan();
 
 }

@@ -1,10 +1,11 @@
 package com.ccsp.dao;
 
-import com.ccsp.model.User;
+import java.util.List;
 
-@FunctionalInterface
+import com.ccsp.entity.User;
+
 public interface UserDAO {
 
-	User findById(String userName);
+	List<User> findById();
 
 }

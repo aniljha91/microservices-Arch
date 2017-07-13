@@ -1,8 +1,7 @@
 spring:
   application:
     name: hystrix-monitoring
-  profiles: 
-     actibe: local 
+
   cloud:
     config:
       uri: http://localhost:8889

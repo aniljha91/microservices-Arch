@@ -1,6 +1,7 @@
 package com.ccsp.service.impl;
 
 import java.security.SecureRandom;
+import java.util.List;
 
 import javax.annotation.Resource;
 
@@ -222,6 +223,11 @@ public class MasterServiceImpl implements MasterService {
 		byte[] b = id.getBytes();
 		plan.setNodeId(b);
 		marketingPlanRepository.save(plan);
+	}
+	
+	@Override
+	public List<MarketingPlan> getMarketingPlan() {
+		return marketingPlanRepository.findAll();
 	}
 
 	@Override

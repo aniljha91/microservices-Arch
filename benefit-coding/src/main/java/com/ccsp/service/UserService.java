@@ -1,11 +1,11 @@
 package com.ccsp.service;
 
-import com.ccsp.model.User;
+import java.util.List;
 
+import com.ccsp.entity.User;
 
-@FunctionalInterface
 public interface UserService {
 	
-	User findById(String userName);
+	List<User> findById();
 	
 }

@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: hystrix-monitoring
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: rohchoudhary
+Built-By: aniljha
 Implementation-Vendor-Id: com.org
 Build-Jdk: 1.8.0_131
 Implementation-URL: http://projects.spring.io/spring-boot/hystrix-moni

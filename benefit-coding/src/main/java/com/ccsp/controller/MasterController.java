@@ -1,10 +1,10 @@
 package com.ccsp.controller;
 
-import java.security.SecureRandom;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,8 +38,7 @@ import com.ccsp.entity.StateList;
 import com.ccsp.service.MasterService;
 import com.ccsp.utils.UIConstants;
 
-
-
+import net.minidev.json.parser.ParseException;
 
 @RestController
 public class MasterController {
@@ -400,6 +399,33 @@ public class MasterController {
     	
     }
     
+    @RequestMapping(value = UIConstants.MARKETING_PLAN, method = RequestMethod.GET, produces="application/json")
+    @ResponseBody
+    public List<com.ccsp.model.MarketingPlan> getMarketingPlan() throws ParseException {
+      log.info("enters into getMarketingPlan");
+      List<com.ccsp.model.MarketingPlan> marketResponseList = new ArrayList<com.ccsp.model.MarketingPlan>();
+      List<MarketingPlan> daoResponse =  masterService.getMarketingPlan();
+      for(MarketingPlan plan : daoResponse){
+    	  com.ccsp.model.MarketingPlan marketResponse = new com.ccsp.model.MarketingPlan();
+    	  marketResponse.setNodeId(String.valueOf(plan.getMktPlanId()));
+    	  marketResponse.setNodeLevel(plan.getNodeLevel());
+    	  marketResponse.setAdminPlanId(plan.getAdminPlanId());
+    	  marketResponse.setMktPlanId(plan.getMktPlanId());
+    	  marketResponse.setMktPlanName(plan.getMktPlanName());
+    	  marketResponse.setMktPlanEffectiveDate(plan.getMktPlanEffectiveDate());
+    	  marketResponse.setMktPlanExpirationDate(plan.getMktPlanExpirationDate());
+    	  marketResponse.setMktPlanType(plan.getMktPlanType());
+    	  marketResponse.setMktPlanCoverage(plan.getMktPlanCoverage());
+    	  marketResponse.setMktPlanNetworkName(plan.getMktPlanNetworkName());
+    	  marketResponse.setMktPlanFormulary(plan.getMktPlanFormulary());
+    	  marketResponse.setMktPlanCurrentOrProposed(plan.getMktPlanCurrentOrProposed());
+    	  marketResponse.setMktPlanStateName(plan.getMktPlanStateName());
+    	  marketResponse.setMktPlanHsaeligible(plan.getMktPlanHsaeligible());
+    	  marketResponseList.add(marketResponse);
+      }
+      return marketResponseList;
+    }
+    
     
     /* edited by vishal gurung*/
 	/** NetworkNameList*/
@@ -614,22 +640,5 @@ public class MasterController {
 		response.setStatus(HttpStatusCode.Success);
 		return response;
 
-	}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-  
+	} 
 }

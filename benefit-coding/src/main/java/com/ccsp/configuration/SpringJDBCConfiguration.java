@@ -30,7 +30,6 @@ public class SpringJDBCConfiguration {
     @Bean
     public UserDAO userDAO(){
         UserDAOImpl userDao = new UserDAOImpl();
-        userDao.setJdbcTemplate(jdbcTemplate());
         return userDao;
     }
     
