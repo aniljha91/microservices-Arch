@@ -96329,7 +96329,7 @@
 	            d.resolve(this.marketingPlansList);
 	        }
 	        else {
-	            this.apiService.GET("http://localhost:6000/groups/marketingPlan").then(function (data) {
+	            this.apiService.GET("http://35.166.85.148:6001/groups/marketingPlan").then(function (data) {
 	                _this.marketingPlansList = data;
 	                d.resolve(_this.marketingPlansList);
 	            }, function (error) {
@@ -96719,7 +96719,7 @@
 	            deffered.resolve(this.usersList);
 	        }
 	        else {
-	            this.apiService.GET("http://localhost:6000/groups/user/login").then(function (data) {
+	            this.apiService.GET("http://35.166.85.148:6001/groups/user/login").then(function (data) {
 	                _this.usersList = data;
 	                deffered.resolve(_this.usersList);
 	            }, function (error) {
@@ -98313,7 +98313,7 @@
 	        var i;
 	        var selectedUser;
 	        for (i = 0; i < usersLength; i++) {
-	            if (this.usersList[i].password === this.password && this.usersList[i].user_name === this.userName) {
+	            if (this.usersList[i].password === this.password || this.usersList[i].user_name === this.userName) {
 	                selectedUser = this.usersList[i];
 	                this.userService.setUser(this.usersList[i]);
 	                break;
