@@ -109,7 +109,7 @@
   </wsdl:binding>
   <wsdl:service name="MinorsurgeryoperationDecisionService">
     <wsdl:port binding="dstns:MinorsurgeryclaimdeployMinorsurgeryoperationBinding" name="MinorsurgeryclaimdeployMinorsurgeryoperationPort">
-      <soap:address location="http://localhost:9081/DecisionService/ws/minorsurgeryclaimdeploy/minorsurgeryoperation/v75"/>
+      <soap:address location="http://35.165.45.103:9080/DecisionService/ws/minorsurgeryclaimdeploy/minorsurgeryoperation/v75"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

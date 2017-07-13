@@ -107,7 +107,7 @@
   </wsdl:binding>
   <wsdl:service name="TestServiceOperationDecisionService">
     <wsdl:port binding="dstns:TestServiceDeployTestServiceOperationBinding" name="TestServiceDeployTestServiceOperationPort">
-      <soap:address location="http://localhost:9080/DecisionService/ws/TestServiceDeploy/TestServiceOperation/v75"/>
+      <soap:address location="http://35.165.45.103:9080/DecisionService/ws/TestServiceDeploy/TestServiceOperation/v75"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

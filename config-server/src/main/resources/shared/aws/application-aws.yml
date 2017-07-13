@@ -46,9 +46,9 @@ swagger:
   title: You have swagger!
   description: Swagger Page
   #version: {build.version}
-  termsOfServiceUrl: https://localhost:8080/TnC
+  termsOfServiceUrl: 
   contact:
       name:
-      url: https://localhost:8080/contactInfo
+      url: 
       email:
-  licenseUrl: https://localhost:8080/PrototypeLicense      
+  licenseUrl:      

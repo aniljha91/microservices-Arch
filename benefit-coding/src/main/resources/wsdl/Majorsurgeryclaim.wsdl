@@ -109,7 +109,7 @@
   </wsdl:binding>
   <wsdl:service name="MajorsurgeryoperationDecisionService">
     <wsdl:port binding="dstns:MajorsurgeryclaimdeployMajorsurgeryoperationBinding" name="MajorsurgeryclaimdeployMajorsurgeryoperationPort">
-      <soap:address location="http://localhost:9081/DecisionService/ws/majorsurgeryclaimdeploy/majorsurgeryoperation/v75"/>
+      <soap:address location="http://35.165.45.103:9080/DecisionService/ws/majorsurgeryclaimdeploy/majorsurgeryoperation/v75"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

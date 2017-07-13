@@ -109,7 +109,7 @@
   </wsdl:binding>
   <wsdl:service name="ErclaimoperationDecisionService">
     <wsdl:port binding="dstns:ErclaimdeployErclaimoperationBinding" name="ErclaimdeployErclaimoperationPort">
-      <soap:address location="http://localhost:9081/DecisionService/ws/erclaimdeploy/erclaimoperation/v75"/>
+      <soap:address location="http://35.165.45.103:9080/DecisionService/ws/erclaimdeploy/erclaimoperation/v75"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

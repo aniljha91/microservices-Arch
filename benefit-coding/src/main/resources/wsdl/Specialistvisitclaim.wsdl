@@ -109,7 +109,7 @@
   </wsdl:binding>
   <wsdl:service name="SpecialistvisitclaimoperationDecisionService">
     <wsdl:port binding="dstns:SpecialistvisitclaimdeploySpecialistvisitclaimoperationBinding" name="SpecialistvisitclaimdeploySpecialistvisitclaimoperationPort">
-      <soap:address location="http://localhost:9081/DecisionService/ws/specialistvisitclaimdeploy/specialistvisitclaimoperation/v75"/>
+      <soap:address location="http://35.165.45.103:9080/DecisionService/ws/specialistvisitclaimdeploy/specialistvisitclaimoperation/v75"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

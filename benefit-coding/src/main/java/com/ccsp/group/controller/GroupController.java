@@ -1,5 +1,7 @@
 package com.ccsp.group.controller;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.security.Principal;
 import java.util.Random;
 import java.util.logging.Level;
@@ -58,10 +60,10 @@ public class GroupController {
 			@ApiResponse(code = 415, message = "Unsupported Media Type"),
 			@ApiResponse(code = 500, message = "Internal Server Error")
 	})
-	public @ResponseBody String getPortNumber()
+	public @ResponseBody String getPortNumber() throws UnknownHostException
 	{
 		LOG.log(Level.INFO, "Inside Benefit-coding callService");
-		String result = restTemplate.getForObject("http://BENEFIT-PLAN/statistics/plan", String.class);
+		String result = restTemplate.getForObject("http://BENEFIT-DETERMINATION/statistics/plan", String.class);
 		long range = 1234567L;
 		Random r = new Random();
 		long number = (long)(r.nextDouble()*range);
@@ -69,7 +71,7 @@ public class GroupController {
 		StringBuilder finalResponse = new StringBuilder();
 		finalResponse.append("Called Benefit coding : "+ number);
 		finalResponse.append("    ::   ");
-		finalResponse.append("Instance used of BENEFIT-CODING is running.");
+		finalResponse.append("Instance used of BENEFIT-CODING is running on host :"+ InetAddress.getLocalHost().getHostName());
 		finalResponse.append("    ::   ");
 		finalResponse.append("And Internally called BENEFIT_PLAN Service, "+result);
 		LOG.log(Level.INFO, finalResponse.toString());
