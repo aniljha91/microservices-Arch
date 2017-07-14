@@ -3,8 +3,8 @@ server:
 
 turbine:
   aggregator:
-    clusterConfig: BENEFIT-PLAN,BENEFITCODING-SERVICE
-  appConfig: benefit-plan,benefitcoding-service
+    clusterConfig: BENEFIT-DETERMINATION,BENEFIT-CODING
+  appConfig: benefit-determination,benefit-coding
   instanceUrlSuffix:
-    BENEFIT-PLAN: statistics/hystrix.stream
-    BENEFITCODING-SERVICE: groups/hystrix.stream
+    BENEFIT-DETERMINATION: determine/hystrix.stream
+    BENEFIT-CODING: groups/hystrix.stream

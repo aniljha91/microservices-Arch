@@ -29,8 +29,8 @@ public class ERServiceImpl implements ERService {
 	public  com.ibm.rules.decisionservice.erclaimdeploy.erclaimoperation.Claim getClaim(Claim claim) throws ErclaimoperationSoapFault{
 		RuleServiceUtil ruleServiceUtil = new RuleServiceUtil();
 		PlanServiceEntity ruleEntity = ruleDAO.getServiceRule(claim.getPlanId(), "ER");
-		double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
-		ruleServiceUtil.prepareClaim(claim, ruleEntity,amount);
+		//double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
+		ruleServiceUtil.prepareClaim(claim, ruleEntity,1200);
 		ErclaimoperationRequest erclaimoperationRequest = new ErclaimoperationRequest();
 		ErclaimoperationDecisionService_Service ss = new ErclaimoperationDecisionService_Service();
 		ErclaimoperationDecisionService service = ss.getErclaimdeployErclaimoperationPort();
@@ -41,7 +41,7 @@ public class ERServiceImpl implements ERService {
 		claimParam.setClaim(serviceClaim);
 		erclaimoperationRequest.setClaim(claimParam);
 		ErclaimoperationResponse response = service.erclaimoperation(erclaimoperationRequest);
-		planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
+		//planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
 		return response.getClaim().getClaim();
 	}
 

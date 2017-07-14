@@ -29,8 +29,8 @@ public class MRIServiceImpl implements MRIService {
 	public  com.ibm.rules.decisionservice.mriclaimdeploy.mriclaimoperation.Claim getClaim(Claim claim) throws MriclaimoperationSoapFault{
 		RuleServiceUtil ruleServiceUtil = new RuleServiceUtil();
 		PlanServiceEntity ruleEntity = ruleDAO.getServiceRule(claim.getPlanId(), "MRI");
-		double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
-		ruleServiceUtil.prepareClaim(claim, ruleEntity,amount);
+		//double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
+		ruleServiceUtil.prepareClaim(claim, ruleEntity,1200);
 		MriclaimoperationRequest mriClaimRequest = new MriclaimoperationRequest();
 		MriclaimoperationDecisionService_Service ss = new MriclaimoperationDecisionService_Service();
 		com.ibm.rules.decisionservice.mriclaimdeploy.mriclaimoperation.Claim serviceClaim = new com.ibm.rules.decisionservice.mriclaimdeploy.mriclaimoperation.Claim();
@@ -41,7 +41,7 @@ public class MRIServiceImpl implements MRIService {
 		claimParam.setClaim(serviceClaim);
 		mriClaimRequest.setClaim(claimParam);
 		MriclaimoperationResponse response = service.mriclaimoperation(mriClaimRequest);
-		planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
+		//planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
 		return response.getClaim().getClaim();
 	}
 

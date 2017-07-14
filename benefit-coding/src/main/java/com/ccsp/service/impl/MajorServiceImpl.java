@@ -29,8 +29,8 @@ public class MajorServiceImpl implements MajorService {
 	public  com.ibm.rules.decisionservice.majorsurgeryclaimdeploy.majorsurgeryoperation.Claim getClaim(Claim claim) throws MajorsurgeryoperationSoapFault{
 		RuleServiceUtil ruleServiceUtil = new RuleServiceUtil();
 		PlanServiceEntity ruleEntity = ruleDAO.getServiceRule(claim.getPlanId(), "Major Surgery");
-		double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
-		ruleServiceUtil.prepareClaim(claim, ruleEntity,amount);
+		//double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
+		ruleServiceUtil.prepareClaim(claim, ruleEntity,1200);//amount=1200
 		MajorsurgeryoperationRequest majorRequest = new MajorsurgeryoperationRequest();
 		MajorsurgeryoperationDecisionService_Service ss = new MajorsurgeryoperationDecisionService_Service();
 		MajorsurgeryoperationDecisionService service = ss.getMajorsurgeryclaimdeployMajorsurgeryoperationPort();
@@ -41,7 +41,7 @@ public class MajorServiceImpl implements MajorService {
 		claimParam.setClaim(serviceClaim);
 		majorRequest.setClaim(claimParam);
 		MajorsurgeryoperationResponse  response = service.majorsurgeryoperation(majorRequest);
-		planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
+		//planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
 		return response.getClaim().getClaim();
 	}
 
