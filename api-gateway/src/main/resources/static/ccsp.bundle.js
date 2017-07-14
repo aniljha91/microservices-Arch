@@ -98313,7 +98313,7 @@
 	        var i;
 	        var selectedUser;
 	        for (i = 0; i < usersLength; i++) {
-	            if (this.usersList[i].password === this.password || this.usersList[i].user_name === this.userName) {
+	            if (this.usersList[i].password === this.password && this.usersList[i].user_name === this.userName) {
 	                selectedUser = this.usersList[i];
 	                this.userService.setUser(this.usersList[i]);
 	                break;

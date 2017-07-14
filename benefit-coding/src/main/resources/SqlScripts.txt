@@ -1,8 +1,8 @@
 marketing_plan :
-insert into marketing_plan values('Auto','Blue Advantage Platinum HMO','1234','Individual','proposed','2010-03-28 02:15:51','2010-03-28 02:15:51','Generic Plus','NA','777777','individual','Community','NM','HMO','00');
-insert into marketing_plan values('Auto1','Blue Option Gold PPO','12343','Individual','proposed','2010-03-28 02:15:51','2010-03-28 02:15:51','Generic Plus','NA','211345','individual','Community','NM','HMO','00');
-insert into marketing_plan values('Auto2','Blue Preffered Bronze PPO','1294','Individual','proposed','2010-03-28 02:15:51','2010-03-28 02:15:51','Generic Plus','NA','8976467','individual','Community','NM','HMO','00');
-insert into marketing_plan values('Auto3','Blue Choice Preferred Silver PPO','12094','Individual','proposed','2010-03-28 02:15:51','2010-03-28 02:15:51','Generic Plus','NA','9875646','individual','Community','NM','HMO','00');
+insert into MarketingPlan values('Auto','Blue Advantage Platinum HMO','1234','Individual','proposed','2010-03-28 02:15:51','2010-03-28 02:15:51','Generic Plus','NA','777777','individual','Community','NM','HMO','00');
+insert into MarketingPlan values('Auto1','Blue Option Gold PPO','12343','Individual','proposed','2010-03-28 02:15:51','2010-03-28 02:15:51','Generic Plus','NA','211345','individual','Community','NM','HMO','00');
+insert into MarketingPlan values('Auto2','Blue Preffered Bronze PPO','1294','Individual','proposed','2010-03-28 02:15:51','2010-03-28 02:15:51','Generic Plus','NA','8976467','individual','Community','NM','HMO','00');
+insert into MarketingPlan values('Auto3','Blue Choice Preferred Silver PPO','12094','Individual','proposed','2010-03-28 02:15:51','2010-03-28 02:15:51','Generic Plus','NA','9875646','individual','Community','NM','HMO','00');
 
 Users :
 insert into users value('admin', 'Rohit','Choudhary','admin','admin','Benefit Engineer');
