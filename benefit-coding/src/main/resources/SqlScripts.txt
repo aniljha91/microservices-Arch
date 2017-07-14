@@ -10,5 +10,5 @@ insert into users value('coder', 'Anil','Jha','coder','coder','Benefit Coder');
 insert into users value('provider','Balu','Sakariboina','provider','provider','Claims Adjudicator');
 
 plan_rule_service :
-insert into plan_rule_service values (2,30,'type','No',0,'No',0,'No','No',500,200,'Yes','1','A','Yes','Preventive Care');
-insert into plan_rule_service values (2,30,'type','No',0,'No',0,'No','No',500,200,'Yes','1','A','Yes','Facility');
+insert into plan_rule_service values (2,30,'type','No',0,'No',0,'No','No',500,200,'Yes','2','A','Yes','Preventive Care');
+insert into plan_rule_service values (1,30,'type','No',0,'No',0,'No','No',500,200,'Yes','1','A','Yes','Facility');
