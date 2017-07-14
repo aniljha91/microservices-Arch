@@ -75,8 +75,8 @@ public class BenefitPlanController {
 	@RequestMapping(path="/plan",method = RequestMethod.GET)
 	public @ResponseBody String getPortNumber() throws UnknownHostException
 	{
-		LOG.log(Level.INFO, " Instance used of BENEFIT-PLAN is running on Host : " + InetAddress.getLocalHost().getHostName());
-		return  (String) " Instance used of BENEFIT-PLAN is running on Host : " + InetAddress.getLocalHost().getHostName();
+		LOG.log(Level.INFO, " Instance used of BENEFIT-DETERMINATION is running on Host : " + InetAddress.getLocalHost().getHostName());
+		return  (String) " Instance used of BENEFIT-DETERMINATION is running on Host : " + InetAddress.getLocalHost().getHostName();
 	}
 	
 }
