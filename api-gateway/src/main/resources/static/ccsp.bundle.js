@@ -96597,7 +96597,7 @@
 	    PlansService.prototype.getProcessClaimDetails = function (requestObj) {
 	        var _this = this;
 	        var d = this.q.defer();
-	        this.apiService.POST("http://35.166.85.148:6001/groups/rule/processClaim", requestObj).then(function (data) {
+	        this.apiService.POST("http://35.166.85.148:4000/groups/rule/processClaim", requestObj).then(function (data) {
 	            _this.processedClaimData = data;
 	            d.resolve(_this.processedClaimData);
 	        }, function (error) {
