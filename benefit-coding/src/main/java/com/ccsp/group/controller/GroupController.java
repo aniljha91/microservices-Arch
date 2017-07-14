@@ -63,7 +63,7 @@ public class GroupController {
 	public @ResponseBody String getPortNumber() throws UnknownHostException
 	{
 		LOG.log(Level.INFO, "Inside Benefit-coding callService");
-		String result = restTemplate.getForObject("http://BENEFIT-DETERMINATION/statistics/plan", String.class);
+		String result = restTemplate.getForObject("http://BENEFIT-DETERMINATION/determine/plan", String.class);
 		long range = 1234567L;
 		Random r = new Random();
 		long number = (long)(r.nextDouble()*range);
