@@ -6,27 +6,48 @@
     }, {
         "name": "Manage Marketing Plans",
         "isSubMenuVisible": false,
-        "icon": "ion-ios-clipboard",
+        "icon": "ion-ios-photos",
         "state": "coder.marketingplan"
     },
     {
-        "name": "Plan Design",
+        "name": "Api Gateway SwaggerLink",
         "isSubMenuVisible": false,
-        "icon": "ion-md-clipboard",
-        "items": [{
-                "name": "Create New Admin Plan",
-                "state": "coder.createNewAdminPlan"
-            },
-            {
-                "name": "Update Existing Admin Plan",
-                "state": "coder.updateExistingAdminPlan"
-            }
-        ]
+        "icon": "ion-ios-photos",
+        "state": "coder.apigateway"
     },
     {
-        "name": "Search and View",
+        "name": "Eureka Service Registry",
         "isSubMenuVisible": false,
-        "icon": "ion-ios-search",
-        "state": "coder.searchplan"
+        "icon": "ion-ios-photos",
+        "state": "coder.eurekaserver"
+    },
+    {
+        "name": "Benefit Coding SwaggerLink",
+        "isSubMenuVisible": false,
+        "icon": "ion-ios-photos",
+        "state": "coder.benefitcoding"
+    },
+    {
+        "name": "Auth Server SwaggerLink",
+        "isSubMenuVisible": false,
+        "icon": "ion-ios-photos",
+        "state": "coder.authserver"
+    },
+    {
+        "name": "Zipkin Tracing",
+        "isSubMenuVisible": false,
+        "icon": "ion-ios-photos",
+        "state": "coder.zipkinserver"
+    },
+    {
+        "name": "Kibana LogAggregation",
+        "isSubMenuVisible": false,
+        "icon": "ion-ios-photos",
+        "state": "coder.kibana"
+    },
+    {
+        "name": "Claims Entry",
+        "icon": "ion-ios-photos",
+        "state": "provider.claimsentry"
     }
 ]

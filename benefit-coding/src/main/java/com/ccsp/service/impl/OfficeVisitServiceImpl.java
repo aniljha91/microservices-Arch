@@ -29,8 +29,8 @@ public class OfficeVisitServiceImpl implements OfficeVisitService {
 	public  com.ibm.rules.decisionservice.officevisitclaimdeploy.officevisitclaimoperation.Claim getClaim(Claim claim) throws OfficevisitclaimoperationSoapFault{
 		RuleServiceUtil ruleServiceUtil = new RuleServiceUtil();
 		PlanServiceEntity ruleEntity = ruleDAO.getServiceRule(claim.getPlanId(), "Office Visit");
-		double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
-		ruleServiceUtil.prepareClaim(claim, ruleEntity,amount);
+		//double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
+		ruleServiceUtil.prepareClaim(claim, ruleEntity,1200);
 		claim.setMaximumAllowedAmount(claim.getMaximumAllowedAmount()/100);
 		OfficevisitclaimoperationRequest offerVisitRequest = new OfficevisitclaimoperationRequest();
 		OfficevisitclaimoperationDecisionService_Service ss = new OfficevisitclaimoperationDecisionService_Service();
@@ -42,7 +42,7 @@ public class OfficeVisitServiceImpl implements OfficeVisitService {
 		claimParam.setClaim(serviceClaim);
 		offerVisitRequest.setClaim(claimParam);
 		OfficevisitclaimoperationResponse  response = service.officevisitclaimoperation(offerVisitRequest);
-		planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
+		//planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
 		return response.getClaim().getClaim();
 	}
 }

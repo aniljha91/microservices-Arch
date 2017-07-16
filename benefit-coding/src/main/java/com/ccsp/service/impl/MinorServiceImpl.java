@@ -29,8 +29,8 @@ public class MinorServiceImpl implements MinorService {
 	public  com.ibm.rules.decisionservice.minorsurgeryclaimdeploy.minorsurgeryoperation.Claim getClaim(Claim claim) throws MinorsurgeryoperationSoapFault{
 		RuleServiceUtil ruleServiceUtil = new RuleServiceUtil();
 		PlanServiceEntity ruleEntity = ruleDAO.getServiceRule(claim.getPlanId(), "Minor Surgery");
-		double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
-		ruleServiceUtil.prepareClaim(claim, ruleEntity,amount);
+		//double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
+		ruleServiceUtil.prepareClaim(claim, ruleEntity,1200);
 		MinorsurgeryoperationRequest minorRequest = new MinorsurgeryoperationRequest();
 		MinorsurgeryoperationDecisionService_Service ss = new MinorsurgeryoperationDecisionService_Service();
 		MinorsurgeryoperationDecisionService service = ss.getMinorsurgeryclaimdeployMinorsurgeryoperationPort();
@@ -41,7 +41,7 @@ public class MinorServiceImpl implements MinorService {
 		claimParam.setClaim(serviceClaim);
 		minorRequest.setClaim(claimParam);
 		MinorsurgeryoperationResponse response = service.minorsurgeryoperation(minorRequest);
-		planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
+		//planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
 		return response.getClaim().getClaim();
 	}
 

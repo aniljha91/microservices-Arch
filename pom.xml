@@ -29,6 +29,7 @@
 	</properties>
 
 	<modules>
+		<module>common-packages</module>
 		<module>config-server</module>
 		<module>eureka-service-registry</module>
 		<module>api-gateway</module>

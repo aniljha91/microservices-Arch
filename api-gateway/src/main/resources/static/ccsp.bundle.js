@@ -96597,7 +96597,7 @@
 	    PlansService.prototype.getProcessClaimDetails = function (requestObj) {
 	        var _this = this;
 	        var d = this.q.defer();
-	        this.apiService.GET(this.apiService.constants.GET_PROCESSED_CLAIM_DETAILS).then(function (data) {
+	        this.apiService.POST("http://35.166.85.148:4000/groups/rule/processClaim", requestObj).then(function (data) {
 	            _this.processedClaimData = data;
 	            d.resolve(_this.processedClaimData);
 	        }, function (error) {
@@ -98313,7 +98313,7 @@
 	        var i;
 	        var selectedUser;
 	        for (i = 0; i < usersLength; i++) {
-	            if (this.usersList[i].password === this.password || this.usersList[i].user_name === this.userName) {
+	            if (this.usersList[i].password === this.password && this.usersList[i].user_name === this.userName) {
 	                selectedUser = this.usersList[i];
 	                this.userService.setUser(this.usersList[i]);
 	                break;
@@ -100958,7 +100958,7 @@
 	        this.billedAmount = null;
 	    };
 	    ClaimsEntryController.prototype.updateBillingAmount = function () {
-	        this.billedAmount = 100;
+	        this.billedAmount = 1000;
 	    };
 	    ClaimsEntryController.prototype.fnToggleTabsSection = function () {
 	        this.tabsSectionVisible = !this.tabsSectionVisible;

@@ -12,19 +12,20 @@
 	<description>CCSP Config Server</description>
 
 	<parent>
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-parent</artifactId>
-		<version>Dalston.RELEASE</version>
-		<!-- <version>${spring-cloud.version}</version> -->
-
-		<relativePath /> <!-- lookup parent from repository -->
+		<groupId>com.org.micro</groupId>
+		<artifactId>org-microservice-parent</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
 	</parent>
+
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
+		<spring-cloud.version>Dalston.SR1</spring-cloud.version>
+		<build.version>0.1.0-SNAPSHOT</build.version>
+		
 	</properties>
 
 	<dependencies>
@@ -39,6 +40,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-remote-shell</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -63,6 +68,9 @@
 		</dependencies>
 	</dependencyManagement>
 
+
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -74,8 +82,10 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.4.13</version>
 				<configuration>
-					<imageName>anil/${project.artifactId}</imageName>
+					<imageName>aniljha/${project.name}</imageName>
 					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+					<!-- <dockerHost></dockerHost>
+					<dockerCertPath></dockerCertPath> -->
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>

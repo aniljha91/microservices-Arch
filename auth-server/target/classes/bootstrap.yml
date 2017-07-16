@@ -1,9 +1,10 @@
 spring:
   application:
     name: auth-server
+
   cloud:
     config:
-      uri: http://config:8889
+      uri: http://localhost:8889
       fail-fast: true
       password: password
       username: user
@@ -11,3 +12,11 @@ jwt:
   secret: testingJWTAuthentication
   expiration: 2
   header: Bearer
+
+management:
+  security:
+    enabled: false
+    
+security:
+  basic: 
+    enabled: false

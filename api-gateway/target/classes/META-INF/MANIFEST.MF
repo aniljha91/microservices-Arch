@@ -1,9 +1,11 @@
 Manifest-Version: 1.0
 Implementation-Title: api-gateway
-Implementation-Version: 1.0-SNAPSHOT
-Built-By: rohchoudhary
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: bsakariboina
 Implementation-Vendor-Id: com.org
-Build-Jdk: 1.8.0_131
+Build-Jdk: 1.8.0_65
+Implementation-URL: http://projects.spring.io/spring-boot/org-microser
+ vice-parent/api-gateway/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 

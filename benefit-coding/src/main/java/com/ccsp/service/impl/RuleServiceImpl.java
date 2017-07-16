@@ -29,8 +29,9 @@ public class RuleServiceImpl implements RuleService{
 	public  com.ibm.rules.decisionservice.ccspdeployment.claimoperation.Claim getClaim(Claim claim) throws  ClaimoperationSoapFault {
 		RuleServiceUtil ruleServiceUtil = new RuleServiceUtil();
 		PlanServiceEntity ruleEntity = ruleDAO.getServiceRule(claim.getPlanId(), "Preventive Care");
-		double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
-		ruleServiceUtil.prepareClaim(claim, ruleEntity,amount);
+		//double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
+		//ruleServiceUtil.prepareClaim(claim, ruleEntity,amount);
+		ruleServiceUtil.prepareClaim(claim, ruleEntity,1200);
 		ClaimoperationRequest claimoperationRequest = new ClaimoperationRequest(); 
 		ClaimoperationDecisionService_Service ss = new ClaimoperationDecisionService_Service();
 		ClaimoperationDecisionService service = ss.getCcspdeploymentClaimoperationPort();
@@ -41,7 +42,7 @@ public class RuleServiceImpl implements RuleService{
 		claimParam.setClaim(serviceClaim);
 		claimoperationRequest.setClaim(claimParam);
 		ClaimoperationResponse response = service.claimoperation(claimoperationRequest);
-		planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
+		//planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
 		return response.getClaim().getClaim();
 	}
 

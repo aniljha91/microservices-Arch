@@ -28,8 +28,8 @@ public class SpecialistVisitRuleServiceImpl implements SpecialistVisitRuleServic
 	public com.ibm.rules.decisionservice.specialistvisitclaimdeploy.specialistvisitclaimoperation.Claim getClaim(com.ccsp.model.Claim claim) throws  SpecialistvisitclaimoperationSoapFault {
 		RuleServiceUtil ruleServiceUtil = new RuleServiceUtil();
 		PlanServiceEntity ruleEntity = ruleDAO.getServiceRule(claim.getPlanId(), "Special Visit");
-		double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
-		ruleServiceUtil.prepareClaim(claim, ruleEntity,amount);
+		//double amount = ruleDAO.getTotalDeductableAmount(claim.getMemberId(), claim.getPlanId());
+		ruleServiceUtil.prepareClaim(claim, ruleEntity,1200);
 		claim.setMaximumAllowedAmount(claim.getMaximumAllowedAmount()/100);
 		SpecialistvisitclaimoperationRequest specialVisitRequest = new SpecialistvisitclaimoperationRequest();
 		SpecialistvisitclaimoperationDecisionService_Service ss = new SpecialistvisitclaimoperationDecisionService_Service();
@@ -41,7 +41,7 @@ public class SpecialistVisitRuleServiceImpl implements SpecialistVisitRuleServic
 		claimParam.setClaim(serviceClaim);
 		specialVisitRequest.setClaim(claimParam);
 		SpecialistvisitclaimoperationResponse response = service.specialistvisitclaimoperation(specialVisitRequest);
-		planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
+		//planDAO.updateTotalDeductableAmount(response.getClaim().getClaim().getTotalDeductableAmount(),claim.getPlanId(),claim.getMemberId());
 		return response.getClaim().getClaim();
 	}
 

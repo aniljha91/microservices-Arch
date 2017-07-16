@@ -2,4 +2,4 @@ server:
   contextPath: /determine
   port: 7000
       
-refreshParameter: AfterConfigRefresh
+refreshParameter: BeforeeConfigRefresh

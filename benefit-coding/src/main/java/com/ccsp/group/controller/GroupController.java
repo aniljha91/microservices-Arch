@@ -52,8 +52,8 @@ public class GroupController {
 	}
 	
 	
-	@RequestMapping(path="/callService",method = RequestMethod.GET)
-	@ApiOperation(value="callService", nickname="generic", response=String.class)
+	@RequestMapping(path="/loadBalancerDemo",method = RequestMethod.GET)
+	@ApiOperation(value="loadBalancerDemo", nickname="generic", response=String.class)
 	@ApiResponses(value = {
 			@ApiResponse(code = 200, message = "Success", response = String.class),
 			@ApiResponse(code = 400, message = "Bad Request"),
@@ -63,17 +63,17 @@ public class GroupController {
 	public @ResponseBody String getPortNumber() throws UnknownHostException
 	{
 		LOG.log(Level.INFO, "Inside Benefit-coding callService");
-		String result = restTemplate.getForObject("http://BENEFIT-DETERMINATION/statistics/plan", String.class);
-		long range = 1234567L;
+		String result = restTemplate.getForObject("http://BENEFIT-DETERMINATION/determine/plan", String.class);
+		/*long range = 1234567L;
 		Random r = new Random();
-		long number = (long)(r.nextDouble()*range);
+		long number = (long)(r.nextDouble()*range);*/
 		
 		StringBuilder finalResponse = new StringBuilder();
-		finalResponse.append("Called Benefit coding : "+ number);
+		finalResponse.append("Inside Benefit coding service");
 		finalResponse.append("    ::   ");
 		finalResponse.append("Instance used of BENEFIT-CODING is running on host :"+ InetAddress.getLocalHost().getHostName());
 		finalResponse.append("    ::   ");
-		finalResponse.append("And Internally called BENEFIT_PLAN Service, "+result);
+		finalResponse.append("And Internally called BENEFIT-DETERMINATION Service, "+result);
 		LOG.log(Level.INFO, finalResponse.toString());
 		return finalResponse.toString();
 	}
