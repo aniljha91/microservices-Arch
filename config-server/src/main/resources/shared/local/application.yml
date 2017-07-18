@@ -12,7 +12,6 @@ spring:
   rabbitmq:
     host: rabbitmq
   zipkin:
-    #baseUrl: http://ec2-34-212-49-187.us-west-2.compute.amazonaws.com:3333
     baseUrl: http://localhost:3333
     
 ribbon:
@@ -24,15 +23,9 @@ ribbon:
 eureka:
   client:
     serviceUrl:
-      #defaultZone: http://ec2-34-212-49-187.us-west-2.compute.amazonaws.com:8762/eureka/
       defaultZone: http://localhost:8762/eureka/
   instance:
     prefer-ip-address: true
-    
-#security:
-#  oauth2:
-#    resource:
-#      user-info-uri: http://ec2-34-212-49-187.us-west-2.compute.amazonaws.com:5000/uaa/users/current
 
 hystrix:
   command:
@@ -46,11 +39,9 @@ hystrix:
       maxConcurrentConnections: 20
       
       
-#swagger
 swagger:
   title: You have swagger!
   description: Swagger Page
-  #version: {build.version}
   termsOfServiceUrl: https://localhost:8080/TnC
   contact:
       name:

@@ -1,0 +1,10 @@
+server:
+  port: 8990
+
+turbine:
+  aggregator:
+    clusterConfig: BENEFIT-DETERMINATION,BENEFIT-CODING
+  appConfig: benefit-determination,benefit-coding
+  instanceUrlSuffix:
+    BENEFIT-DETERMINATION: determine/hystrix.stream
+    BENEFIT-CODING: groups/hystrix.stream

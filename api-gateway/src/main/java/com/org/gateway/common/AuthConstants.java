@@ -17,7 +17,5 @@ public final class AuthConstants {
     public static final String ROLE_ADMIN = "admin";
     public static final String ROLE_READ_WRITE = "writer";
     public static final String ROLE_READ_ONLY = "reader";
-    
-    public static final String REQUEST_TOKEN_HEADER_NAME = "bearer";
    
 }

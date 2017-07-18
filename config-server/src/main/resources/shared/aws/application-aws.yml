@@ -9,7 +9,13 @@ spring:
   zipkin:
     baseUrl: http://ec2-34-212-49-187.us-west-2.compute.amazonaws.com:3333
     
-    
+
+jwt:
+  secret: testingJWTAuthentication
+  expiration: 2
+  header: Bearer
+
+  
 ribbon:
   eureka:
     enabled: true
