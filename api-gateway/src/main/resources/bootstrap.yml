@@ -9,4 +9,5 @@ spring:
       password: password
       username: user
 jwt:
-  header: Bearer
+  secret: testingJWTAuthentication
+  expiration: 2

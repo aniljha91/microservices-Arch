@@ -10,25 +10,31 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.web.client.RestTemplate;
 
+import com.org.gateway.filter.PreRoutingFilter;
+
 @SpringBootApplication
 @EnableDiscoveryClient
-@Import(value={ZuulProxyConfiguration.class})
-public class ApiGatewayApplication{
-	
+@Import(value = { ZuulProxyConfiguration.class })
+public class ApiGatewayApplication {
+
 	public static void main(String[] args) {
 		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
-	
+
+	@Bean
+	public PreRoutingFilter simpleFilter() {
+		return new PreRoutingFilter();
+	}
+
 	@Bean
 	public AlwaysSampler defaultSampler() {
 		return new AlwaysSampler();
 	}
-	
+
 	@Bean
 	@LoadBalanced
-	public RestTemplate restTemplate()
-	{
+	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
-	
+
 }
