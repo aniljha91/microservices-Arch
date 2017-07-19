@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
-import com.org.gateway.common.AuthConstants;
 import com.org.gateway.security.JwtTokenUtil;
 import com.org.gateway.util.ErrorHandler;
 

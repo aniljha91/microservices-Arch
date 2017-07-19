@@ -1,22 +1,32 @@
 package com.ccsp.configuration;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-import org.springframework.web.method.HandlerMethod;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 
-@Component
 public class ControllerRoleInterceptor extends HandlerInterceptorAdapter {
-
-	@Value("${jwt.secret}")
+	
 	private String secret;
-
-	@Value("${jwt.header}")
 	private String headerName;
+	
+	ControllerRoleInterceptor(String secret,String headerName){
+		this.secret = secret;
+		this.headerName = headerName;
+	}
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
@@ -24,18 +34,42 @@ public class ControllerRoleInterceptor extends HandlerInterceptorAdapter {
 		if (request.getHeader(headerName) != null) {
 			Claims claims = getClaimsFromToken(request.getHeader(headerName));
 			if (claims != null && claims.size() > 0) {
-				if (handler instanceof HandlerMethod) {
+				SecurityContext securityContext = SecurityContextHolder.getContext();
+				Authentication auth = new UsernamePasswordAuthenticationToken(claims.get("username"), null, returnAuthorities(claims));
+				securityContext.setAuthentication(auth);
+				HttpSession session = request.getSession(true);
+			    session.setAttribute("SPRING_SECURITY_CONTEXT", securityContext);
+			    
+				/*if (handler instanceof HandlerMethod) {
 					HandlerMethod handlerMethod = (HandlerMethod) handler;
-					/*SomeAnnotation annotation = handlerMethod.getMethodAnnotation(SomeAnnotation.class);
+					SomeAnnotation annotation = handlerMethod.getMethodAnnotation(SomeAnnotation.class);
 					if (annotation != null) {
 						// do stuff
-					}*/
-				}
+					}
+				}*/
+			    
 				return true;
+			}else{
+				response.sendError(401, "Invalid User, Please send a valid token!!");
+				return false;
 			}
+		}else{
+			response.sendError(401, "Invalid User, Please send a valid token!!");
 			return false;
 		}
-		return false;
+	}
+
+	private Collection<GrantedAuthority> returnAuthorities(Claims claims) {
+		Collection<GrantedAuthority> grantedAuthorities = new ArrayList<GrantedAuthority>();
+		/*GrantedAuthority grantedAuthority = new GrantedAuthority(){
+		    public String getAuthority() {
+		        return (String) claims.get("role");
+		    }
+		};
+		grantedAuthorities.add(grantedAuthority);*/
+		GrantedAuthority grantedAuthority = new SimpleGrantedAuthority("ROLE_"+((String)claims.get("role")).toUpperCase());
+		grantedAuthorities.add(grantedAuthority);
+		return grantedAuthorities;
 	}
 
 	private Claims getClaimsFromToken(String token) {

@@ -6,7 +6,7 @@ public final class AuthConstants {
 	private AuthConstants() {
 	}
 
-	public static final String CLAIM_KEY_USERNAME = "sub";
+	public static final String CLAIM_KEY_USERNAME = "username";
 	public static final String CLAIM_KEY_AUDIENCE = "audience";
 	public static final String CLAIM_KEY_CREATED = "created";
 	public static final String CLAIM_KEY_ROLE = "role";
