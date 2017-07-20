@@ -1,4 +1,4 @@
-package com.org.common.service;
+/*package com.org.common.service;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -47,3 +47,4 @@ public class ErrorCodeLookupServiceTest {
 	}
 	
 }
+*/

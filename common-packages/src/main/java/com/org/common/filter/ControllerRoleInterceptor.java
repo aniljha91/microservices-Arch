@@ -23,7 +23,7 @@ public class ControllerRoleInterceptor extends HandlerInterceptorAdapter {
 	private String secret;
 	private String headerName;
 	
-	ControllerRoleInterceptor(String secret,String headerName){
+	public ControllerRoleInterceptor(String secret,String headerName){
 		this.secret = secret;
 		this.headerName = headerName;
 	}
@@ -61,12 +61,6 @@ public class ControllerRoleInterceptor extends HandlerInterceptorAdapter {
 
 	private Collection<GrantedAuthority> returnAuthorities(Claims claims) {
 		Collection<GrantedAuthority> grantedAuthorities = new ArrayList<GrantedAuthority>();
-		/*GrantedAuthority grantedAuthority = new GrantedAuthority(){
-		    public String getAuthority() {
-		        return (String) claims.get("role");
-		    }
-		};
-		grantedAuthorities.add(grantedAuthority);*/
 		GrantedAuthority grantedAuthority = new SimpleGrantedAuthority("ROLE_"+((String)claims.get("role")).toUpperCase());
 		grantedAuthorities.add(grantedAuthority);
 		return grantedAuthorities;

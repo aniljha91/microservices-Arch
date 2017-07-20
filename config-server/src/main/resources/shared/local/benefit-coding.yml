@@ -1,5 +1,5 @@
 server:
-  contextPath: /groups
+  contextPath: /benefitcoding
   port: 6000
 
 refreshParameter: BenefitCodingBeforeRefresh

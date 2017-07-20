@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="MajorsurgeryoperationDecisionService" targetNamespace="http://www.ibm.com/rules/decisionservice/Majorsurgeryclaimdeploy/Majorsurgeryoperation" xmlns:dstns="http://www.ibm.com/rules/decisionservice/Majorsurgeryclaimdeploy/Majorsurgeryoperation" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.ibm.com/rules/decisionservice/Majorsurgeryclaimdeploy/Majorsurgeryoperation/param" xmlns:xom1="http://www.ibm.com/rules/decisionservice/Majorsurgeryclaimdeploy/Majorsurgeryoperation">
+      <xsd:import namespace="http://www.ibm.com/rules/decisionservice/Majorsurgeryclaimdeploy/Majorsurgeryoperation"/>
+      <xsd:element name="claim">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="claim" type="xom1:claim"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xs:schema targetNamespace="http://www.ibm.com/rules/decisionservice/Majorsurgeryclaimdeploy/Majorsurgeryoperation" version="1.0" xmlns:param="http://www.ibm.com/rules/decisionservice/Majorsurgeryclaimdeploy/Majorsurgeryoperation/param" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <xsd:import namespace="http://www.ibm.com/rules/decisionservice/Majorsurgeryclaimdeploy/Majorsurgeryoperation/param"/>
+
+  <xs:complexType name="claim">
+    <xs:sequence>
+      <xs:element name="accumulatorINDeductAmount" type="xs:double"/>
+      <xs:element name="accumulatorINOpexAmount" type="xs:double"/>
+      <xs:element name="accumulatorONDeductAmount" type="xs:double"/>
+      <xs:element name="accumulatorONOpexAmount" type="xs:double"/>
+      <xs:element name="age" type="xs:int"/>
+      <xs:element name="billedAmount" type="xs:double"/>
+      <xs:element name="coInsuranceAmount" type="xs:double"/>
+      <xs:element name="coPayAmount" type="xs:double"/>
+      <xs:element name="deductableAmountLeft" type="xs:double"/>
+      <xs:element name="diagnosticCode" type="xs:int"/>
+      <xs:element minOccurs="0" name="isCoInsuranceAllowed" type="xs:string"/>
+      <xs:element minOccurs="0" name="isCoPayAllowed" type="xs:string"/>
+      <xs:element minOccurs="0" name="isDeductableAllowed" type="xs:string"/>
+      <xs:element minOccurs="0" name="isIgnoreCostShare" type="xs:string"/>
+      <xs:element minOccurs="0" name="isNetwork" type="xs:string"/>
+      <xs:element minOccurs="0" name="isServiceAllowed" type="xs:string"/>
+      <xs:element name="maxDeductableAmountAllowed" type="xs:double"/>
+      <xs:element name="maximumAllowedAmount" type="xs:double"/>
+      <xs:element name="memberId" type="xs:int"/>
+      <xs:element name="paidByCompanyInsuranceAmount" type="xs:double"/>
+      <xs:element name="patientCoInsuranceAmount" type="xs:double"/>
+      <xs:element name="patientCoPayAmount" type="xs:double"/>
+      <xs:element name="patientDeductableAmount" type="xs:double"/>
+      <xs:element minOccurs="0" name="planName" type="xs:string"/>
+      <xs:element name="procedureCode" type="xs:int"/>
+      <xs:element name="serviceCode" type="xs:int"/>
+      <xs:element minOccurs="0" name="serviceName" type="xs:string"/>
+      <xs:element name="totalDeductableAmount" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+<xsd:element name="MajorsurgeryoperationRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element form="qualified" maxOccurs="1" minOccurs="0" name="DecisionID" type="xsd:string"/>
+            <xsd:element ref="param:claim"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="MajorsurgeryoperationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element form="qualified" name="DecisionID" type="xsd:string"/>
+            <xsd:element ref="param:claim"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="MajorsurgeryoperationException">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="exception" nillable="false" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="MajorsurgeryoperationSoapFault">
+    <wsdl:part element="dstns:MajorsurgeryoperationException" name="fault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="MajorsurgeryoperationRequest">
+    <wsdl:part element="dstns:MajorsurgeryoperationRequest" name="MajorsurgeryoperationRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="MajorsurgeryoperationResponse">
+    <wsdl:part element="dstns:MajorsurgeryoperationResponse" name="MajorsurgeryoperationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MajorsurgeryoperationDecisionService">
+    <wsdl:operation name="Majorsurgeryoperation">
+      <wsdl:input message="dstns:MajorsurgeryoperationRequest" name="MajorsurgeryoperationRequest">
+    </wsdl:input>
+      <wsdl:output message="dstns:MajorsurgeryoperationResponse" name="MajorsurgeryoperationResponse">
+    </wsdl:output>
+      <wsdl:fault message="dstns:MajorsurgeryoperationSoapFault" name="MajorsurgeryoperationSoapFault">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MajorsurgeryclaimdeployMajorsurgeryoperationBinding" type="dstns:MajorsurgeryoperationDecisionService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Majorsurgeryoperation">
+      <soap:operation soapAction="Majorsurgeryoperation" style="document"/>
+      <wsdl:input name="MajorsurgeryoperationRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="MajorsurgeryoperationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="MajorsurgeryoperationSoapFault">
+        <soap:fault name="MajorsurgeryoperationSoapFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MajorsurgeryoperationDecisionService">
+    <wsdl:port binding="dstns:MajorsurgeryclaimdeployMajorsurgeryoperationBinding" name="MajorsurgeryclaimdeployMajorsurgeryoperationPort">
+      <soap:address location="http://35.165.45.103:9080/DecisionService/ws/majorsurgeryclaimdeploy/majorsurgeryoperation/v75"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

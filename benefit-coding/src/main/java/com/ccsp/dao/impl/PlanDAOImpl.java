@@ -10,7 +10,7 @@ import com.ccsp.utils.QueryConstant;
 @Repository
 public class PlanDAOImpl  implements PlanDAO {
 	
-	final Logger logger = Logger.getLogger(UserDAOImpl.class);
+	final Logger logger = Logger.getLogger(PlanDAOImpl.class);
 
 	private JdbcTemplate jdbcTemplate;
 	

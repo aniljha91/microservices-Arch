@@ -9,9 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import com.ccsp.dao.PlanDAO;
-import com.ccsp.dao.UserDAO;
 import com.ccsp.dao.impl.PlanDAOImpl;
-import com.ccsp.dao.impl.UserDAOImpl;
  
 @Configuration
 @Component
@@ -27,11 +25,7 @@ public class SpringJDBCConfiguration {
         return jdbcTemplate;
     }
  
-    @Bean
-    public UserDAO userDAO(){
-        UserDAOImpl userDao = new UserDAOImpl();
-        return userDao;
-    }
+   
     
     @Bean
     public PlanDAO planDAO(){

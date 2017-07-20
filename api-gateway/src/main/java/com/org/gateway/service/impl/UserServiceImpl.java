@@ -1,5 +1,7 @@
 package com.org.gateway.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,5 +19,11 @@ public class UserServiceImpl implements UserService {
 	public User findByName(String userName) {
 		return userDAO.findByName(userName);
 	}
+	
+	@Override
+	public List<User> listOfUsers() {
+		return userDAO.listOfUsers();
+	}
+
 
 }

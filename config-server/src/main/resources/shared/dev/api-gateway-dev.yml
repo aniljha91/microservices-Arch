@@ -8,7 +8,7 @@ zuul:
         sensitiveHeaders:
         serviceId: auth-server
     benefitcoding-service:
-        path: /groups/**
+        path: /benefitcoding/**
         stripPrefix: false
         sensitiveHeaders:
         serviceId: benefit-coding

@@ -1,5 +1,7 @@
 package com.org.gateway.dao.impl;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -23,6 +25,12 @@ public class UserDAOImpl implements UserDAO {
 		Query query = entityManager.createNativeQuery("SELECT * FROM users WHERE user_name = ?", User.class);
 	    query.setParameter(1, userName);
 		return (User) query.getSingleResult();
+	}
+	
+	@Override
+	public List<User> listOfUsers() {
+		Query query = entityManager.createNativeQuery("SELECT * FROM users", User.class);
+		return (List<User>) query.getResultList();
 	}
 
 }
